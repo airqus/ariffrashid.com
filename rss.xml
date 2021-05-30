@@ -1,4 +1,109 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Sun, 30 May 2021 07:25:42 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[DisplayPort 1.4 KVM Alternative]]></title><description><![CDATA[My cheaper solution to purchasing a DisplayPort 1.4 compatible KVM. New Monitor DisplayPort 1.4 (DP1.4) KVMs USB Switching Monitor Switching Final Solution Diagram Price Video New…]]></description><link>https://calvin.me/displayport-1.4-kvm-alternative</link><guid isPermaLink="false">https://calvin.me/displayport-1.4-kvm-alternative</guid><category><![CDATA[displayport]]></category><category><![CDATA[kvm]]></category><pubDate>Wed, 28 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My cheaper solution to purchasing a DisplayPort 1.4 compatible KVM.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Sun, 30 May 2021 09:25:23 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[More Open Source: Build, Hosting and Analytics]]></title><description><![CDATA[I've made changes to this blog's build, hosting and analytics to be more transparent. This blog has been open-source since moving to Jekyll back in 2016. Its source code (posts…]]></description><link>https://calvin.me/making-this-site-more-open-source</link><guid isPermaLink="false">https://calvin.me/making-this-site-more-open-source</guid><category><![CDATA[github actions]]></category><category><![CDATA[github pages]]></category><category><![CDATA[umami]]></category><pubDate>Sun, 30 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I&apos;ve made changes to this blog&apos;s build, hosting and analytics to be more transparent.&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;This blog has been open-source since moving to Jekyll back in 2016. Its source code (posts, themes, images, etc.) are all publicly available. Anyone is free to take it and start their blog based on everything I&apos;ve done. The source code is available &lt;a href=&quot;https://github.com/calvinbui/calvin.me&quot;&gt;on GitHub&lt;/a&gt;. There is also a link in the footer of each page.&lt;/p&gt;
+&lt;h2 id=&quot;build&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#build&quot; aria-label=&quot;build permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build&lt;/h2&gt;
+&lt;p&gt;This site was with &lt;a href=&quot;https://www.gatsbyjs.com/&quot;&gt;Gatsby&lt;/a&gt;, a web framework that also generates static sites. To create the static site files, it must be built using a continuous integration (CI) system. This was done &lt;a href=&quot;https://docs.netlify.com/configure-builds/common-configurations/gatsby/&quot;&gt;using Netlify&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To make this more clear and visible, I have moved this over to &lt;a href=&quot;https://github.com/features/actions&quot;&gt;GitHub Actions&lt;/a&gt;, a CI system by GitHub. &lt;a href=&quot;https://github.com/calvinbui/calvin.me/actions&quot;&gt;Every build&lt;/a&gt; can be viewed directly in the repo.&lt;/p&gt;
+&lt;p&gt;The difference with GitHub Actions is that every command the CI performs can also be seen. The GitHub Action &lt;a href=&quot;https://github.com/calvinbui/calvin.me/blob/master/.github/workflows/gatsby-build.yml&quot;&gt;workflow file is available inside of the repo&lt;/a&gt;. This file details each step used to build the website and shows the link between the source code and the final site viewers are reading now.&lt;/p&gt;
+&lt;p&gt;I have also set the GitHub Action&apos;s log retention to 30 days to give time for anyone to see what transpired inside each build. Using git also allows auditing of all changes to the build.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1607d018689d5b3c31737bfe7ebb9680/2f7b1/actions.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 93.89671361502347%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAIAAAAf7rriAAAACXBIWXMAAAsTAAALEwEAmpwYAAABPElEQVQ4y5WT0U4EIQxF50tcYFqgtBRmmKiJ/v93GYZdN0ZdMblvkzMXTstCudXjbXt+Jz0sskU2kL4Hoq5hJI9YlAWixtxIj8Cb83JZ6cesQSGq8525xstikZGq9fmypicXf4PPfPlqIC3OZy6NcwWqSHUN+SF/J91olu2l7K8QK1KxXi6QZniLvFgU0hZ1h1gw9fIZ8nZslJDrygKxQFQL/B/YS9R9FemdQH85u5PdtvPC5eDaMHVbZq7ZIA9hwtpEN0g18I5UzaSwYZv1YG1DGFABKjO8Qe7CfK4geQ1lUtWYkxt3DrIj5XNJSu+nOlPe5+x8DrlhEp+q520EqP/iwap/whLzUUoLJ9yfx9yGXuHALepVlQWeHPUNluaFIep5Z7XI/4BjboErRDXAFsXMPwyDfM3JTJ555AN0n6g+5uz/ZwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;actions&quot;
+        title=&quot;actions&quot;
+        src=&quot;/static/1607d018689d5b3c31737bfe7ebb9680/d6170/actions.png&quot;
+        srcset=&quot;/static/1607d018689d5b3c31737bfe7ebb9680/53f68/actions.png 213w,
+/static/1607d018689d5b3c31737bfe7ebb9680/df70d/actions.png 425w,
+/static/1607d018689d5b3c31737bfe7ebb9680/d6170/actions.png 850w,
+/static/1607d018689d5b3c31737bfe7ebb9680/2f7b1/actions.png 909w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;hosting&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hosting&quot; aria-label=&quot;hosting permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hosting&lt;/h2&gt;
+&lt;p&gt;Hosting has now moved from &lt;a href=&quot;https://www.netlify.com/with/gatsby/&quot;&gt;Netlify&lt;/a&gt; to &lt;a href=&quot;https://github.com/calvinbui/calvin.me/tree/gh-pages&quot;&gt;GitHub Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;With GitHub Pages, it is instantly visible which files are being served through the &lt;code class=&quot;language-text&quot;&gt;gh-pages&lt;/code&gt; branch in the source code. Users can also navigate to &lt;a href=&quot;https://calvinbui.github.io/calvin.me/&quot;&gt;https://calvinbui.github.io/calvin.me/&lt;/a&gt; to confirm the site is legit (GitHub Pages are hosted in the format username.github.io/repo).&lt;/p&gt;
+&lt;p&gt;Previously it was impossible to know which files Netlify was hosting and if they had made any changes to them. GitHub can do the same but in this scenario, users can also download
+every single file from the &lt;code class=&quot;language-text&quot;&gt;gh-pages&lt;/code&gt; branch to browse the site locally. Alternatively, they can also build the files following the GitHub Actions workflow file as mentioned above.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/f7f5660a5bebb93e48ca97406ca7f621/43dd6/pages.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 61.9718309859155%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYElEQVQoz4WS2W7jMAxF/S2xRVESRVGLZUdWmyDoAsz/f9DA7jZtAwxwHg4EXT5ccgjzpbSXuT25sEwYlInKiLJxMnL4l4yafzCAXzBsyDP6rCm98eH5ICFlpDzZMJl/wDAAs6tCa/It07ra5cHWM0bBKPrgS5KYFDEdkiOwDBgycgQfwAflRVFUJIpYUVAU4A0vsD+GT4CCsmEIpad64dR8bJw2yZ13aSSr5QWoTSaP4Efg3ww+t9qf2uU1r9d8vq6PL6FsMj9ol07gf5f0rbBQ+tKfpXTj54NiuWqqyi0Tyn/CUh/77c/58oq+TBgmFGXkiMkJ/Ccj0J0wp1bajXMDl/QBuAwuG1+Qit6XVMAV5eqI4WcYKfu4gk0ka91u6Xzt221ZL5qK3qcc42xWttwJ+9Q5bfsNaD7+ReuicfEENH4r7E55g5VV5s65GZ4Nz5bru0hDv2iXdygpe+c8/wJcG34JKr3YlQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;pages&quot;
+        title=&quot;pages&quot;
+        src=&quot;/static/f7f5660a5bebb93e48ca97406ca7f621/d6170/pages.png&quot;
+        srcset=&quot;/static/f7f5660a5bebb93e48ca97406ca7f621/53f68/pages.png 213w,
+/static/f7f5660a5bebb93e48ca97406ca7f621/df70d/pages.png 425w,
+/static/f7f5660a5bebb93e48ca97406ca7f621/d6170/pages.png 850w,
+/static/f7f5660a5bebb93e48ca97406ca7f621/43dd6/pages.png 937w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;analytics&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#analytics&quot; aria-label=&quot;analytics permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Analytics&lt;/h2&gt;
+&lt;p&gt;Finally, I am making the analytics for the site publicly available. These are analytics I have collected using &lt;a href=&quot;https://github.com/mikecao/umami&quot;&gt;Umami&lt;/a&gt;, an open-source analytics tool. Its deployment code can be found inside my public &lt;a href=&quot;https://github.com/calvinbui/ansible-monorepo/commit/4cf3e009a70b5ba9b2fb29d5f6f1a38d90d05eed&quot;&gt;Ansible repository&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The dashboard is available at &lt;a href=&quot;https://umami.calvin.me/share/AkrFoOXj/calvin.me&quot;&gt;https://umami.calvin.me/share/AkrFoOXj/calvin.me&lt;/a&gt;. I have also added the link to the website&apos;s footer visibility.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c5f3f3d5851281df8cfca339556360e9/58c38/umami.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 95.30516431924883%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAIAAAAf7rriAAAACXBIWXMAAAsTAAALEwEAmpwYAAACbElEQVQ4y41T2W5TMRDtlzRtru0ZL2P7Lr5L3CQNKl2SCpQWhPrKh8ALSx+QeEF8L/g6RCnlgaORZVlzZsYzZ46aprm8vFqdn1tn/f8hhND3vff+yDlnLVVVZa0FAETM5/4in0FrTUTW2iMiIm0Wi4W1ZAxpra21IxXHCxRFwZ6Cc46IRHRkjIkxXt/cKK03m80wDOv1Op7Frm232+1sNhRFwQ+QKxdCpMzWWmMMAAghECVjHACklIiolJJSimfIzjtyds2BhRD8KXYMztAOoBxnRX7akZVSiJiDin8DOJuq5iXaVrBpdvsrc5Gipn4wwdmYlYmUeSynmKjuFu3AiwkfizsgAwjlQFegPOhSoBaoQRKASmSUvDjV8Y3qNunLyh6SFbATWr2vH36W94/V22/l/Vd/98XfP/rtJ/f6o0/2wW8/1w8/yrtP1bvvsn5BWiYypMZKW0c3XNv+ymWbrZv5bRU3zeKV7a9sf+36y2x+tlZUE5lEFiAYY8X0hE2P05emEzY9FvxUI0dRKCj4dHJo7PSYsyKVbYxpmlDXtTFGKZ36JQTjvK4bpXRo26YJBWO5b3wcZBM6bYiMSeTQhIuLi9VqNZ/PtdZ5uLN4JpXqui7GeDh2ECKezaVSSZ5E5Jzr2jY0IYSWiLJ6h2FAxHZ8zy971YQQdtq2ZA2Zuq68SwtGRN57MqauG0Qsy9I5h6Me92yytCMTUVmWsxjjLC1Dch2lWpYVIlZV3feD9x4A9uTss9uqEJrlctm2XZYqADDGur5HxBDa5XKRlH1QeVXVUsqx7Ly9f/ZWa5U9cn4AzLGEENqYw1X5Papfoo/LKtM/EkUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;umami&quot;
+        title=&quot;umami&quot;
+        src=&quot;/static/c5f3f3d5851281df8cfca339556360e9/d6170/umami.png&quot;
+        srcset=&quot;/static/c5f3f3d5851281df8cfca339556360e9/53f68/umami.png 213w,
+/static/c5f3f3d5851281df8cfca339556360e9/df70d/umami.png 425w,
+/static/c5f3f3d5851281df8cfca339556360e9/d6170/umami.png 850w,
+/static/c5f3f3d5851281df8cfca339556360e9/58c38/umami.png 1260w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[DisplayPort 1.4 KVM Alternative]]></title><description><![CDATA[My cheaper solution to purchasing a DisplayPort 1.4 compatible KVM. New Monitor DisplayPort 1.4 (DP1.4) KVMs USB Switching Monitor Switching Final Solution Diagram Price Video New…]]></description><link>https://calvin.me/displayport-1.4-kvm-alternative</link><guid isPermaLink="false">https://calvin.me/displayport-1.4-kvm-alternative</guid><category><![CDATA[displayport]]></category><category><![CDATA[kvm]]></category><pubDate>Wed, 28 Apr 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My cheaper solution to purchasing a DisplayPort 1.4 compatible KVM.&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;div class=&quot;table-of-contents&quot;&gt;
 &lt;ul&gt;
