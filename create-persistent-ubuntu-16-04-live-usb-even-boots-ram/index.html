@@ -1,0 +1,801 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.4e9716aac985f0c683cf.css" id="gatsby-global-css">@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/roboto-400-465390c6e54c60f4a15ff698f372e858.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/roboto-500-324b1e6d0f5ae7c6ab42fed5516c7b3d.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:700;src:url(/static/roboto-700-18034c13b329fd74d51af5c9e2ddee1e.woff2) format("woff2");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-display:swap;font-family:Roboto Mono;font-style:normal;font-weight:400;src:url(/static/roboto-mono-400-336c829bcd5d167e6d7942a2bd64c703.woff) format("woff");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}@font-face{font-family:PerfectDOS;src:url(/static/PerfectDos-4df1d5bd795358c80faab26511d48071.ttf) format("truetype")}*,:after,:before,html{-webkit-box-sizing:border-box;box-sizing:border-box}body,figure{margin:0}html{font:normal normal normal 1rem/1.6 Helvetica Neue,Roboto,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;font-family:Helvetica Neue,Roboto,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;font-size:84%!important}body{color:#454545;font-size:1rem;-webkit-transition:background .4s ease;transition:background .4s ease}@media (min-width:620px){body{font-size:1.15rem}}.gatsby-resp-iframe-wrapper,dl,ol,p,table,ul,video{font-size:1.25rem;margin:0 0 1.5rem}@media (min-width:620px){.gatsby-resp-iframe-wrapper,dl,ol,p,table,ul,video{font-size:1.35rem;margin:0 0 2rem}}ul li p{margin:0}ul li ul{margin:0;padding-left:1rem}ul li ul li{margin:.25rem 0}ol li ol{margin-bottom:0}h1,h2,h3,h4,h5{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;color:#111;font-family:Roboto,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;font-weight:500;line-height:1.3}h1,h1:not(:first-child),h2,h2:not(:first-child),h3,h3:not(:first-child),h4,h4:not(:first-child),h5,h5:not(:first-child){margin:0 0 1rem}h1{font-size:1.95rem;font-weight:500}h1 code{font-size:1.95rem!important}h2{font-size:1.8rem;font-weight:500;padding-bottom:.2rem}h2 code{font-size:1.8rem!important}h3{color:#444;font-size:1.6rem}h3,h4{font-weight:500}h4{color:#777;font-size:1.4rem}h5{font-size:1.3rem;font-weight:500}@media (min-width:620px){h1,h2,h3,h4,h5{margin:0 0 2rem}h1:not(:first-child),h2:not(:first-child),h3:not(:first-child),h4:not(:first-child),h5:not(:first-child){margin:0 0 1.5rem}h1{font-size:2.6rem}h1 code{font-size:2.6rem!important}h2{font-size:2.3rem}h2 code{font-size:2.3rem!important}h3{font-size:1.95rem}h4{font-size:1.6rem}h5{font-size:1.5rem}}ul{padding:0}ul li{list-style-type:none;margin-bottom:.3rem;margin-left:.5rem;padding-left:1.5rem;position:relative}ul li.task-list-item{margin-left:0;padding-left:0}ul li.task-list-item:before{content:""}ul li:before{color:#929292;content:"\2022 ";font-size:22px;left:0;line-height:1.1;position:absolute}@media (min-width:620px){ul li{margin-left:1.5rem;padding-left:1.5rem}}a{color:#5183f5;font-weight:500;text-decoration:none}a:active,a:focus,a:hover{color:#2161f2}.lead a:not(.button):not(.anchor):not(.gatsby-resp-image-link),.lead a:not(span.gatsby-resp-image-wrapper),.page a:not(.button):not(.anchor):not(.gatsby-resp-image-link),.page a:not(span.gatsby-resp-image-wrapper),.post a:not(.button):not(.anchor):not(.gatsby-resp-image-link),.post a:not(span.gatsby-resp-image-wrapper){border-radius:4px;padding:1px 2px}.lead a:not(.button):not(.anchor):not(.gatsby-resp-image-link):hover,.lead a:not(span.gatsby-resp-image-wrapper):hover,.page a:not(.button):not(.anchor):not(.gatsby-resp-image-link):hover,.page a:not(span.gatsby-resp-image-wrapper):hover,.post a:not(.button):not(.anchor):not(.gatsby-resp-image-link):hover,.post a:not(span.gatsby-resp-image-wrapper):hover{background:#2161f2;color:#f0f4fe}.lead a:not(.button):not(.anchor):not(.gatsby-resp-image-link):active,.lead a:not(.button):not(.anchor):not(.gatsby-resp-image-link):focus,.lead a:not(span.gatsby-resp-image-wrapper):active,.lead a:not(span.gatsby-resp-image-wrapper):focus,.page a:not(.button):not(.anchor):not(.gatsby-resp-image-link):active,.page a:not(.button):not(.anchor):not(.gatsby-resp-image-link):focus,.page a:not(span.gatsby-resp-image-wrapper):active,.page a:not(span.gatsby-resp-image-wrapper):focus,.post a:not(.button):not(.anchor):not(.gatsby-resp-image-link):active,.post a:not(.button):not(.anchor):not(.gatsby-resp-image-link):focus,.post a:not(span.gatsby-resp-image-wrapper):active,.post a:not(span.gatsby-resp-image-wrapper):focus{background:#0c49d4;color:#f0f4fe}.lead img,.page img,.post img{height:auto;max-width:100%}mark{background:#ffeea8;padding:0 .2rem}b,strong{font-weight:600}blockquote cite{display:block;text-align:right}hr{border:0;border-top:2px solid #ccc;height:0}dt{font-weight:500}dd{margin-bottom:.5rem}[type=checkbox]{margin-right:1rem}.text-right{text-align:right}.text-center{text-align:center}.text-justify{text-align:justify}.block{display:block}.inline-block{display:inline-block}.inline{display:inline}.vertical-center{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;justify-content:center}.flex,.vertical-center{display:-ms-flexbox;display:flex}.show{display:block!important}.hide{display:none!important}.invisible{visibility:hidden}.green{color:#1fc844}.pink{color:#ff5a5f}.blue{color:#5183f5}.yellow{color:#fec623}.crypto p{margin-bottom:.5rem}.screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute!important;width:1px}.button,[type=button],[type=submit],a.button,button{-webkit-appearance:none;background:#5183f5;border:2px solid #5183f5;border-radius:6px;color:#fff;cursor:pointer;display:inline-block;font-family:Helvetica Neue,Roboto,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;font-size:1.1rem;font-weight:500;line-height:1;margin:0 0 .5rem;padding:.6rem .9rem;text-align:center;text-decoration:none;text-transform:none;vertical-align:middle}.button:active,.button:focus,.button:hover,[type=button]:active,[type=button]:focus,[type=button]:hover,[type=submit]:active,[type=submit]:focus,[type=submit]:hover,a.button:active,a.button:focus,a.button:hover,button:active,button:focus,button:hover{background:#0e51ec;border:2px solid #0e51ec;color:#fff;text-decoration:none}.button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=submit]::-moz-focus-inner,a.button::-moz-focus-inner,button::-moz-focus-inner{border:0;padding:0}.button:disabled,[type=button]:disabled,[type=submit]:disabled,a.button:disabled,button:disabled{cursor:default;pointer-events:none}.button:active,[type=button]:active,[type=submit]:active,a.button:active,button:active{-webkit-transform:scale(.95);transform:scale(.95)}.button.muted-button,a.button.muted-bottom{background:#e5e5e5;border:2px solid #e5e5e5;color:#454545}.button.muted-button:active,.button.muted-button:focus,.button.muted-button:hover,a.button.muted-bottom:active,a.button.muted-bottom:focus,a.button.muted-bottom:hover{background:#d9d9d9;border:2px solid #d9d9d9;color:#111}.twitter-button,a.twitter-button{background:#00aced;border:2px solid #00aced}.twitter-button:active,.twitter-button:focus,.twitter-button:hover,a.twitter-button:active,a.twitter-button:focus,a.twitter-button:hover{background:#0099d4;border:2px solid #0099d4;color:#fff}@media (min-width:620px){.button,[type=button],[type=submit],a.button,button{padding:.75rem 1.25rem}}[type=color],[type=date],[type=email],[type=number],[type=search],[type=text],[type=url],select,textarea{border:2px solid #ccc;border-radius:6px;display:block;font-size:1.1rem;font-weight:500;line-height:1;margin-bottom:.5rem;max-width:100%;outline:none;padding:.75rem;width:100%}[type=color]:hover,[type=date]:hover,[type=email]:hover,[type=number]:hover,[type=search]:hover,[type=text]:hover,[type=url]:hover,select:hover,textarea:hover{background:#f7f7f7;border:2px solid #b3b3b3}[type=color]:active,[type=color]:focus,[type=date]:active,[type=date]:focus,[type=email]:active,[type=email]:focus,[type=number]:active,[type=number]:focus,[type=search]:active,[type=search]:focus,[type=text]:active,[type=text]:focus,[type=url]:active,[type=url]:focus,select:active,select:focus,textarea:active,textarea:focus{background:#f0f4fe;border:2px solid #5183f5}textarea{height:auto;line-height:1.6;overflow:auto}fieldset{border:2px solid #ccc;border-radius:6px;margin:2rem 0;padding:60px}legend{font-weight:500;padding:0 .5rem}select{-webkit-appearance:none;-moz-appearance:none;background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==) 100% no-repeat;color:#454545;line-height:1}select::-ms-expand{display:none}[type=range]{width:100%}label{display:block;font-size:1rem;font-weight:700;margin:1rem 0 .5rem;max-width:100%}:-moz-placeholder,:-ms-input-placeholder,::-moz-placeholder,::-webkit-input-placeholder{color:#9a9a9a}table{border-collapse:collapse;border-spacing:0;display:block;max-width:100%;overflow-x:auto;white-space:nowrap;width:100%}th{border-bottom:2px solid #ccc}tfoot th{border-top:1px solid #ccc}td{border-bottom:1px solid #ccc}td,th{-webkit-hyphens:auto;-ms-hyphens:auto;hyphens:auto;padding:.75rem!important;text-align:left;width:100%;word-break:break-word}caption{caption-side:bottom;color:#ababab;padding:60px 0}tbody tr:nth-child(2n){background-color:#f8f8f8}.nav{background:#fff;left:0;position:fixed;top:0;-webkit-transition:background .4s ease;transition:background .4s ease;width:100%;z-index:3}.nav.scroll{-webkit-box-shadow:1px 2px 18px rgba(0,0,0,.1);box-shadow:1px 2px 18px rgba(0,0,0,.1)}.nav.scroll .nav-container{padding:0 1.5rem}.nav .cta{margin:0 0 0 .75rem}.nav .cta,.nav .nav-container{-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex}.nav .nav-container{-ms-flex-pack:justify;height:55px;justify-content:space-between;margin:auto;max-width:800px;padding:1.5rem 1.5rem 0;-webkit-transition:height .4s ease;transition:height .4s ease}.nav .nav-container .nav-icon-hide-mobile{display:none}.nav .brand a{-ms-flex-align:center;align-items:center;color:#333;display:-ms-flexbox;display:flex;font-size:1.15rem;font-weight:500;margin-right:0}.nav .brand a:focus,.nav .brand a:hover{color:#000}.nav .links{-ms-flex-pack:end;-ms-flex-align:center;-ms-flex:1 1;flex:1 1;-ms-flex-direction:row;flex-direction:row;justify-content:flex-end;margin:0}.nav .links,.nav .links a{align-items:center;display:-ms-flexbox;display:flex}.nav .links a{-ms-flex-align:center;border-radius:6px;color:rgba(0,0,0,.6);font-size:1.05rem;font-weight:400;line-height:1.2;margin:.25rem;padding:.75rem;text-align:center}.nav .links a.active,.nav .links a:active,.nav .links a:hover{background:rgba(0,0,0,.05);color:#111}.favicon{border-radius:50%;height:40px;margin-bottom:0;margin-right:1rem;min-width:40px;width:40px}button.dark-switcher{-webkit-appearance:none;background:transparent;border:0;margin:0;padding:.75rem .5rem}button.dark-switcher:focus{outline:none}.nav-icons{height:1.3rem;margin-bottom:0;min-width:1.3rem;width:1.3rem}.github-nav-icon{color:#000}.linkedin-nav-icon{color:#0077b5}.twitter-nav-icon{color:#1da1f2}.sun-nav-icon{color:#fcc21b}.moon-nav-icon{color:#7890ff}@media (min-width:620px){.nav.scroll .nav-container{height:60px}.nav.scroll .favicon{height:40px;min-width:40px;width:40px}.nav .nav-container{height:160px;padding:0 2rem}.nav .nav-container .nav-icon-hide-mobile{display:-ms-flexbox;display:flex}.nav .brand a{font-size:1.3rem}.nav .brand .text{display:block}.nav .links{-ms-flex-pack:end;display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;height:100%;justify-content:flex-end}.nav .links a{border-bottom:2px solid transparent;font-size:1.2rem;margin:0 .5rem;padding:1rem}.nav .favicon{height:70px;margin-right:1rem;min-width:70px;width:70px}.nav button.dark-switcher{font-size:1.4rem;margin:0;padding:.75rem 1rem}.nav .nav-icons{height:1.65rem;margin-bottom:0;min-width:1.65rem;width:1.65rem}}@media print and (min-width:620px){.nav{display:none}}#main-content{margin-top:55px;min-height:calc(100vh - 190px);padding:40px 0 0}@media (min-width:620px){#main-content{margin-top:140px;min-height:calc(100vh - 360px)}}.container{margin-left:auto;margin-right:auto;max-width:800px;padding:0 1.5rem}@media (min-width:620px){.container{padding:0 2rem}}.lead{font-size:1.1rem;margin:0 auto}.lead h1{font-size:3.2rem;font-weight:600;margin-bottom:1.5rem;margin-top:0}.lead p{color:rgba(0,0,0,.6);font-size:1.6rem}.lead .button{margin-right:.5rem}@media screen and (min-width:750px){.lead{-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex;font-size:1.2rem;line-height:1.5}.lead .elevator{-ms-flex:2 1;flex:2 1;margin-left:2rem}.lead h1{font-size:4rem}.lead p{font-size:1.65rem}.lead .button{margin-right:.5rem}}.callouts{display:none}@media (min-width:620px){.callouts{display:block}a.article-callout{-ms-flex-align:center;align-items:center;border:none!important;border-radius:4px;-webkit-box-shadow:1px 2px 10px rgba(0,0,0,.1);box-shadow:1px 2px 10px rgba(0,0,0,.1);color:#454545;display:-ms-flexbox;display:flex;font-size:1.5rem;font-weight:500;margin:1.5rem 0;padding:1.5rem;-webkit-transition:all .3s ease;transition:all .3s ease}a.article-callout:active,a.article-callout:focus,a.article-callout:hover{background:#fff;-webkit-box-shadow:3px 5px 20px rgba(0,0,0,.16);box-shadow:3px 5px 20px rgba(0,0,0,.16);color:#111}a.article-callout img{height:50px;margin:0 1.5rem 0 0;max-width:50px;width:50px}}.front-page{margin-top:2rem;padding:0 2rem}.front-page h2{-ms-flex-align:center;-ms-flex-pack:justify;align-items:center;border-bottom:0;display:-ms-flexbox;display:flex;justify-content:space-between;padding-bottom:0}@media (min-width:620px){.front-page h2{-ms-flex-pack:start;justify-content:flex-start}}.single .gatsby-image-wrapper{height:50px!important;width:50px!important}@media (min-width:620px){.single .gatsby-image-wrapper{-ms-flex-order:1;height:150px!important;margin-left:2rem;order:1;width:150px!important}.front-page{padding:0 4rem}}.single-header{display:grid;margin-bottom:30px}.single-header .flex,.single-header.no-thumbnail{display:-ms-flexbox;display:flex}.single-header .flex{-ms-flex-direction:column;flex-direction:column}.single-header h1{font-weight:600;margin:.5rem 0}.single-header .post-meta{margin-bottom:1rem}@media (min-width:620px){.single-header{display:grid;grid-template-columns:1fr 180px;margin-bottom:60px}.single-header h1{margin:0 0 .5rem}}.post-container{display:-ms-flexbox;display:flex}.posts a{display:block}.posts a .each{border:1px solid transparent;border-bottom-color:#ebebeb;display:grid;grid-template-columns:50px 1fr 0;margin:0;padding:1rem 0}.posts a .each .date{color:rgba(0,0,0,.4);font-size:.9rem;font-weight:400;margin:0}.posts a:last-of-type .each{border-bottom-color:transparent}.posts h2{border-bottom:none;font-size:1.25rem;font-weight:500;line-height:2rem;margin:0;padding:0}.posts .gatsby-image-wrapper{height:30px!important;margin-top:0;width:30px!important}.posts.simple a .each{-ms-flex-align:center;align-items:center;border:1px solid transparent;grid-template-columns:50px 2fr auto;margin:0;padding:.5rem 0}.posts.simple a .each:hover{background:#fff}.posts.simple a:last-of-type .each{border-bottom:1px solid transparent!important}.posts.simple .gatsby-image-wrapper{height:30px!important;margin-top:0;width:30px!important}.posts.simple h2{color:#454545;font-size:1.2rem;font-weight:500;margin:0;padding:0}.posts.simple h2:hover{color:#111}.posts .datetime{display:block}.posts .datetime,.posts .excerpt{color:rgba(0,0,0,.6);font-size:1.1rem;font-weight:400}.posts .excerpt{margin-top:1rem}@media (min-width:620px){.posts a .each{-ms-flex-align:start;align-items:start;grid-template-columns:80px 1fr;margin:0 -2rem;padding:2rem}.posts a .each:hover{background:#fafafa;border-radius:6px}.posts a .each:hover h2{color:#111}.posts a .each:active,.posts a .each:focus{background:#f0f4fe;border:1px dashed #5183f5}.posts a .each h2{font-size:1.35rem;line-height:2rem;margin:0 0 .25rem}.posts a .each .gatsby-image-wrapper{height:50px!important;margin-top:0;width:50px!important}.posts.simple a .each{border-bottom:1px solid #ebebeb;margin:0 -1rem;padding:.75rem 1rem}.posts.simple a .each:hover{background:#f2f2f2;border:1px solid #f2f2f2}.posts.simple a .each:active,.posts.simple a .each:focus{background:#f0f4fe;border:1px dashed #5183f5}.posts.simple a .each h2{font-size:1.3rem;margin:0}.posts.simple a .each .gatsby-image-wrapper{height:30px!important;width:30px!important}}.page h2,.post h2{border-bottom:1px solid #ebebeb}.tag-container a,.tag-container span{display:inline-block}.tag-container span{background:#f2f2f2;border-radius:6px;color:#5f5f5f;font-size:1rem;font-weight:400;margin:0 .5rem .5rem 0;padding:.3rem .5rem}.tag-container span .count{color:#5183f5;font-weight:700;margin-left:.25rem}.tag-container span:active,.tag-container span:focus,.tag-container span:hover{background:#e5e5e5;color:#454545}.tag-container.articles-page-tags{margin-bottom:1rem}@media (min-width:620px){.tag-container span{font-size:1rem;font-weight:500;padding:.3rem .8rem}.tag-container span .count{margin-left:.5rem}.tag-container.articles-page-tags{display:-ms-flexbox;display:flex;margin-bottom:2rem}.tag-container.articles-page-tags a{-ms-flex:1 1;flex:1 1}.tag-container.articles-page-tags a span{-ms-flex-pack:center;display:-ms-flexbox;display:flex;justify-content:center}}.post-meta{-ms-flex-align:center;align-items:center;color:rgba(0,0,0,.6);display:-ms-inline-flexbox;display:inline-flex;font-size:1.3rem}.post-meta .date{margin-right:.5rem}.post-meta a.comment-link,.post-meta a.github-link,.post-meta a.twitter-link{margin:0 .5rem}@media (min-width:620px){.post-meta{font-size:1.4rem}}blockquote{background:#fff4d5;border:2px solid #ffedbb;border-radius:6px;color:rgba(0,0,0,.8);font-size:1rem;font-weight:500;line-height:1.6;margin:1.5rem 0;padding:1.5rem}blockquote p{font-size:1.15rem;padding:0}blockquote p:last-of-type{margin-bottom:0}blockquote a{border-bottom:none!important;color:#111}blockquote a:active,blockquote a:focus,blockquote a:hover{background:#ffebb1!important;color:#111!important}blockquote code{margin:1rem 0 0}@media (min-width:620px){blockquote{padding:2rem}blockquote p{font-size:1.5rem}blockquote cite{font-size:2rem}}.search{margin-bottom:0}.filter-count{color:#2161f2;font-size:1.4rem;font-weight:500;text-align:center;width:80px}.emoji-in-button{font-size:1.5rem;line-height:0;margin-left:.75rem}.search-container{-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex;margin-bottom:2rem}.category-container{-ms-flex-pack:start;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;justify-content:flex-start;margin-bottom:1.5rem}.category-container .category-filter{-ms-flex-align:center;align-items:center;background:#ebf1fe;border-radius:6px;color:#2161f2;cursor:pointer;display:-ms-flexbox;display:flex;font-size:.85rem;font-weight:500;margin-bottom:.5rem;margin-right:.5rem;padding:.5rem .75rem}.category-container .category-filter .count{-ms-flex-align:center;-ms-flex-pack:center;align-items:center;border-radius:50%;color:#5183f5;display:-ms-flexbox;display:flex;font-size:.8rem;height:23px;justify-content:center;margin-left:1rem;padding:5px;width:23px}.category-container .category-filter.active{background:#5183f5;color:#fff}.category-container .category-filter.active .count{background:#fff}.category-container .category-filter.active:active,.category-container .category-filter.active:focus,.category-container .category-filter.active:hover{background:#2161f2;color:#fff}.category-container .category-filter:last-of-type{margin-right:0}.category-container .category-filter:hover{background:#d8e3fd;color:#3972f4}@media (min-width:620px){.category-container{margin-bottom:1.5rem}.category-container .category-filter{font-size:1rem;padding:.5rem 1rem}}.footer{-ms-flex-pack:justify;color:rgba(0,0,0,.6);-ms-flex-direction:column;flex-direction:column;justify-content:space-between;margin-top:2.5rem}.footer,.footer div{-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex}.footer div{padding-bottom:1.5rem}.footer strong{margin-right:1rem}.footer a{color:rgba(0,0,0,.6);display:block;font-weight:400;margin-right:1.5rem}.footer a:hover{color:rgba(0,0,0,.8)}.footer .footer-img{height:30px;margin-bottom:0;width:30px}@media (min-width:620px){.footer{-ms-flex-direction:row;flex-direction:row;height:100px;margin:60px auto}}iframe{margin-bottom:0}[type=submit]:disabled,[type=submit]:disabled:active,[type=submit]:disabled:focus,[type=submit]:disabled:hover,button[disabled],button[disabled]:active,button[disabled]:focus,button[disabled]:hover{opacity:.5}::-moz-selection{background:rgba(255,235,20,.7);color:#111}::selection{background:rgba(255,235,20,.7);color:#111}@media print{.footer{display:none}}#remark42{margin-top:4.5rem}code{font-size:13px}pre.language-shell-session code.language-shell-session{background:#fff;border:1px solid #d8d9da;border-radius:6px;-webkit-box-shadow:3px 5px 20px rgba(0,0,0,.16);box-shadow:3px 5px 20px rgba(0,0,0,.16);color:#333;font-family:Menlo,Roboto Mono,Courier New,monospace;font-size:13px;margin:2rem 0;padding:45px 1rem 1rem;position:relative}pre.language-shell-session code.language-shell-session:before{background:#e1e1e1;color:#c2c3c4;content:"\2022 \2022 \2022";font-size:2.5rem;height:25px;left:0;letter-spacing:-15px;line-height:0;margin:0;padding:14px 0;position:absolute;text-indent:4px;top:0;width:100%}code[class*=language-],pre[class*=language-],pre code{-webkit-font-smoothing:subpixel-antialiased;border-radius:6px;color:#b3b9c5;direction:ltr;font-family:Menlo,Roboto Mono,Courier New,monospace;font-size:13px;font-weight:400;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.7;margin:2rem 0;-moz-tab-size:2;-o-tab-size:2;tab-size:2;text-align:left;white-space:pre-wrap;word-break:normal;word-spacing:normal}pre code{background-color:#333;border:0;-webkit-box-shadow:2px 4px 25px rgba(0,0,0,.15);box-shadow:2px 4px 25px rgba(0,0,0,.15);display:block;overflow:auto;padding:1.5rem}kbd{background-color:#f7f7f7;border:2px solid rgba(0,0,0,.3);border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 2px #fff;box-shadow:0 1px 0 rgba(0,0,0,.2),inset 0 0 0 2px #fff;color:#333;display:inline-block;font-family:Helvetica Neue,Roboto,-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;font-size:14px;line-height:1.4;margin:0 .1em;padding:.1em .6em;text-shadow:0 1px 0 #fff}:not(pre)>code,:not(pre)>code[class*=language-]{color:#111;font-weight:500;padding:3px 5px}:not(pre)>code{background:rgba(0,0,0,.06);border:none;border-radius:4px;font-family:Menlo,Roboto Mono,Courier New,monospace}code[class*=language-css],code[class*=language-less],code[class*=language-sass],code[class*=language-scss]{color:#c9c}.filename{background:#111;border-top-left-radius:6px;border-top-right-radius:6px;color:#fff;font-size:1rem;font-weight:700;margin-bottom:-2.3rem;padding:.5rem 1rem .75rem}@media (min-width:620px){code,code[class*=language-],pre.language-shell-session code.language-shell-session,pre[class*=language-],pre code{font-size:14px}}.token.doctype{background:#000;color:#fff}.token.cdata,.token.comment,.token.prolog{color:#848991}.token.namespace{opacity:.7}.token.attr-value,.token.string{color:#92d192}.token.punctuation{color:#d5d8df}.token.operator{color:#ac8d58}.token.variable{color:#f2777a}.token.property{color:#abb2bf}.token.builtin{color:#4a7baa}.token.parameter{color:#848991}.token.boolean,.token.constant{color:#e1a6f2}.token.entity,.token.inserted,.token.number,.token.regex,.token.symbol,.token.url{color:#fca369}.token.delimiter{background:#000;color:#fff;padding:1px 2px}.token.atrule{color:#62cfcf}.token.keyword{color:#ffeead}.language-autohotkey .token.selector{color:#fca369}.token.attr-name{color:#ffd479}.token.function{color:#62cfcf}.language-php .token.function{color:#fff}.token.class-name{color:#e1a6f2}.language-autohotkey .token.tag,.token.deleted{color:#f2777a}.token.tag{color:#6ab0f3}.language-autohotkey .token.keyword{color:#ffeead}.token.selector{color:#ffd479}.token.italic{font-style:italic}pre[data-line]{padding:1rem 0;position:relative}.line-highlight{background:hsla(0,0%,59%,.1);left:0;line-height:inherit;margin-top:1rem;padding-bottom:inherit;padding-left:0;padding-right:0;padding-top:inherit;pointer-events:none;position:absolute;right:0;white-space:pre}.line-highlight:before,.line-highlight[data-end]:after{background-color:transparent;border-radius:999px;color:transparent;content:attr(data-start);font:700 65%/1.5 sans-serif;left:.6em;min-width:1em;padding:0 .5em;position:absolute;text-align:center;text-shadow:none;top:.4em;vertical-align:.3em}.line-highlight[data-end]:after{bottom:.4em;content:attr(data-end);top:auto}.line-numbers .line-highlight:after,.line-numbers .line-highlight:before{content:none}code::-moz-selection,pre::-moz-selection{background:hsla(0,0%,59%,.3)!important;color:inherit;text-shadow:none}code::selection,pre::selection{background:hsla(0,0%,59%,.3)!important;color:inherit;text-shadow:none}code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection{background:hsla(0,0%,59%,.3)!important;color:inherit;text-shadow:none}code[class*=language-] ::selection,pre[class*=language-]::selection{background:hsla(0,0%,59%,.3)!important;color:inherit;text-shadow:none}.gatsby-highlight-code-line{background-color:#191919;border-left:.25em solid #92d192;display:block;margin-left:-1em;margin-right:-1em;padding-left:.75em;padding-right:1em}.dark{background:#202020;color:#b3b9c5}.dark a{color:#6ab0f3}.dark a:active,.dark a:focus,.dark a:hover{background:transparent;color:#238aed}.dark .lead h1{color:#eee}.dark .lead a:not(.button):not(.anchor):not(.gatsby-resp-image-link){background:transparent!important;border-bottom:none}.dark .lead a:not(.button):not(.anchor):not(.gatsby-resp-image-link):hover{color:#238aed}.dark .page a:not(.button):not(.anchor):not(.gatsby-resp-image-link),.dark .page a:not(span.gatsby-resp-image-wrapper),.dark .post a:not(.button):not(.anchor):not(.gatsby-resp-image-link),.dark .post a:not(span.gatsby-resp-image-wrapper){border-bottom:2px solid transparent;padding:1px 2px}.dark .page a:not(.button):not(.anchor):not(.gatsby-resp-image-link):active,.dark .page a:not(.button):not(.anchor):not(.gatsby-resp-image-link):focus,.dark .page a:not(.button):not(.anchor):not(.gatsby-resp-image-link):hover,.dark .page a:not(span.gatsby-resp-image-wrapper):active,.dark .page a:not(span.gatsby-resp-image-wrapper):focus,.dark .page a:not(span.gatsby-resp-image-wrapper):hover,.dark .post a:not(.button):not(.anchor):not(.gatsby-resp-image-link):active,.dark .post a:not(.button):not(.anchor):not(.gatsby-resp-image-link):focus,.dark .post a:not(.button):not(.anchor):not(.gatsby-resp-image-link):hover,.dark .post a:not(span.gatsby-resp-image-wrapper):active,.dark .post a:not(span.gatsby-resp-image-wrapper):focus,.dark .post a:not(span.gatsby-resp-image-wrapper):hover{background:#3b97ef;border-radius:4px;color:#fff}.dark .page img,.dark .post img{height:auto;max-width:100%}.dark .page h2,.dark .post h2{border:none;color:#ffd479}.dark :not(pre)>code{background:rgba(255,255,255,.1);color:#b3b9c5}.dark .nav{background:#202020;border-color:#202020}.dark .nav.scroll{background:#131313;border-color:#131313}.dark .nav .brand a{color:#c1c6d0}.dark .nav .brand a:hover{color:#eee}.dark .nav .links a{color:#8891a4}.dark .nav .links a.active,.dark .nav .links a:hover{background:rgba(0,0,0,.2)}.dark .nav .links a:hover{color:#b3b9c5}.dark .nav .links a.active{color:#6ab0f3}.dark li,.dark ol,.dark p,.dark ul{color:#b3b9c5}.dark h2{border-color:#303030}.dark h1,.dark h2,.dark h3,.dark h4,.dark h5{color:#eee}.dark .posts.simple a .each{border-color:transparent transparent #181818}.dark .posts.simple a .each h2{color:#9fa3a9}.dark .posts.simple a .each:hover{background:#303030}.dark .posts a .each{border:1px solid transparent;border-bottom-color:#181818}.dark .posts a .each h2{color:#ccc}.dark .posts a .each:hover{background:#303030!important;border-color:#303030}.dark .posts a .each:hover h2{color:#fff}.dark .posts a .datetime{color:#848991}.dark .posts a .excerpt{color:rgba(255,255,255,.3)}.dark .tag-container span{background:rgba(0,0,0,.2);border:none;color:#b3b9c5}.dark .tag-container span .count{color:#ff5a5f}.dark .tag-container span:active,.dark .tag-container span:focus,.dark .tag-container span:hover{background:#111;border:none;color:#fff}.dark .post-meta{color:#848991}.dark th{border-bottom:2px solid #131313}.dark tfoot th{border-top:2px solid #0c0c0c}.dark td{border-bottom:2px solid #0c0c0c}.dark tbody tr:nth-child(2n){background-color:#2d2d2d}.dark pre code{background:#3a3a3a}.dark blockquote{background:rgba(0,0,0,.2);border:2px solid #393939}.dark blockquote p{color:#fed356}.dark blockquote a{border-bottom:#fed356!important;color:#fff4d5!important}.dark blockquote a:hover{background:#111!important;color:#febf0a!important}.dark blockquote.quotation{background:rgba(0,0,0,.2);border-color:#3a3a3a;-webkit-box-shadow:none;box-shadow:none;color:#fed356}.dark blockquote.quotation cite{color:#fff}.dark cite{color:rgba(255,255,255,.4)}.dark .footer,.dark .footer strong{color:#b3b9c5}.dark .footer a{color:#8891a4}.dark .footer a:hover{color:#d0d4db}.dark [type=color],.dark [type=date],.dark [type=email],.dark [type=number],.dark [type=search],.dark [type=text],.dark [type=url],.dark select,.dark textarea{background:#333!important;border:2px solid #444;color:#b3b9c5}.dark [type=color]:hover,.dark [type=date]:hover,.dark [type=email]:hover,.dark [type=number]:hover,.dark [type=search]:hover,.dark [type=text]:hover,.dark [type=url]:hover,.dark select:hover,.dark textarea:hover{border:2px solid #505050}.dark [type=color]:active,.dark [type=color]:focus,.dark [type=date]:active,.dark [type=date]:focus,.dark [type=email]:active,.dark [type=email]:focus,.dark [type=number]:active,.dark [type=number]:focus,.dark [type=search]:active,.dark [type=search]:focus,.dark [type=text]:active,.dark [type=text]:focus,.dark [type=url]:active,.dark [type=url]:focus,.dark select:active,.dark select:focus,.dark textarea:active,.dark textarea:focus{border:2px solid #6ab0f3}.dark .button,.dark [type=button],.dark [type=submit],.dark a.button,.dark button{background:#0f64b5!important;border:2px solid transparent;color:#fff}.dark .button:disabled,.dark [type=button]:disabled,.dark [type=submit]:disabled,.dark a.button:disabled,.dark button:disabled{cursor:default;opacity:.3;pointer-events:none}.dark .button:active,.dark .button:focus,.dark .button:hover,.dark [type=button]:active,.dark [type=button]:focus,.dark [type=button]:hover,.dark [type=submit]:active,.dark [type=submit]:focus,.dark [type=submit]:hover,.dark a.button:active,.dark a.button:focus,.dark a.button:hover,.dark button:active,.dark button:focus,.dark button:hover{background:#127ee5!important;border:2px solid transparent;color:#fff}.dark .new,.dark .popular{background:rgba(0,0,0,.2)}.dark .popular{color:#92d192}.dark .button.muted-button,.dark a.button.muted-bottom{border:2px solid #848991;color:#848991}.dark .button.muted-button:active,.dark .button.muted-button:focus,.dark .button.muted-button:hover,.dark a.button.muted-bottom:active,.dark a.button.muted-bottom:focus,.dark a.button.muted-bottom:hover{background:transparent;border:2px solid #b3b9c5;color:#b3b9c5}.dark button.dark-switcher{background:transparent!important;border:none!important}.dark pre.language-shell-session code.language-shell-session{background:#111;border:2px solid #666;color:#ccc}.dark pre.language-shell-session code.language-shell-session:before{background:#303030;color:#888}.dark .category-container .category-filter{background:rgba(0,0,0,.2);color:#6ab0f3;cursor:pointer;font-weight:500}.dark .category-container .category-filter.active{background:#6ab0f3!important;color:#fff!important}.dark .category-container .category-filter:last-of-type{margin-right:0}.dark .category-container .category-filter:hover{background:#111;color:#99c9f7}.dark .filter-count{color:#6ab0f3}.dark mark{background:#127ee5;color:#fff}.dark ::-moz-selection{background:#6ab0f3;color:#fff}.dark ::selection{background:#6ab0f3;color:#fff}.dark path{stroke:#ffeead}.dark .github-nav-icon{color:#fff}.not-found{background:#000084;color:#bbb;font-family:PerfectDOS,Courier New,monospace;font-size:16px;font-weight:400;height:100vh}.not-found #main-content{margin:0;padding-top:80px}.not-found button.dark-switcher,.not-found footer.footer{display:none}.not-found h1{background:#bbb;-webkit-box-shadow:10px 10px 0 #000;box-shadow:10px 10px 0 #000;color:#000;display:inline-block;font-family:PerfectDOS,Courier New,monospace;font-weight:600;margin-bottom:40px;padding:10px 20px}.not-found p{font-size:16px}.not-found .list p:not(:last-of-type){margin-bottom:5px}.not-found .bullet{margin-right:30px}.not-found .error-msg{color:#ff0}.not-found .nav{background:#bbb;border-bottom:2px solid #bbb;color:#000;height:30px}.not-found .nav .nav-container{height:30px;padding:0}.not-found .nav .nav-container .brand{-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex}.not-found .nav .nav-container .brand,.not-found .nav .nav-container .brand a,.not-found .nav .nav-container .links{height:30px}.not-found .nav .nav-container .brand a,.not-found .nav .nav-container .links a{border-radius:0;color:#000;font-size:16px;font-weight:600;line-height:30px;margin:0;padding:0 5px}.not-found .nav .nav-container .brand a:active,.not-found .nav .nav-container .brand a:focus,.not-found .nav .nav-container .brand a:hover,.not-found .nav .nav-container .links a:active,.not-found .nav .nav-container .links a:focus,.not-found .nav .nav-container .links a:hover{background:#000;color:#bbb}.not-found .nav .nav-container a.kofi-button{background:#0aa;border:none;border-radius:0;color:#eee;display:none;height:30px}.not-found .nav .nav-container a.kofi-button:active,.not-found .nav .nav-container a.kofi-button:focus,.not-found .nav .nav-container a.kofi-button:hover{background:#000;border:none;color:#fff}@media (min-width:900px){.not-found{font-size:24px}.not-found #main-content{padding-top:160px}.not-found .nav .nav-container .brand a,.not-found .nav .nav-container .links a{font-size:24px;padding:0 15px}.not-found p{font-size:24px}.not-found .emoji,.not-found img{display:none}}.blink{-webkit-animation:blinkingText .8s infinite;animation:blinkingText .8s infinite}@-webkit-keyframes blinkingText{0%{opacity:0}49%{opacity:0}50%{opacity:1}}@keyframes blinkingText{0%{opacity:0}49%{opacity:0}50%{opacity:1}}</style><meta name="generator" content="Gatsby 3.5.1"/><title data-react-helmet="true">Create a persistent Ubuntu USB which boots to RAM – Calvin Bui</title><link data-react-helmet="true" rel="shortcut icon" type="image/png" href="data:image/png;base64,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"/><meta data-react-helmet="true" name="description" content="When your drive dies, or in my case, the SATA port fails completely, this is a good temporary solution until the replacement arrives. Live…"/><meta data-react-helmet="true" name="image" content="https://calvin.me/static/3970c1b7ff3fe9979237158bef677630/ccc8a/thumbnail.png"/><meta data-react-helmet="true" property="og:url" content="https://calvin.me/create-persistent-ubuntu-16-04-live-usb-even-boots-ram"/><meta data-react-helmet="true" property="og:type" content="article"/><meta data-react-helmet="true" property="og:title" content="Create a persistent Ubuntu USB which boots to RAM"/><meta data-react-helmet="true" property="og:description" content="When your drive dies, or in my case, the SATA port fails completely, this is a good temporary solution until the replacement arrives. Live…"/><meta data-react-helmet="true" property="og:image" content="https://calvin.me/static/3970c1b7ff3fe9979237158bef677630/ccc8a/thumbnail.png"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content=""/><meta data-react-helmet="true" name="twitter:title" content="Create a persistent Ubuntu USB which boots to RAM"/><meta data-react-helmet="true" name="twitter:description" content="When your drive dies, or in my case, the SATA port fails completely, this is a good temporary solution until the replacement arrives. Live…"/><meta data-react-helmet="true" name="twitter:image" content="https://calvin.me/static/3970c1b7ff3fe9979237158bef677630/ccc8a/thumbnail.png"/><script data-react-helmet="true" type="application/ld+json">[{"@context":"http://schema.org","@type":"WebSite","url":"https://calvin.me/","name":"Create a persistent Ubuntu USB which boots to RAM","alternateName":"Calvin Bui"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://calvin.me/create-persistent-ubuntu-16-04-live-usb-even-boots-ram","name":"Create a persistent Ubuntu USB which boots to RAM","image":"https://calvin.me/static/3970c1b7ff3fe9979237158bef677630/ccc8a/thumbnail.png"}}]},{"@context":"http://schema.org","@type":"BlogPosting","url":"https://calvin.me/","name":"Create a persistent Ubuntu USB which boots to RAM","alternateName":"Calvin Bui","headline":"Create a persistent Ubuntu USB which boots to RAM","image":{"@type":"ImageObject","url":"https://calvin.me/static/3970c1b7ff3fe9979237158bef677630/ccc8a/thumbnail.png"},"description":"When your drive dies, or in my case, the SATA port fails completely, this is a good temporary solution until the replacement arrives. Live…"}]</script><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 100)
+          }), 0)
+        }
+      }
+    })
+  </script><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#3F80FF"/><link rel="apple-touch-icon" sizes="48x48" href="/favicon/favicon-48.png"/><link rel="apple-touch-icon" sizes="1024x1024" href="/favicon/favicon-1024.png"/><link rel="alternate" type="application/rss+xml" title="Calvin Bui - RSS Feed" href="/rss.xml"/><link as="script" rel="preload" href="/webpack-runtime-4c40fe4d54b571656223.js"/><link as="script" rel="preload" href="/framework-57e92c176a31b228e386.js"/><link as="script" rel="preload" href="/app-61c1ee04bb3e88ab05cc.js"/><link as="script" rel="preload" href="/1bfc9850-846e536cc7c42c63a083.js"/><link as="script" rel="preload" href="/95b64a6e-b3956967be527516c6c3.js"/><link as="script" rel="preload" href="/0c428ae2-8645a111f436fabc2d8a.js"/><link as="script" rel="preload" href="/9c7e749333147a39e3ef652a529fb524f3568be7-65a0b6f40c1d9029b999.js"/><link as="script" rel="preload" href="/47f38362120cd2cdba877e108f8a5f6ae3a5eef6-987220a318f43d21a416.js"/><link as="script" rel="preload" href="/component---src-templates-post-js-047326168b0b0924c9ad.js"/><link as="fetch" rel="preload" href="/page-data/create-persistent-ubuntu-16-04-live-usb-even-boots-ram/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body class="theme "><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><nav class="nav"><div class="nav-container"><div class="brand"><a href="/"><img src="/static/avatar-fc7b5d563e8c0ce28625ebf13d1a1252.png" class="favicon" alt="Avatar"/><span class="text">Calvin Bui</span></a></div><div class="links"><a class="nav-icon-hide-mobile" href="/categories/">Categories</a><a class="nav-icon-hide-mobile" href="/tags/">Tags</a><a href="https://git.io/calvin"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="nav-icons github-nav-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a><a href="https://linkedin.com/in/c-bui"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="nav-icons linkedin-nav-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg></a><a href="https://twitter.com/ASAPCalvin"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="nav-icons twitter-nav-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a><div class="cta"><button class="dark-switcher" aria-label="Toggle Dark Mode." title="Toggle Dark Mode"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="nav-icons moon-nav-icon" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.53 10.53a7 7 0 01-9.058-9.058A7.003 7.003 0 008 15a7.002 7.002 0 006.53-4.47z" clip-rule="evenodd"></path></svg></button></div></div></div></nav><main id="main-content"><article class="single container"><header class="single-header "><div data-gatsby-image-wrapper="" style="width:150px;height:150px" class="gatsby-image-wrapper"><div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;background-color:#58b8b8;width:150px;height:150px;position:relative"></div><picture><source type="image/webp" data-srcset="/static/3970c1b7ff3fe9979237158bef677630/3554d/thumbnail.webp 150w,/static/3970c1b7ff3fe9979237158bef677630/c437f/thumbnail.webp 300w" sizes="150px"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="150px" decoding="async" loading="lazy" data-src="/static/3970c1b7ff3fe9979237158bef677630/ccc8a/thumbnail.png" data-srcset="/static/3970c1b7ff3fe9979237158bef677630/ccc8a/thumbnail.png 150w,/static/3970c1b7ff3fe9979237158bef677630/67d4a/thumbnail.png 300w" alt=""/></picture><noscript><picture><source type="image/webp" srcSet="/static/3970c1b7ff3fe9979237158bef677630/3554d/thumbnail.webp 150w,/static/3970c1b7ff3fe9979237158bef677630/c437f/thumbnail.webp 300w" sizes="150px"/><img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="150px" decoding="async" loading="lazy" src="/static/3970c1b7ff3fe9979237158bef677630/ccc8a/thumbnail.png" srcSet="/static/3970c1b7ff3fe9979237158bef677630/ccc8a/thumbnail.png 150w,/static/3970c1b7ff3fe9979237158bef677630/67d4a/thumbnail.png 300w" alt=""/></picture></noscript><script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1)}}</script></div><div class="flex"><h1>Create a persistent Ubuntu USB which boots to RAM</h1><div class="post-meta"><time class="date">May 23rd, 2016</time>/<a class="github-link" href="https://github.com/calvinbui/calvin.me/edit/master/posts/2016-05-23-create-persistent-ubuntu-16-04-live-usb-even-boots-ram/index.md" target="_blank" rel="noopener noreferrer">Edit</a></div><div class="tag-container"><a style="text-decoration:none" href="/tags/ubuntu/"><span>ubuntu</span></a><a style="text-decoration:none" href="/tags/usb/"><span>usb</span></a></div></div></header><div class="post"><p>When your drive dies, or in my case, the SATA port fails completely, this is a good temporary solution until the replacement arrives.</p>
+<!-- more -->
+<p>Live USB/CDs are a great way to try out new Linux distros or run things securely. They're also great when you don't have any other operating system to run or hard drive to install to. The problem with Live USB/CDs is that anything you do in them are erased as soon as you turn the computer off as it's all stored temporarily. The way around this is to create a persistent file storage system on-top of the Live USB which captures all files and folder changes. So now when you turn off your computer, everything you've done will be saved!</p>
+<h4 id="note-to-pre-1604-distros" style="position:relative;"><a href="#note-to-pre-1604-distros" aria-label="note to pre 1604 distros permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Note to pre-16.04 distros</h4>
+<p>This used to be a very simple process in Ubuntu before 16.04 using the Startup Disk Creator program. If you have 15.10, 15.04, 14.10, etc. on hand without any Internet, this is the best and easy temporary solution. Persistence was removed in 16.04:</p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">usb-creator (0.3.0) xenial; urgency=medium
+[ Marc Deslauriers ]
+* Rework the whole imaging process for writing to devices:
+  - Use an equivalent of dd to make an exact copy of the image to the device
+  - This also breaks persistence.
+
+[ Mathieu Trudel-Lapierre ]
+* Update UI and frontend code to drop the persistence widgets.
+* Drop Erase Disk widgets too.
+
+-- Mathieu Trudel-Lapierre &lt;mathieu-tl@ubuntu.com&gt;  Fri, 11 Dec 2015 12:37:41 -0500</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p><em>Comparison of Startup Disk Creator from 15.10 to 16.04</em>:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 179px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/6bf8d93926f30584921f276040d2670a/a0b6e/Startupdiskcreatorcomparison-179x300.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 167.5977653631285%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Startupdiskcreatorcomparison"
+        title="Startupdiskcreatorcomparison"
+        src="/static/6bf8d93926f30584921f276040d2670a/a0b6e/Startupdiskcreatorcomparison-179x300.png"
+        srcset="/static/6bf8d93926f30584921f276040d2670a/a0b6e/Startupdiskcreatorcomparison-179x300.png 179w"
+        sizes="(max-width: 179px) 100vw, 179px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<h2 id="lets-start" style="position:relative;"><a href="#lets-start" aria-label="lets start permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Let's start</h2>
+<h3 id="download-ubuntu" style="position:relative;"><a href="#download-ubuntu" aria-label="download ubuntu permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Download Ubuntu</h3>
+<p>The first you want to do is boot up an existing 16.04 or later Live CD or installation. There are a zillion guides how to get this up and running but usually you'll need another computer first if you got a dead hard drive.</p>
+<p>You can download <a href="http://www.ubuntu.com/download">Ubuntu from here</a>.</p>
+<h3 id="install-the-mkusb-tool" style="position:relative;"><a href="#install-the-mkusb-tool" aria-label="install the mkusb tool permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install the mkusb tool</h3>
+<p>Open up terminal and run the following commands:</p>
+<p>If you run standard Ubuntu, you need an extra instruction to get the repository Universe. (Kubuntu, Lubuntu ... Xubuntu have the repository Universe activated automatically.)</p>
+<div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">sudo add-apt-repository universe  # only for standard Ubuntu
+
+sudo add-apt-repository ppa:mkusb/ppa  # and press Enter
+sudo apt-get update
+sudo apt-get install mkusb</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<p>and if you want also the command line version without graphics:</p>
+<div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">sudo apt-get install mkusb-nox</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<h3 id="start-mkusb" style="position:relative;"><a href="#start-mkusb" aria-label="start mkusb permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Start mkusb</h3>
+<p>You can start mkusb by either searching for it through Unity or running the command:</p>
+<div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">sudo -H mkusb</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 311px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1d8624fd5fe0792f8fcd8ea43bcf0dc0/fedc7/ubuntu-64-bit-2016-05-23-19-07-49.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 80.75117370892019%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsTAAALEwEAmpwYAAADiElEQVQozxWRSWsbZwBAp2mIJY1m12bJlrXMSJrlm2/20UizaCSPZC2W4lpGli3bJaSJjROTpiSH0ks3utBeemgupeTSUigEQo+FQgM9lPZY0l/R/1B8ffDgwUMeb9TeLYGluvzm8RcDotWL6xFq9BL6dkKPUL2PakNUG6HaBNWmSX0PMw4wY4GZK9y6Q9jIMtu65Gf31ZNL89TDZJsQLVxoUpJJCCbRsEmxSUo2LngUCCg5pGGPgdu00mfUIaMiD8tnf3z969/PX31uPTFSglaVzJrC56qg2NBYWVivinnOEUywUZc26lKhLhZqQp4T8hyfZ5GrzeO/fnz1+s9/nk0+bTIgMoKj0b6Yrz249+j87P5yMD2dHT19+ATma/mbdDm+XornirFsMZ6tJgrIRfbg5fnzX57+8BG4ajJAWW9IWU7KsE3OcFh9B/oDGISgJTIVniyJdFliWJGpigyrZBrImPBW6ckqNd5junK8ahfkEQzdgrojeH0xGNaDUaMTlDUrK9RvFWS0LMVLcqKsJTk5XkIGeOuoODnemo4ZX0vUQtae2+Ow5JwNDpfedN8eHranK/f2biPQUc6loYU1XEruMrpLydfy6dbtk63ZiHYtXFAwDsQrSpKDsYpwg5Vv8sobohGrO7jQIiULaxjJepjSt9PmdtpEeqg1YTpj2u9ipoUJFiU4lOTQoonCt+fcdz/nPvukOtg0A0rTkxxY25LWijbGhyktTGnImPKPC9NVYXcv3bNxUSPqbQaoa8Kew794Hbv6EHnvS+SD90tB0uqmVQOtgbWilmB9GnoURBaF4WVj9Q63OCnOWrjskKKfklVEPj+tfvv7DdN58+pj5KvvaSuuuDRwCNHGeSVRhbEyjJWR+frgcHP8Vr5/kN/xCNiiQIsCVlKMyvDOI/Knf5Hf/rt1sarZa0qYVlwS2LjQodUOrQa0gkzo4CA3mOcG+5nIIxSbEDwKOpToJGC0Jd09Kk0M1kmog4zdT1tNnAexko3xUcaOMhayk2zPU/1FdjglQ59QXVrupjSPhj4Nuxmrm/ajnNtNqy4htwjJxvg2CSycdylZQ1lkjPsXlaMH3Mk81Q9wLUxd97iU7JFwtxqcuXun9ixMqw4heddQbpPAo6BHyU1cQHbJzt3Swb3y4jA7CgndpUBAK20SdBjVJUAzKTSTvE8rUcaKMlaLkJR4xSHE6Pqz8T+O9sPDI53YQgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Ubuntu 64-bit-2016-05-23-19-07-49"
+        title="Ubuntu 64-bit-2016-05-23-19-07-49"
+        src="/static/1d8624fd5fe0792f8fcd8ea43bcf0dc0/fedc7/ubuntu-64-bit-2016-05-23-19-07-49.png"
+        srcset="/static/1d8624fd5fe0792f8fcd8ea43bcf0dc0/53f68/ubuntu-64-bit-2016-05-23-19-07-49.png 213w,
+/static/1d8624fd5fe0792f8fcd8ea43bcf0dc0/fedc7/ubuntu-64-bit-2016-05-23-19-07-49.png 311w"
+        sizes="(max-width: 311px) 100vw, 311px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>The program will then prompt for your password:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 300px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/246e6386944088b6cdd68d74fc795f7f/a8a0d/Ubuntu-64-bit-2016-05-23-19-07-59-300x200.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsTAAALEwEAmpwYAAACbUlEQVQoz22Qy08TURSH588yYkAM1YTyCIEUgQYN1PCMgLpx4crEDTuXLlybSNtpZ4oKITFCSUD6MqUqqfQ1KO3c5zzunZkWa2ZQMNGTLyfnnsf93XuEe13XVkeuDAeGAqODvf6eUGhyYT40N3s3EBgMTU/OzU3PzE7NzkyNj49cv9Hhu9nV4+v0+Tq7b3UNd1wVXq4+fytHIuE1MRoWo2EpLiYSkizFpVh0PSEl5LgsxWQpFo+Lohg574mGX8tv5BdPnwn5ZKrZPlOUqqbRZtOxbcs0DcYY54wxk3Ev4MyyuMlMy+KOY1uctdvtg/UNYX9zW2daPv+pVqtgjAhBXwr55O5uLpvJZjP5fD6dPnBJpTKZdLVaIwQDtcFsaycSEz5uJQ1uHB19rVbLlBJCMMYIQoAQRBi5HkGMXU8IPgdBYDWdZFQS9jd3uMM9TXwJJRcXXSYxwh4QqLzlJEVvWGeGK+UWPAVKMFThSYU2vv8X/KNmmdRV3nv3oXhcTKUOctl0Lpc9LBSoRimoK5WSxbljWf9iM/6zyZNh0Xu2zdRGHSLoGSAEU4wMrJoEGBiY5DeMQkahm0SNVsvajcnuMLMZ/msff76NdUPTdU03NELdI0QAYahpBICG6fBkTBb2NrYZNyFQMUIYQQ93ybpGSt+K5dJxsVg0NE1RapQQ0KjncjmoAtPiW6/WhMz7vVb7TDd1k5vnMG7qBsUYlsrHlWq5Uq0QilWgntZPlZNa4fOhotSQTrajkvCwe3plILTYO7novyC44J+Y9wfvD95Z6g8uDwSX+sZW+seW/KPLfWOPBiYe+G8/Hgo+8Q3/AiNBconIA27TAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Ubuntu 64-bit-2016-05-23-19-07-59"
+        title="Ubuntu 64-bit-2016-05-23-19-07-59"
+        src="/static/246e6386944088b6cdd68d74fc795f7f/a8a0d/Ubuntu-64-bit-2016-05-23-19-07-59-300x200.png"
+        srcset="/static/246e6386944088b6cdd68d74fc795f7f/53f68/Ubuntu-64-bit-2016-05-23-19-07-59-300x200.png 213w,
+/static/246e6386944088b6cdd68d74fc795f7f/a8a0d/Ubuntu-64-bit-2016-05-23-19-07-59-300x200.png 300w"
+        sizes="(max-width: 300px) 100vw, 300px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Then be shown the welcome screen:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 574px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e1f4de705ab9c16f61580e583f217d6c/312c2/Screenshot-from-2016-05-23-02-08-25.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 76.99530516431925%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAACgklEQVQ4y5VS2VLbQBD0z+Uh38ADv5YKb0mAOBgMJsEWAR3Waa8kW77KiU9pd2XLXJWA06ldG0gFqEoeunq2Z6ZXM9rcSf5ds5D/gL3CJ5SODnBY3EfxoIDiwR5KR0UcHa60+1jUiLyIj0tF7Bfy2Nl+j/zHbWy9faPkpmmvVuts4erq5jZbZMtHLJbz7PE8z+Zrzh5Y4OLyYnl5dXl7fXON0Wh4nEuSCZnEA8RJvIyTGOksxWw+A0+5jAULzLO51B+QrWpEzzSe3iU0QStqfs4xRklCKSijSyE6rg3TMkF8H17NQxCGIH4dZ+dnsGwLpmXJvG7oID5BTBMkNLljnKHTbt0bxtJwGk9l0wo2HNeB7/twXQcVpQLlVIGqaVA1FYqiwHYcJIw+NRSfzVO+jKKmLNZ0DVXLXMc6qmYVVdOAqmvyEsuxpCby3wcDMM6eN2y1IqjqOTRdhe3YssmyTNi2Bd0w5Docx5aapqnSsNvrPTUUuxMjy31wBo/UYboOgqgBvxmCNELUwwAkDCQHzQY6/T5oysW4z+1wZUiTGDRqYui5GLgOxj7BqFbDyHMx8gmGNQ9Dx8Y49DEhdVlLXzJknC1HoyGCuofAc9Hw64gCHw1CJEfhOvYJQlJH0ycIajX5bCh7xpBztux/68MwDZiODcOqQjU02K4jf5Bg3azCtC1UbVueNUPHeDIW0/1hSJP6+i2Jd/iLMvpfED33I7eF4SzlHucMKWc/U87u/gZ/QWOMShagNPmRphzdTruUW2Tz7iKb419xkWVgNEav18F0OkESx+h1OxiPR2i3IjWna+rrSrm8qSiVDaXyb6iUTzbKJ18kK5Wy5K+nyubu7s6r38r7GsvmBOEfAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 02-08-25"
+        title="Screenshot from 2016-05-23 02-08-25"
+        src="/static/e1f4de705ab9c16f61580e583f217d6c/312c2/Screenshot-from-2016-05-23-02-08-25.png"
+        srcset="/static/e1f4de705ab9c16f61580e583f217d6c/53f68/Screenshot-from-2016-05-23-02-08-25.png 213w,
+/static/e1f4de705ab9c16f61580e583f217d6c/df70d/Screenshot-from-2016-05-23-02-08-25.png 425w,
+/static/e1f4de705ab9c16f61580e583f217d6c/312c2/Screenshot-from-2016-05-23-02-08-25.png 574w"
+        sizes="(max-width: 574px) 100vw, 574px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>The first thing to do is select your source, use the file browser to select the Ubuntu ISO file.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 749px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5691a96807225bf2f0a832411c5c0795/2ab73/screenshot-from-2016-05-23-02-08-56.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 43.1924882629108%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABn0lEQVQoz6XMbU/aUBjG8X5Lky0m26KJk8nocPPT7OXe8mITZQoq2LlAUTFOAvU4aE+fiBaRntMHyuFaALMskWRLdie//K9XtySnVvRsJnW9ld0gmY01splZJx/evSFy+jWR02tkK5sm7+UU2ZRTJPt2nay8fLaItvrqOX2xvJST2l0DutsDMUx0LAc/LRuO18c9D+D5bNY+4+jzcObOZ0/c+gweD3CjdxuSU/iEwbft8a2yLVi9KMKzkgjODkR0URZR40iE54fzqnsirO6KsFZYJIlqBVjnJzWJq/sY1ktCL+fRPfwMo/wFtJKHUcnDPvkK83gHlrILWsrBPsiBnRbB6k8IfloEbXxXJS4AP5mIdsdAx+5hOBLgY4AnEwTTjjFrIIBgAgRYYAIRATBdV5XiMEDImTANA7Zpouc4CDhHEseIowij30LEfwofzbdI4giWRVUJ80sAjP/DaPrEdZ2qxDnDnP+I/dVgcA/Pu5uZbu4/gA0f4Fj0UqJUr1KqH1OqK/9K01pKs3mlNK9+KFq7peg3WqVz3ao1Ly8+/gJmGHeEI/eTvgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 02-08-56"
+        title="Screenshot from 2016-05-23 02-08-56"
+        src="/static/5691a96807225bf2f0a832411c5c0795/2ab73/screenshot-from-2016-05-23-02-08-56.png"
+        srcset="/static/5691a96807225bf2f0a832411c5c0795/53f68/screenshot-from-2016-05-23-02-08-56.png 213w,
+/static/5691a96807225bf2f0a832411c5c0795/df70d/screenshot-from-2016-05-23-02-08-56.png 425w,
+/static/5691a96807225bf2f0a832411c5c0795/2ab73/screenshot-from-2016-05-23-02-08-56.png 749w"
+        sizes="(max-width: 749px) 100vw, 749px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 749px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/209d7bdfbe28a117cff5c04b2cd979c0/2ab73/screenshot-from-2016-05-23-02-09-29-e1464005557692.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 21.12676056338028%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAABDElEQVQY003GS0sCURgG4Pm9bSKJpnS8RV5S923bJEVFgRUY0WWTSIsWmhB5HOvMjJ/Y0Ex61Jz5eCMX6eKBRysZ68/pZMwtFbK9YiFLuUya8pkU7ea2qZjfoXh0g9ZWVyiqRyhh6JSILTF0SsY3KWnodiqxNY7qkX3NsiySUsL3fSil8PnlweoP4H6P5pyBi/a7nP8HwHTJhIHRLISahRhOAziuV9FarRfZEQJE/dD3Pe7VquzfH/P4scKqdsGT+iVP61c8rlVY3R2xuj38N7wps3tdZu/hdDaoHsA82TvTmo2GFEKga3bZti1M+h9g+w3hH0cs2G0E3SYCcyE0m2D5itBpB+gJ+K2n81+ufgio3zAubQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 02-09-29"
+        title="Screenshot from 2016-05-23 02-09-29"
+        src="/static/209d7bdfbe28a117cff5c04b2cd979c0/2ab73/screenshot-from-2016-05-23-02-09-29-e1464005557692.png"
+        srcset="/static/209d7bdfbe28a117cff5c04b2cd979c0/53f68/screenshot-from-2016-05-23-02-09-29-e1464005557692.png 213w,
+/static/209d7bdfbe28a117cff5c04b2cd979c0/df70d/screenshot-from-2016-05-23-02-09-29-e1464005557692.png 425w,
+/static/209d7bdfbe28a117cff5c04b2cd979c0/2ab73/screenshot-from-2016-05-23-02-09-29-e1464005557692.png 749w"
+        sizes="(max-width: 749px) 100vw, 749px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Next, click on the <strong>Live only selected</strong> option to toggle it to <strong>Persistent live selected</strong> mode:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 749px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/01862c42a9f967746b0a90157d258b64/2ab73/screenshot-from-2016-05-23-02-09-43.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 43.1924882629108%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABw0lEQVQoz33QbYvaQBAH8HzMvrgr5byjUM7e+XDaL9PP0O/Q+qYKRmu0mmw0zzHZxCSYbjRm/Ze1elAqXfgxw8wyMCM16u/NVrOuddtPpPH0gbw066T78kw67Y+k3Xwk7WadfOo0yEurTrqdBmk1HslD7Zbc392Q+9rZ3Y36ULu1371980Waz2cwjBWWSx26TkCICsexQWkAGgZ/Ig2QJPFJHNPX2kUYBogiCkK0kRRFEfI8r3zf50EQcM/zuMjX6zV3Xe81ZlnGy7LkVVX943A4HDjn8H2vL2VpioiGfDgcQlEUTH5MIMsyRvLoFMfjMUayDE3T4HseKKVIk+QvSbLhYo5hrAaSWCsM1vznbAp1sYDnunBsG6ZhwDJNuI4D17Hh2BZsyzz1xHoRDRFRehbyOI6wWukDibECeb7lykSBqqqgNEJRFCjLEvv9/qrdbofi7JxzUXddZyBVVQVxA8ZYJYh7lmVZcS7Oc/2J3vF4PDn/K4EjPM/tS4zlEIqCnex2DIz9wqV+TZal2GxibOIYaZaKDZFvt2LgRLIs47ttm98sy+hd2Lb5X+pi3pvNpr3pVOktFvPecql/1YnWV5TJ59/8wHykYDxoYQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 02-09-43"
+        title="Screenshot from 2016-05-23 02-09-43"
+        src="/static/01862c42a9f967746b0a90157d258b64/2ab73/screenshot-from-2016-05-23-02-09-43.png"
+        srcset="/static/01862c42a9f967746b0a90157d258b64/53f68/screenshot-from-2016-05-23-02-09-43.png 213w,
+/static/01862c42a9f967746b0a90157d258b64/df70d/screenshot-from-2016-05-23-02-09-43.png 425w,
+/static/01862c42a9f967746b0a90157d258b64/2ab73/screenshot-from-2016-05-23-02-09-43.png 749w"
+        sizes="(max-width: 749px) 100vw, 749px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 654px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5e2e11732743b3245b4449843c725e19/ba4a2/screenshot-from-2016-05-23-02-10-22.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 90.14084507042254%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC8ElEQVQ4y32U3W7bNhTH/Yy9aLtibYchKLq0XdPtdk+wl9jeYegSJ3HRtEBiS7FqW98UJZkUJUui5Lrp1QoL/4JyEttBsosfzgfIPw7POWDnj51Hx6+eP2MvdneC3/de0F9fPqMvd3fom9e7dO/Vc/rm9S/0t71d+vNPj+iTH+/Tp48f3MJ9/+mTB7MfHt77q0PpWWy6PWRpDiEYEsGRJBxCJBDiyibgfArG7iJGkjDYlvmuI3LHn6YGFouvS1nLpqqrW6nn9f/xbb6YYzqNDzpZNiO+T+B6TlPKErJaofzNuEWu8zdYVrVEGNJuR6QpsYMILmWNQzkUbshBmYAfJbADBi/irWUig6wKlHLFht8KRhHtdlLBie3a8HyvsR0LjufAD3x4xIPlmPCJj2peQdYSVUuJer6ypcwhq1zZpYpbwdk0InRwCmqcN6F2hlAfIDwfIBpqiPQBgv4pYuMckXaGmPpIUo4wCtrhrSq8IciIR/T9t9AODxrj+BD64QG0t/9g2N2H0TuCfvAvjKMuRu+O4X38gHiowbdNMMFuFxSCEU0fYDQ2GmNkQB9q0PU+RuNPUHn9XMNwqGOg9eH5jhpea8OIts+ef66V8IZgwkhf64MEpEkzAZFyJIKB8XirX/NFBcYinJy8h0fcNj/QzmBaY2R5ulRxpKacpQmxbBMTc9w4jgXbUQNy4XouijK/XAs1UYlslsJxrba6ui5BAg+TyUj1sxUMw6DbSVNOXM8CDYMmoH77nEIWmH+urtdibbcnrPzLc+snV1VJ1AVZlc1qga8bvbkW13ad3zq3FpSyIJfJZvPC1fJuk9/wr+J8s8KVoKyKZlXpNndUdJOtCr2inKEs829FmS+LcraFOnyF6tUd/LeacrDfufiyEBdfFriNrxcLSFmgqiQqWYJNY3DO2i9LWfXNKZSvvrg4jk46WSr+Fgn/IBJ+LBLe2yThrEcD0gtD2gsC0jMn4545mbTYlnmNZZpHjm2ffjKGf34HteDz1XVHrrEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 02-10-22"
+        title="Screenshot from 2016-05-23 02-10-22"
+        src="/static/5e2e11732743b3245b4449843c725e19/ba4a2/screenshot-from-2016-05-23-02-10-22.png"
+        srcset="/static/5e2e11732743b3245b4449843c725e19/53f68/screenshot-from-2016-05-23-02-10-22.png 213w,
+/static/5e2e11732743b3245b4449843c725e19/df70d/screenshot-from-2016-05-23-02-10-22.png 425w,
+/static/5e2e11732743b3245b4449843c725e19/ba4a2/screenshot-from-2016-05-23-02-10-22.png 654w"
+        sizes="(max-width: 654px) 100vw, 654px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Select your USB from the next screen or select <strong>toggle USB-only; show all drives</strong> if your USB is not showing, as it is being seen as a hard drive.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 654px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/340fedd627b90163b46140800838e7ee/ba4a2/screenshot-from-2016-05-23-02-10-34.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.6056338028169%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB5klEQVQ4y62Ta28SQRSG96f5xZCYiK2JttJiW2v84q/wUzHx55h+NYq0ArPscpldaAlruezOrtAit11hZl8zC0SIl0DiSZ45Mydz3rxnklGOE7ulw4Mn+VenSXKU3CPPD5+S05MEeXH0jBwn90hi/zF5eXIQkdjfJfGH98lOPLbGo3gsuxOP1R/E7r1W0p8+4HP6I75cXuDyIoNMJh2dNU0FpWWUSzoqlSLK5SJ0XQUhWahqbg1CctAKBOfn798prXYL/f7drNv9JmzbFsxlwvNc4bqukLVeryt8fyI4nwk+mwkhuBCcCx4xW/JDCI769dWZ0ryx4NgdYRoUBZVA1zSUijpUkkc+l4VWUFE1jYhatSqbQCtlXNVqYE4Hjt2G02lPXeZA1wspZTQaIQgCYVkWKDVAKxTNZgvMYeh0bNi2jcFgAHlvlfF4jMlksmTq+758opTCOYcQQgRBAFkcjyfyjNUIwzCq/YOpzIZBU8qiZ11hIbJkg5jKxTRpSlk0iVWB7ZGC4S9B6XBDJ/jTJHOHK4Ih/qPDv73hJs6WU/02chiGPNwypM5cN9rPBQ16pgyHA2zPd/R6Xdze9jAaDmTmMpsmfat4HvM9j915Hutvius6/Uaj3resRrS/+Wp1GbPlT3nzExe6/UrRO25bAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 02-10-34"
+        title="Screenshot from 2016-05-23 02-10-34"
+        src="/static/340fedd627b90163b46140800838e7ee/ba4a2/screenshot-from-2016-05-23-02-10-34.png"
+        srcset="/static/340fedd627b90163b46140800838e7ee/53f68/screenshot-from-2016-05-23-02-10-34.png 213w,
+/static/340fedd627b90163b46140800838e7ee/df70d/screenshot-from-2016-05-23-02-10-34.png 425w,
+/static/340fedd627b90163b46140800838e7ee/ba4a2/screenshot-from-2016-05-23-02-10-34.png 654w"
+        sizes="(max-width: 654px) 100vw, 654px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Finally you will be brought to this screen which is the final confirmation before it wipes your drive:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 654px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/34871067991b8204487ed5a9c5119e60/ba4a2/screenshot-from-2016-05-23-02-10-52.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 83.09859154929579%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAADSElEQVQ4y53PS28bVRgG4BPH7HIR28Ky6ga2/AYWEBaNbDd2KipFoqEQx2qBpk6atEUNoj+ABVLLhlQUW20QSe3xeIzjy/gy9/EZpy5J7MSwQKigtEnbTDh60YybEFIQl8Wj9ztn5nznOyQcGbs/MnG2FrkyRc9MfURHox/Q96cn6NhMlI7NXKDvTn5Iw5eiNHx5koYvTbr/jF+eou9dPE9D4dM0OPYODYZPG6EzI+23Bl4fJumzJ1Ac9KEU8EP0+VD0+SD6HX7X3rrk97vcOhBw6/zx48gPDiI38CZKo6P49ubcObL02ouo9ffv6v19zGE8y+fWfb1M7XX0MLWnx02tr5dp/X1MecG7Y736Cqqx2DhJffElUrksS3IJpAQeiVQSdxOL4PgkkqkkktxdJHkOHM+hWFyCaSowDPkPugTd0m3rThzFGzciJD1/B3y5wlK5AvhiGYJYQUasuJnKl1xcvgS+UIZaU2FaOgxLd9NFNegNate/uQ3RaZiN30SmILCcWEC2JCFfrqBQEpETS6goCsqyjJIkQ5Rl6FSFWVNhHOBMrC+bdn0+3mnI35pDupBh/FIOXLYAIZsBLySwVMxAN2SougRVr0LRytCMKkzdeeYBmgSd6nb9dqzTMB//CrlyjgmpBaS5BXDcAoQMh2xeQCaTRCadwHdCAum8AKW5DPrD9zDb91Hbs9GA8VPTXuYXUbx+PUKUgTegDQeZEQxAHwrACA1Bd+rgiU4O+Tv7J4PQToWgvR08JARlOGDTkVMQ5+YiZJEQVAlhUif3SYf81d6eCiG2eeQIxHg8QuYJge71Mqm7G/L/4fU6l9nmsWMQY7EIcW6QCWFyJ/+7rq5Ow6NHDzT0eJjk6YLU9TzngOzx/L3u7j9PWP2HCav/QpkQW3/pZRS/vhUh1vkIatOTu/TiBVafjjJrOsrqM1OsNjXh1muffMw2rs2yjU+vdly7ytbdnN23Pntl58fPP4MkpMfJr9uP8ODxNn455MH2luuhvYOtXXvfIyd/23W/bT59gs2dJ/h56yE2nz6GqijnyEazZbWbTbXdbGntZlPbz1bLrdfX1rT11bVOPtNaXdXuWZa20mhoK417mmUa8kqjsZrm+ZO/A1o8fR3rvLgIAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 02-10-52"
+        title="Screenshot from 2016-05-23 02-10-52"
+        src="/static/34871067991b8204487ed5a9c5119e60/ba4a2/screenshot-from-2016-05-23-02-10-52.png"
+        srcset="/static/34871067991b8204487ed5a9c5119e60/53f68/screenshot-from-2016-05-23-02-10-52.png 213w,
+/static/34871067991b8204487ed5a9c5119e60/df70d/screenshot-from-2016-05-23-02-10-52.png 425w,
+/static/34871067991b8204487ed5a9c5119e60/ba4a2/screenshot-from-2016-05-23-02-10-52.png 654w"
+        sizes="(max-width: 654px) 100vw, 654px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Select the boot system and partition table which suits your needs. If your computer only has secure boot then you must either turn it off or choose <strong>ISO file</strong>. For the partition table, it is safe to go with GPT in most cases.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 554px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/156d7da45211910b47b6760ad6cc2612/b4bb7/screenshot-from-2016-05-23-02-11-20.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50.70422535211267%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAACG0lEQVQoz41R3W7TMBTOC3LV7oIVJNCQJsY2TQzGC3DLKwC94IYXAPUGbhCUJmnaIrGkaVM7cX5s56etlqYJ3kH2CkiICyx9/n6OdWQfa88P2h9PDu9Fh4f3vYvzU3R+9gidnR6h46MH6OnjE+Ulnj05Q8cPD1Dndgvd7eyhO532De+3ZTbr7LfyvdatF9rYMr3BoA+GPgBD10EffAXD0EGX3tBhODQVpJZ1qS2VGdDvfwHLssBxbIV+//MbzffRpa7rMBqNfownEzEaWWIyGYuhaQrTMBVb1lCYii2BMRYIIRGGociyVBRFLq6u1nVZXoHv+681zqiNMYaEUsEYhSAIII5jKIocsjSFNOWQZRmkWQpZlgLnHCilkOc5VFUFm015XZZlU5YlzOezrhZHxHanDpAgECEJ4NtkDPblpfSQyWacQZYyxSlnO3+Tc5oAZ/SaM9pwRsGdOl0tJMTmnEGRZ8KbuWpOjuNAFIaqgTwob84oVVpmUjOa/KqrhlK77rSrcc7scrMBIYSQT8PYhzhOIIkTiKJYQY4h2nlCCCRJApQyCAIChITX2+22qesaPG/e1dbr1femrqFpZFbLvam322b7F35nVaVYrkrpSsldw1faclmEy2UB/8JqVcBqx3+ypZqhvLX8uPVqCXEUqk9aLLy3WhiSl4QEHwgJ3hMS9P4Hi4XXcxy7hzHq+T7uzVz3Hcbo03g8uvgJ0CO3Mktw8HwAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 02-11-20"
+        title="Screenshot from 2016-05-23 02-11-20"
+        src="/static/156d7da45211910b47b6760ad6cc2612/b4bb7/screenshot-from-2016-05-23-02-11-20.png"
+        srcset="/static/156d7da45211910b47b6760ad6cc2612/53f68/screenshot-from-2016-05-23-02-11-20.png 213w,
+/static/156d7da45211910b47b6760ad6cc2612/df70d/screenshot-from-2016-05-23-02-11-20.png 425w,
+/static/156d7da45211910b47b6760ad6cc2612/b4bb7/screenshot-from-2016-05-23-02-11-20.png 554w"
+        sizes="(max-width: 554px) 100vw, 554px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 554px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8289670f5b0d406cb4001264164aa0ef/b4bb7/screenshot-from-2016-05-23-02-11-32.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50.70422535211267%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+klEQVQoz42Qy27TQBSG/YJsaJFKIqGqLEK5tFFB9AFY8wqFbFjwAohsYAUVqRKnUi5jO7bHHl/isePYSRzi6eSgmaQoFCGx+PT/Ov+ZozNHefN4/+vz2mFQqx1Zr1+e4LP6M1w/OcbHtSN8dvpUelGvv3iCz1+d4sNHB7hycB9XK3u4+vA3o2plP32wd++tcq22rVbrB1xdtSTCdzpt0HUNdA1J1TQEaDiAoaQPCA3vMJA9l5ffPyjmyBiqqgr9fv+m21X59XWXdzoqR2jIkYb4oNfjvV6f27bNMba542Cez3K+WMz5fD67pSyKBbiu816hNEK2bQONYx7HFFzXBc/zQPgkSSCKIkiSGMSD5XIpKYpil3VRFEz40choKGHgoZGhg0cIJ64jvyU0iSlMEkEsiWn0L9YxjZjwuoYaCrYtFAQ+ZNOUm4YOaqcthsuBMaV/PI6isdz8DuuYUib6dV1rKDGlSKzLOeeTyQRsG4PvBxAGIQRhCEEQAiFE1sbjMazKEhhjUDImlTG2ZoyxsizBMs2GMpvlA8ZkU1mWJduGbLVa/cUm33CzadzW2E8x0DTNd0qWTf0sm8Iu+S15Bnm+1Z1c3FRsnaYTmYmTTdMUbMv8qPi+d0GI+4UQ8pkQt/k/2JbZRAg1HQc3XRc3DUP/5Dj4W7ernv8CIZC7pscqafkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 02-11-32"
+        title="Screenshot from 2016-05-23 02-11-32"
+        src="/static/8289670f5b0d406cb4001264164aa0ef/b4bb7/screenshot-from-2016-05-23-02-11-32.png"
+        srcset="/static/8289670f5b0d406cb4001264164aa0ef/53f68/screenshot-from-2016-05-23-02-11-32.png 213w,
+/static/8289670f5b0d406cb4001264164aa0ef/df70d/screenshot-from-2016-05-23-02-11-32.png 425w,
+/static/8289670f5b0d406cb4001264164aa0ef/b4bb7/screenshot-from-2016-05-23-02-11-32.png 554w"
+        sizes="(max-width: 554px) 100vw, 554px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Enter how much of the remaining space should be used for persistence which sits on-top of the Ubuntu Live USB. Any remaining will be normal USB storage:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 524px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/9a90eea09316114160e6c9d2dca73401/6d924/screenshot-from-2016-05-23-02-11-50.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.009389671361504%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB6klEQVQoz42R227TQBCG/YIIgUAIKo4CqrYoh1bc8wK8AG/BTX1TLlCBCDtpYsdJGifxnpzYDskebCqqkvWgdcg1XHya/5/dGe3MWu+e3v548mpv+ezFY9KsHbJm3XDEDvefs0btgDUN9W3+uHHEGm/22XH9oNJvT2rs9csn7OGDO3Tv0b3s/t1bZ9Yw8N1h0Ieg78NwEMBoOIBB0IfRMKjiTpszg/GXo2GVC/oe+F4Pet2Lqr7V+jq2GCXfXNcBz+v9vui0dbfb0e22q13H0cb7vqfbrqPPzz9r13V1p9PRrvNdu66jJ2Goo9lUT8LxhhAMCEV9azGPW4wSiBnVccyAYGQ0mBxGETBGAaMZRLMpYIyq3HQSVqRJAkoKkILrXElzJ7AEX7WyJIFkMdfzOIYsTY2uSNMElllaRZ7OQSxTuC4U/MolXBcSriSHfL3cNswVoGgWWOvVj+qFlGCNMSpjRktK8F9IuYhZySgtszktV1lSXilRFmJd8VPysuCrUvC1luaFpqEU/EuRKyhydVPkapMruTFxx86bqKTYCL7eSMErjBZbfWNGJhj5lpLCN3v4H0yRwezOTMU5r7xZj1LSTInMp7xnlHxilJwySux/QQm2J+HYDseXNkaRTTCyp5PwlGB05nvehz9s3GmzLFnrnQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 02-11-50"
+        title="Screenshot from 2016-05-23 02-11-50"
+        src="/static/9a90eea09316114160e6c9d2dca73401/6d924/screenshot-from-2016-05-23-02-11-50.png"
+        srcset="/static/9a90eea09316114160e6c9d2dca73401/53f68/screenshot-from-2016-05-23-02-11-50.png 213w,
+/static/9a90eea09316114160e6c9d2dca73401/df70d/screenshot-from-2016-05-23-02-11-50.png 425w,
+/static/9a90eea09316114160e6c9d2dca73401/6d924/screenshot-from-2016-05-23-02-11-50.png 524w"
+        sizes="(max-width: 524px) 100vw, 524px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>When finished, you will be shown this screen:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 654px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c268767618e8e9b51634a635f94fc0b9/ba4a2/screenshot-from-2016-05-23-02-20-19.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.6056338028169%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACcklEQVQ4y43Sy27TQBgFYL8JW6SIDW/AhiIQ96qiodAmlA1vwapFvEbX3AQsgFaiQkJp7LETx3HiXO3EsT0zvqRUXELdg2ynpaQVsPh0/qOxZkbWCIX8QjW/eLv8sLgkLi8tiPfuzovF5UWxuJIXC/fviKuFvLhaXBIfrOTF+VtXxOtXL4o3rs3NKt28Pte+fOnCI2H70wtIEoGiEBAigRARskymJChytpb0nZ0SSqXPpyqXS3jz+tVToWG9x97X7z/9KIiDKIqDcZTllB+FqWQOd8dxtDtOc8aP3b0vaDYba0Kz1UWtocW2N4LLvZTDMof90Ii6p7KpM3E5RbVaWRdqhoVay44bPYpmn8IwGdoDjrbF0ehSGH2GZo+iZXI4LILHxye4bDxhwRiqWl0XGqaChiXHep9A6xBoXQK9R2AMCFr2b22bwKQKLFo5wfTkyYgb2YYbH89jY/ts/FzO4Zmcw8tqlm/1HLasHLbMHDaP+TDTN81zeNc/MymPClDVyrrQcxSYnhLbvgI7UDAM5DSTPuAyhjybh74Ci5GUSaU/9L3yxOZ6dsO60YOmd2JV70Jr9tFoWajVO0i6bpjQjT4qtRbUehtDN0z99R+Segty3YglzQCpG6g2O5C0JsRaMreRrO9U9eQb1LsWtI6FUfIKjr0Gh7kT6rNsQxpwsDCIWegjFUzz2MzDIE3PZymH0VkT6vNswxFNTqD7DqUHDpuiU6d0l7MDz+dH0s7ZJDlcVatrQhQGiKLwH4Kj9DwXjjOC6zopxihs295nnEGrqU8Ezug3zmjIGY3+h9nvRd1OO+q0W2mO7GEyc3s4gEykx78AkqS/U4ZTJdkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 02-20-19"
+        title="Screenshot from 2016-05-23 02-20-19"
+        src="/static/c268767618e8e9b51634a635f94fc0b9/ba4a2/screenshot-from-2016-05-23-02-20-19.png"
+        srcset="/static/c268767618e8e9b51634a635f94fc0b9/53f68/screenshot-from-2016-05-23-02-20-19.png 213w,
+/static/c268767618e8e9b51634a635f94fc0b9/df70d/screenshot-from-2016-05-23-02-20-19.png 425w,
+/static/c268767618e8e9b51634a635f94fc0b9/ba4a2/screenshot-from-2016-05-23-02-20-19.png 654w"
+        sizes="(max-width: 654px) 100vw, 654px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Plug it in and see if works. In some cases you may have to change your BIOS from Legacy to UEFI or vice-versa if nothing is showing.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/065175f2ea22f25dcda5164ac735514f/42a19/Ubuntu-64-bit-2-2016-05-23-19-21-06-1024x768.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAiElEQVQoz9XRQQ4DIQgFUAGBWgwXMDj3v2UTjc0snEyX07di8+EbU3ocRJwDAPwUgIWIVFUGVSUiXPZJIoqIY+m9R0QbYmmtEdG+p7ub2WsQkZwzMyPiudH+FQBw2ep04GnhlFJemPk7MLOIMPPcfhkWkVqrmb0Hdy+lqGoZbj587p7lb+78sw8h9QeEVD11OAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Ubuntu 64 bit 2 2016 05 23 19 21 06 1024x768"
+        title="Ubuntu 64 bit 2 2016 05 23 19 21 06 1024x768"
+        src="/static/065175f2ea22f25dcda5164ac735514f/d6170/Ubuntu-64-bit-2-2016-05-23-19-21-06-1024x768.png"
+        srcset="/static/065175f2ea22f25dcda5164ac735514f/53f68/Ubuntu-64-bit-2-2016-05-23-19-21-06-1024x768.png 213w,
+/static/065175f2ea22f25dcda5164ac735514f/df70d/Ubuntu-64-bit-2-2016-05-23-19-21-06-1024x768.png 425w,
+/static/065175f2ea22f25dcda5164ac735514f/d6170/Ubuntu-64-bit-2-2016-05-23-19-21-06-1024x768.png 850w,
+/static/065175f2ea22f25dcda5164ac735514f/42a19/Ubuntu-64-bit-2-2016-05-23-19-21-06-1024x768.png 1024w"
+        sizes="(max-width: 850px) 100vw, 850px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b37fde81ab937b157ef4e225f4cc71a1/42a19/Ubuntu-64-bit-2-2016-05-23-19-22-34-1024x768.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPUlEQVQoz22R6VMaBxiH9/9owrEcu7ALu8Iuxy6HigjIrYT7VIMrmqC4Cl01KKgQkSRiAiTGMXi1dZqrNp1OO/3WP6yz1Jl+6cz79Xmf3+99gb00lxkPT5tdPoMtqLXniSCj8xf03idGz4rRtUY7102TZZOtTFk5k2WTpht22yuvszlBv5yyABepQwbKVehQhQ4vSWJ1efZAkTpC4seqaA+bOdMEBoTnArPf4NZbjekzQd2RxDcS/4vC/x5XAyf58jpcaDuLLcfyFpirIpkammioY0dYuKMJ9ghfD3e+xSc+aEcvCfOPOuqTUf+VIn+lNX+OjQAnpTaLLtUca3vOEifN7CgzdSTRVMXaWLiDB09U7q7KcYpPDLSj14T5Jx312aD/xUj8Ro/8YcaAhm+WRRlWmi/D81twbkdxDx+pw23E30Gm/g8mv9Ga3004sDvXWkWWWDBfgf6DG2i0AYdaCn8HdXdVzreY/VwzfkVYfiBNH/WGL0bdHcXLgYP6fglfZMGFCjTPwbPP4GxNmaxB4X35zKHC/xLxnKCuPjZ5NjJ+QVivSfOtjvpk0H81kncUAfQ3ahsqZu0entuCs9vSeFUa3odmnsOBF0pvB53qqh3vePnY5VB+Owz/xaADBsnlCpIvgcy6/HEZmq2AKQ6MV6WRmvxRA55uKX2vEM9r1NVTT57itoF29Iqw3JCmWz31s94AfHy8VFHlV0GGleVLotyGKMWBiW1JrCqL7MO8vK30HaPurtrRxybfj9g+aEYvtZZr0nxD0sD55us1rFAU5VeF8ysPc6woXRanNsF4VRbZhR4dQNPD5sPwKmcf4/3nmrELrfWKtALd9O4qssA8SC8/zBUFsyVhlhWlOTC+LYlWpZG6PNSEg63h5fi3qZ09zPEOt5/itiv9BNBdbBcVc/nv4owgWRCkngrTrDBTEfPhn0mjO/LwHjzThIItpe+F0nuMuN+onMMKjoHBBZx9311B53lYmGQEyUVB4qkwURIlyuLEpiR+z8tDTSh4qPC3+fu5j5GpHu5+r/MCex5uWZZdeJBgBMl/pyBMPBFHi+IoC0Y5SawqjezIwnU41ICnn8OBlpJf8UYT6JOBfwDwXjqao787EgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Ubuntu 64-bit (2)-2016-05-23-19-22-34"
+        title="Ubuntu 64-bit (2)-2016-05-23-19-22-34"
+        src="/static/b37fde81ab937b157ef4e225f4cc71a1/d6170/Ubuntu-64-bit-2-2016-05-23-19-22-34-1024x768.png"
+        srcset="/static/b37fde81ab937b157ef4e225f4cc71a1/53f68/Ubuntu-64-bit-2-2016-05-23-19-22-34-1024x768.png 213w,
+/static/b37fde81ab937b157ef4e225f4cc71a1/df70d/Ubuntu-64-bit-2-2016-05-23-19-22-34-1024x768.png 425w,
+/static/b37fde81ab937b157ef4e225f4cc71a1/d6170/Ubuntu-64-bit-2-2016-05-23-19-22-34-1024x768.png 850w,
+/static/b37fde81ab937b157ef4e225f4cc71a1/42a19/Ubuntu-64-bit-2-2016-05-23-19-22-34-1024x768.png 1024w"
+        sizes="(max-width: 850px) 100vw, 850px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Success!</p>
+<h2 id="extra-boot-the-live-usb-to-ram" style="position:relative;"><a href="#extra-boot-the-live-usb-to-ram" aria-label="extra boot the live usb to ram permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Extra: Boot the Live USB to RAM</h2>
+<p>When running applications or any read operations, everything is run from the USB drive. This can be slow depending on the type of USB used. A way around this is to have everything from the USB to be pushed into memory (RAM) which is a faster storage medium. For this to work you will need around 4GB or more of memory to be sure you don't run out.</p>
+<p>The easiest way to test this out is when booting, hit the 'e' key to edit the boot options of Ubuntu. Add the word '<strong>toram</strong>' right after the word '<strong>boot=casper</strong>' and before '<strong>quiet</strong>' then hit F10 or Ctrl+X to boot. Booting will take a little longer as everything is being copied from the USB to memory.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7f5a97485938d4b6ff11471c840a7299/42a19/Ubuntu-64-bit-2-2016-05-23-19-27-52-1024x768.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAiElEQVQoz9WRwQ4CMQhE26FABJL+/9+adOJG466riQd9pzn0AYXWfg4A/cZnpoi4uy7M7LwQgMy8LMzMF2MM+iLCovt+7z0iMjMi2NbMtuYM7n4oqypbMTy/4/z7MoB3tvhtubV2P7M+woW9klV1zsmdRURVMWdmVdE/hJPznlhs5xWR00/9C1fNgQTMnLQDcAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Ubuntu 64-bit (2)-2016-05-23-19-27-52"
+        title="Ubuntu 64-bit (2)-2016-05-23-19-27-52"
+        src="/static/7f5a97485938d4b6ff11471c840a7299/d6170/Ubuntu-64-bit-2-2016-05-23-19-27-52-1024x768.png"
+        srcset="/static/7f5a97485938d4b6ff11471c840a7299/53f68/Ubuntu-64-bit-2-2016-05-23-19-27-52-1024x768.png 213w,
+/static/7f5a97485938d4b6ff11471c840a7299/df70d/Ubuntu-64-bit-2-2016-05-23-19-27-52-1024x768.png 425w,
+/static/7f5a97485938d4b6ff11471c840a7299/d6170/Ubuntu-64-bit-2-2016-05-23-19-27-52-1024x768.png 850w,
+/static/7f5a97485938d4b6ff11471c840a7299/42a19/Ubuntu-64-bit-2-2016-05-23-19-27-52-1024x768.png 1024w"
+        sizes="(max-width: 850px) 100vw, 850px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>To compare, here is my computer before and after using the 'toram' option:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 615px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8b1cd19f2fadf8aeac11ef71e06d9e90/8ab79/toram-memory-usage.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 25.821596244131456%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAAsTAAALEwEAmpwYAAABB0lEQVQY0yXJz07CMACA8T223OUwASXBwEO4MwRPID6CB7Ou6x82aVe6tuvWjkFSo3z5br+IYpQBQDAqywLlkPNT29rGaGN005jTTwkzQAgmBAOQcsbqWjZG348ao0MISZLEcfw0iVfL5WazCSFc/+us7fs+hLBer0ejh8fxeLfb3fV2u0WiqlzX7T/28/nL62LxPJslyZv3zjnXe6dqKTi/DMP2fbtaLafTyefhcB2G1lrvXFTLs6i4IEfBWMXZMFwuvZdnoVVttFK1lOp8/PouUsgr1nvnXfentTRaRbYx1hpGKcphBgDKIcphWRwxykXFbWPazlaY0gwiBEGaEowKSinBWqlfz6sE1vIP048AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="toram-memory-usage"
+        title="toram-memory-usage"
+        src="/static/8b1cd19f2fadf8aeac11ef71e06d9e90/8ab79/toram-memory-usage.png"
+        srcset="/static/8b1cd19f2fadf8aeac11ef71e06d9e90/53f68/toram-memory-usage.png 213w,
+/static/8b1cd19f2fadf8aeac11ef71e06d9e90/df70d/toram-memory-usage.png 425w,
+/static/8b1cd19f2fadf8aeac11ef71e06d9e90/8ab79/toram-memory-usage.png 615w"
+        sizes="(max-width: 615px) 100vw, 615px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>To make the 'toram' permanent you will have to edit GRUB and add another entry to the boot options. First open up the Disks application.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 256px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/bd909ef566d622609f2d2fb4b7235b8b/e3135/ubuntu-64-bit-2-2016-05-23-19-44-58-1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 103.28638497652582%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAIAAADJt1n/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEtElEQVQ4y03S/U8TdwDH8TNZMO19r+3RB6AU5KEWLdhK6T21d71re23v2rtrr6VFaGlBMZ0GUabgMzjc4mZkGlSsaNgy5yOCki1ZNh+GVbbM+Js/uPnD/paFmS1LXr9+8v7lA8132qc78XSbMn/4whFxH73JFUUoHib+LwKwDTAmwN4EwCSAywBPIiQ01dJatnaGzOyJvvGyv0hv2slrybCWDGuI//AajNd4o5qeuNYrwZgE4wog0oCE9m4tnUtMX8zPTJFjSX0wqMMFCxM1+qU6VqkPKg3BVGM4aQ1lmvheG59u4NJWLmPl+qxcv5WDLngm33/35q/1d2ufrOyxpDkj7qvrDrZQbo1d7hQ+5gfzPck9gXzenZLbgjjcgWs3ENptlHYb9On2A68fVn+v/vZkZmW0tRAyETlCmRk95UGcM/tnrk3N3Tg++835ryuTl3Z7VfdHbZ6a9p6adqzGjtXYobP2A9Uz379afPKob2G3SQ2bqIANi7TTmKFrf2zP8cz4dPbw2YGT5wamysQuBnUxqCuAulnUxaEuqGRJjjeXxltLY9aCagiHARFD/VHUJ6D+0a7CtH9swl8e85SOEHtH3LtiJiJmIuJmKmHxSWYfFNH5Uma+ty4qGpgIQrEfefq3yrPls4ol9EVx6tzw6cmR8REhfzBbHh3Yt18tyt1hb+02st5F1e2E4gam2JwqbVFzdQIPyLAGl0xs0ZlSreF8h5LrigccOG3vCTgwxoGxDozY4vbWO7GGLsLqghJooGBTBmzyQKMUQSheS0S1pKj3yyZWRgO8Dt9htDvN7Z2mNqexdXttq9PY5rY4ui0dOy0dUFTnS6ABxchJRjaCkLyWiMCkoPOLCC0jdESPO0BT82ZLi6a+A93itLQ7TW07zHaX2eE2b4V4hBRRRkSZmN4fgf8dA38cphVAhzZ7yurQ5yfOHBs9ImERr6XTZ+v2NXb7bd20zQMptcGhFnWoRS3YZBH4I1pSBHQc0DLCSBp/f2P8zfrrP96/e/vn2x8WHs6Qh74MTp4PHp0NHZ8Nn4QSKFOwKXmbvKshISJ+AdBxmJYBrSBMosY37Mpeu3x94erNG5XF1burN+Tzd1JX7qcr99OVpcwClDAEik3JQpPS1xCP65iNJqAVwCQBm4TZYl3sK3rvTf7gIn/oVv+pW9HJB7GTjxNnlsXTy8IpKAYoBeVklJMNrIQwMqAlmEkCLoNwKuB2G9nbvqFV/tCPZOpJj/CUTD6jlOeUvEbKv1AKJACfagz31QmZWj6lZ2XAyDCXRrgswqUBN2wMzjMHFsXPVnz9L3DhBaVUKeUlHn1FSuuUDMkGtticKjanhppUVR+WYfZDNqcLp0FwuDZ6SznxdHJhbezyWuLYc2HiuTDxQpioiker4lFIQblsgyCjbL5RyqC8Aj5kQ1mEzyLhiY7i4+z1p8N3fhq+vZq7+SA9fyc59yizsJyp3FOvQBJg0hvfjvWZRRUJZZDgh2UvwhfQyCV85K4y+618cSl1dTlTWUpfW1LnlzOVu6nLt5NzkAQzMgik9EEVCfXq+H+CG3JIpGAIzbkzP+euP8vfqw4+WC8urxdXfi2trJdWqoNLLwcf/g0miHCfACAurwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Ubuntu 64-bit (2)-2016-05-23-19-44-58"
+        title="Ubuntu 64-bit (2)-2016-05-23-19-44-58"
+        src="/static/bd909ef566d622609f2d2fb4b7235b8b/e3135/ubuntu-64-bit-2-2016-05-23-19-44-58-1.png"
+        srcset="/static/bd909ef566d622609f2d2fb4b7235b8b/53f68/ubuntu-64-bit-2-2016-05-23-19-44-58-1.png 213w,
+/static/bd909ef566d622609f2d2fb4b7235b8b/e3135/ubuntu-64-bit-2-2016-05-23-19-44-58-1.png 256w"
+        sizes="(max-width: 256px) 100vw, 256px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Mount the 128MB partition of your USB by clicking the Play button when it is highlighted:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 743px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/3b8520a43195a1b91d4461f53b9fe612/46468/screenshot-from-2016-05-23-19-45-17.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC1ElEQVQ4y3WRS2/TQBSF87d4iCaUR2HLGrGpYYvYsEKIh1oktiD+BQgkSkuhSNSx00KTtrGbJo0LJH7HbydxYnvmoHEDAiSudHTunRl9c2du6VL51NF85QwuzJ/D5YtlXFk4j4VLFVy8MFfU58tnUJ47XfhvVU68Mnca5XOnivrqwjzmK2edkihWD9bfr2JtdSXf+LhOaiJPajWB7O3VSbO5S/b366RR3yaiWCWCwBNR4Em1ukl4/jNp7LIze8U5WW7iy9ctvaQcdVp7jToa9R3ydXsbhwcH0NQ+bMvAOBkhjkMEvoNer4euoqDb7eL42zeoqoogDJFMEoyTMWXueq5ROlaUVqfdRutAJpLUxLGiwLZMBIEP17FhGhosS4dyrKDT6aCrdHHUPYJlWwjCAJ7vMVE/8KHpmlFK07SV5zmyLCPM0zTFdDoFyXP0ej8KkOs5GAxs2AMbA2dQ5I4zAIPMRBncMA2jBKCFkyD4IwghiKIQk5xCf3EXxrM7IJSCXZpnWbE/awRpOqWUUjiuY5QopS1WUErJzGfAHIHvIRwlcJ7fhvl0EZZlIYojgFJEUQTX80AIxXQ6oa7rwrbtEyAD/AvM8wxxHCEFYC7fgHbvGqI4RhzHRWdsCMPhsMgnk4SORiN24d/Amf9+dhgG8IMQ2sZLeMJbTKYTDIcxxuMRkmRciNVRGFKW62wofwLZv7Co13fw6OEDPFlewtLSY9xfWsbrd2vQVBWq2ofa76Pf6xXDiaMQURhQ5iYbCqVUnj01pZRmADLLNDOe38w+rL/P1tdWs5U3rzJx83PWbh9mhq5lvucWCnyvcM91Uvbfuq6pbMoq/hPJeIgocBH6DkxdRbvdRu/Hdxi6Bss0ik6ZGCwKA9bhsNTpdK5JknRLluVFSZI4WZa5piRxjUaDE4QqJwoCJ1R5rlYTuS/bW1xNFLgqzxdrvySKArdVE29++rRx/Se+JIZsi1R6fAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 19-45-17"
+        title="Screenshot from 2016-05-23 19-45-17"
+        src="/static/3b8520a43195a1b91d4461f53b9fe612/46468/screenshot-from-2016-05-23-19-45-17.png"
+        srcset="/static/3b8520a43195a1b91d4461f53b9fe612/53f68/screenshot-from-2016-05-23-19-45-17.png 213w,
+/static/3b8520a43195a1b91d4461f53b9fe612/df70d/screenshot-from-2016-05-23-19-45-17.png 425w,
+/static/3b8520a43195a1b91d4461f53b9fe612/46468/screenshot-from-2016-05-23-19-45-17.png 743w"
+        sizes="(max-width: 743px) 100vw, 743px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>The mounting location should now appear at the bottom-right. Click on this to browse to it.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 554px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5fbf58aa8ae60b234bf6db544eae3616/b4bb7/screenshot-from-2016-05-23-19-45-46.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 53.52112676056338%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVQoz5WOyY7UMBBA/blIc+AjOCCxSC3unNBckPgSbgxDptPjJHbH2WwnVXYmS9tOj5JWo0Fw4empVFZtJnc/7xjnaLCFrvsfAYG44IdOVrfv6i9vh5L58/l0mud5Ol1xG5d8XpmcO3nvbG+JX5apbdSn12p30/N4HZ7nZQnnK8457/0lX1aC996HMIwDKeumFUf7bWe/fjj++J7lRZalzp0uzcYYxlkuxDiOl/lxHBhjQgg0hqy7Qandjfr4asrpeb08vTwVwhJC+P10zi1h/YDtewKIXSWSz2/E7XvgdJjmttWI0Pd284q1vbUI0Go9PD0Zg1I2hLG0LItCqsH7tW5Nv8UX4nXRHyICMdYAgpJVWeRRFDHOj/nxEMcHSmlCk4Qmadp2LSD8Lemgk7Ku6yLPj/F+Hx8OSivbWzSI1phNMPgPEUhViqoSTV3mOd8/RL+iqCgL3WqttVRqU3Zagm5ANaDlFhuQFUBLOoCmKaWsq6rknDPOsiylCRVFwRh7pI80SVQWI72HNIL0AZIIsj3Qe1D1M7b8YcK8FOWVAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 19-45-46"
+        title="Screenshot from 2016-05-23 19-45-46"
+        src="/static/5fbf58aa8ae60b234bf6db544eae3616/b4bb7/screenshot-from-2016-05-23-19-45-46.png"
+        srcset="/static/5fbf58aa8ae60b234bf6db544eae3616/53f68/screenshot-from-2016-05-23-19-45-46.png 213w,
+/static/5fbf58aa8ae60b234bf6db544eae3616/df70d/screenshot-from-2016-05-23-19-45-46.png 425w,
+/static/5fbf58aa8ae60b234bf6db544eae3616/b4bb7/screenshot-from-2016-05-23-19-45-46.png 554w"
+        sizes="(max-width: 554px) 100vw, 554px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Navigate to /boot/grub and open up grub.cfg in gedit or your favourite editor.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 611px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/8e0e2ae44adf5a08a8b36333c724bbe9/a91ec/Screenshot-from-2016-05-23-19-46-18.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 96.71361502347418%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAADdElEQVQ4y52T227UVhSG/UJtQXRyUJsEUBIqSgJSC1UrnqEv0RsoatQLpBJFqlSaDIFxh8wMnXBTqRdV1YuiKGkCZOwZj4/j07bHxzl4tv/KngANSCViSb/W1tr2573+5c18/dnCb19dvSxev/5F48trV/hLF+f5pU8X+OVLi0da4JeXFvnLSxdyvb4+eu5weWnRuPjJ+dvMuZkJcbJwGnMz07j2+TLmz8/gwsIczs5N49zsFBbnZzE3O4UPz7yHycIpTE2cwkThg1zTk6dxdnYaH39UwNzMFApn3q8wxY27jY31n1As3h3VqmVa2WJpZatEH5ZZWq5U6OPHdbpdf0S36zX6qLZFWXbz5bpcLtF6vUbvFX8e/sI+QKm0WWIs0+Asy4BNbJokQyTJAMNkiEHkIeCeoBfF+G+MRiP0+wP0+304joskGWU5oWmKIAhZZnd3h+P5BtptgTqODdexQVwXjsLD+PUO2lwDhqEjCnyEvgfbNCBLInRNhdQWYBkGVFlOojCAKksss7PzhGs1ebRaTdrpqPA8F12vi66twfp9A6JmwPAi9IFcTjyEZBKYXghRt0HiAVTbTXoAdC9kGVWVOVWR0GzytNnk4XUddMMQ5K9tKBs3YKzfhPvwNvzSCrz7t+Bu3oK+fhOk9D309Ruwi9/CvL+S+A++g/TjNywjigInigIkqU0NozMG+h7I3p9o//0H7OoazOoa/NoqguoP8Kt3QCqred2tjetWdS0Ja6tQ7q2wDNd4zglCE4oi06zdTK5L4Efx2Muwl2sAIAHy3I2HcOM+/MEIWatO2EuyPSuIWYbjDrl2u5V7mA0lA2a51zs+XaQUoHScj9VTHH0LrkNY5vDwWQ5UVYWGoQ+v6+ZtvwCmafpWUUrHQNdlmX/2dvOWZVl8OWVNUxBF4YmBaZq+Au7v73E8z4HnGlRRZPh+Fx1NfQP4f3EM2BZanKrKecuOQ3JgdnPiOHo34NOD/dxDQWjRTkfLgYoiIQyDdwMeHOznHvI8R03TQBB4ME39jRO+gL7Vw+fPnnJCawzUdS01TSMVRSENwyAdv3+ieAVUFKmZ3RBNU5FNOfOTEAuDQR8njTQd/5yu65YZYlt7hFgJIVZAiBU5jh2Zph75vhclSRINh8Nj6vXiqNPpRB1dj3Rdj1RVjWzb9gzDgCzLxX8BUsgxCBU7fyUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 19-46-18"
+        title="Screenshot from 2016-05-23 19-46-18"
+        src="/static/8e0e2ae44adf5a08a8b36333c724bbe9/a91ec/Screenshot-from-2016-05-23-19-46-18.png"
+        srcset="/static/8e0e2ae44adf5a08a8b36333c724bbe9/53f68/Screenshot-from-2016-05-23-19-46-18.png 213w,
+/static/8e0e2ae44adf5a08a8b36333c724bbe9/df70d/Screenshot-from-2016-05-23-19-46-18.png 425w,
+/static/8e0e2ae44adf5a08a8b36333c724bbe9/a91ec/Screenshot-from-2016-05-23-19-46-18.png 611w"
+        sizes="(max-width: 611px) 100vw, 611px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>I have chosen to copy and paste the first menu entry and simply change it's name and add the toram option as you can see in this photo. Up to you how you would like to do this.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/848f4cadc32a0adb64397aaa886781b7/3fcec/screenshot-from-2016-05-23-19-47-19.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 81.2206572769953%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC7ElEQVQ4y52S3W7cRBiGfU1FoNDQRSKJhMpNAEeIUo5AqAe9hFZIbYJE1LBNkw1JQRzQFUghKk04rroSR0BEEu/aHs+P1/bM2GOv50Xj3U0Tfk4Y6dH3zVh+/M6MvXeWFn9bWe6k199e4itLHbH81jXh6spyR6wszfoLvNlZEFcXrojF11855+rCFdp547X62uKrX3sbG+v8i7V72HjwJXZ6W+htb2Kn9+ici/PebP53trc2sbvbw6PN7g+eVoooKVFo3QCw/5MarmmaJ54fxeQkiPD7yZl1dRhz+DFDPM7BMgmhCrBMgee6JS0qqLqB+/oFamfNTd331C/fEf1sD+roWysPtqEOtqGf7sAc7qE6egzz8w6qo29QHe7BPNuFOXyM8mAL5f5DlPvdlmK/W5v9LsSP3b6nHnxG9Fe3UDy8bfXGLcj1TyHXP0G+9jHy1ZuQqzeQr34EOWftJuT9G5D3PkR+933kd99ztZZ33kX8+Qd9L/b/JDQKEfpnNhUceZrA1YxTZDyGThOoMUetJZpSwRoNa4opVTmnRm0gx0nfI5SRkBAMR4EdhSEiErckaYYsl5BaI5MKmbu40uDfhp1ditS670VhSKIownA4tIJzJEkCzhjG4zHyLHO3jzzPkWUppJSojEEzmcDaZoZ1dSqUsu9RSgkhBEEQWCfmnLeyoihQlmVLXdfnvZM6ycV81tqXwiAIWmEUhXY0GoFxjjRN26RO3PbjMbIsQ5pmUEq1z4QQGKfpLKG9nDCaJQzCAEkiWpF7UcocSuu211q3uOQOt2bM9EwvCYUQxCXzh74NwwCMMTDOWrE7u7noslD/t5AyGrqzC8OwDsJgIoSYpGk6McZM3Gia5h/Mh+uttQ4zE37vEmZBEMD3fbftacIZlNL23HRRvExYzrcsUVXVpd9HKfWTxxl7Kjj/VXD+gnM2YDQeMEoHjE0RgrdrpycngygKB2enp20vOB/EhAyGvj/gjD6nND4+Pv5j9S93j2vz3nJwwwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Screenshot from 2016-05-23 19-47-19"
+        title="Screenshot from 2016-05-23 19-47-19"
+        src="/static/848f4cadc32a0adb64397aaa886781b7/d6170/screenshot-from-2016-05-23-19-47-19.png"
+        srcset="/static/848f4cadc32a0adb64397aaa886781b7/53f68/screenshot-from-2016-05-23-19-47-19.png 213w,
+/static/848f4cadc32a0adb64397aaa886781b7/df70d/screenshot-from-2016-05-23-19-47-19.png 425w,
+/static/848f4cadc32a0adb64397aaa886781b7/d6170/screenshot-from-2016-05-23-19-47-19.png 850w,
+/static/848f4cadc32a0adb64397aaa886781b7/3fcec/screenshot-from-2016-05-23-19-47-19.png 914w"
+        sizes="(max-width: 850px) 100vw, 850px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Finally reboot and check if the option appears:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/f1c6b4210c32c98fc18a9434c7096bd8/42a19/Ubuntu-64-bit-2-2016-05-23-19-48-41-1024x768.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAo0lEQVQoz9WRSw7DIAwFwdhELlYipAIiwP2vWQmUbJqP2lU7q7cZbJ6V+i201gCgNz6WEREAjDGIeO8DQM65lFJrba2VUtZ1zTmnlEIIqRNjBIAD2RgTYwwhPDve+2VZvPciwsyuIyLH8lj1esNRxGlJI7xXNfK9/M1kpRRuENEeiMhaS0T7/Y5la62IOOcenXmemXmaJu7cHGy8vf/8as4/8wJh0ggywAfjjwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Ubuntu 64-bit (2)-2016-05-23-19-48-41"
+        title="Ubuntu 64-bit (2)-2016-05-23-19-48-41"
+        src="/static/f1c6b4210c32c98fc18a9434c7096bd8/d6170/Ubuntu-64-bit-2-2016-05-23-19-48-41-1024x768.png"
+        srcset="/static/f1c6b4210c32c98fc18a9434c7096bd8/53f68/Ubuntu-64-bit-2-2016-05-23-19-48-41-1024x768.png 213w,
+/static/f1c6b4210c32c98fc18a9434c7096bd8/df70d/Ubuntu-64-bit-2-2016-05-23-19-48-41-1024x768.png 425w,
+/static/f1c6b4210c32c98fc18a9434c7096bd8/d6170/Ubuntu-64-bit-2-2016-05-23-19-48-41-1024x768.png 850w,
+/static/f1c6b4210c32c98fc18a9434c7096bd8/42a19/Ubuntu-64-bit-2-2016-05-23-19-48-41-1024x768.png 1024w"
+        sizes="(max-width: 850px) 100vw, 850px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p></div></article></main><footer class="footer container"><div><a href="#">Back To Top</a></div><div><a href="https://github.com/calvinbui/calvin.me" target="_blank" rel="noopener noreferrer">Source</a><a href="/rss.xml" target="_blank" rel="noopener noreferrer">RSS</a></div></footer></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" defer="" src="https://u.bui.services/script.js" data-website-id="90b1fd6b-e6ea-4725-848e-213b6cc123d2" data-auto-track="true" data-do-not-track="false"></script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/create-persistent-ubuntu-16-04-live-usb-even-boots-ram";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-2f1e5987209173d62c65.js"],"app":["/app-61c1ee04bb3e88ab05cc.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-49ba2a50c15e881b6592.js"],"component---src-pages-404-js":["/component---src-pages-404-js-f7fed71e0d47abada388.js"],"component---src-pages-categories-js":["/component---src-pages-categories-js-81bc16ccbb87bd23bb71.js"],"component---src-pages-index-js":["/component---src-pages-index-js-5cbf5b15eb5029bb6831.js"],"component---src-pages-tags-js":["/component---src-pages-tags-js-f3c9a3cebaa936e74666.js"],"component---src-templates-category-js":["/component---src-templates-category-js-d7cfff1b05fecbb997ad.js"],"component---src-templates-post-js":["/component---src-templates-post-js-047326168b0b0924c9ad.js"],"component---src-templates-tag-js":["/component---src-templates-tag-js-518d546729df5961d0a7.js"]};/*]]>*/</script><script src="/polyfill-2f1e5987209173d62c65.js" nomodule=""></script><script src="/component---src-templates-post-js-047326168b0b0924c9ad.js" async=""></script><script src="/47f38362120cd2cdba877e108f8a5f6ae3a5eef6-987220a318f43d21a416.js" async=""></script><script src="/9c7e749333147a39e3ef652a529fb524f3568be7-65a0b6f40c1d9029b999.js" async=""></script><script src="/0c428ae2-8645a111f436fabc2d8a.js" async=""></script><script src="/95b64a6e-b3956967be527516c6c3.js" async=""></script><script src="/1bfc9850-846e536cc7c42c63a083.js" async=""></script><script src="/app-61c1ee04bb3e88ab05cc.js" async=""></script><script src="/framework-57e92c176a31b228e386.js" async=""></script><script src="/webpack-runtime-4c40fe4d54b571656223.js" async=""></script></body></html>
