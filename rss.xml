@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Fri, 25 Jun 2021 07:29:22 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[More Open Source: Build, Hosting and Analytics]]></title><description><![CDATA[I've made changes to this blog's build, hosting and analytics to be more transparent. This blog has been open-source since moving to Jekyll back in 2016. Its source code (posts…]]></description><link>https://calvin.me/making-this-site-more-open-source</link><guid isPermaLink="false">https://calvin.me/making-this-site-more-open-source</guid><category><![CDATA[github actions]]></category><category><![CDATA[github pages]]></category><category><![CDATA[umami]]></category><pubDate>Sun, 30 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I&apos;ve made changes to this blog&apos;s build, hosting and analytics to be more transparent.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Fri, 25 Jun 2021 09:25:27 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[More Open Source: Build, Hosting and Analytics]]></title><description><![CDATA[I've made changes to this blog's build, hosting and analytics to be more transparent. This blog has been open-source since moving to Jekyll back in 2016. Its source code (posts…]]></description><link>https://calvin.me/making-this-site-more-open-source</link><guid isPermaLink="false">https://calvin.me/making-this-site-more-open-source</guid><category><![CDATA[github actions]]></category><category><![CDATA[github pages]]></category><category><![CDATA[umami]]></category><pubDate>Sun, 30 May 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I&apos;ve made changes to this blog&apos;s build, hosting and analytics to be more transparent.&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;This blog has been open-source since moving to Jekyll back in 2016. Its source code (posts, themes, images, etc.) are all publicly available. Anyone is free to take it and start their blog based on everything I&apos;ve done. The source code is available &lt;a href=&quot;https://github.com/calvinbui/calvin.me&quot;&gt;on GitHub&lt;/a&gt;. There is also a link in the footer of each page.&lt;/p&gt;
 &lt;h2 id=&quot;build&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#build&quot; aria-label=&quot;build permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Build&lt;/h2&gt;
@@ -293,11 +293,11 @@ every single file from the &lt;code class=&quot;language-text&quot;&gt;gh-pages&
 &lt;p&gt;StarTech has a collection of certified DisplayPort 1.4 cables in different lengths. They are also fairly priced and readily available.&lt;/p&gt;
 &lt;p&gt;For my PC, I needed a DP to DP cable. This cable is sold in many lengths. I got the 2M cable which cost $35. I also got a 1M cable for the DP Repeater which cost $25.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/cables/dp14mm1m&quot;&gt;https://www.startech.com/en-au/cables/dp14mm1m&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/cables/dp14mm2m&quot;&gt;https://www.startech.com/en-au/cables/dp14mm2m&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/cables/dp14mm3m&quot;&gt;https://www.startech.com/en-au/cables/dp14mm3m&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/cables/dp14mm4m&quot;&gt;https://www.startech.com/en-au/cables/dp14mm4m&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/cables/dp14mm5m&quot;&gt;https://www.startech.com/en-au/cables/dp14mm5m&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/cables/dp14mm1m&quot;&gt;dp14mm1m&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/cables/dp14mm2m&quot;&gt;dp14mm2m&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/cables/dp14mm3m&quot;&gt;dp14mm3m&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/cables/dp14mm4m&quot;&gt;dp14mm4m&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/cables/dp14mm5m&quot;&gt;dp14mm5m&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -334,8 +334,8 @@ every single file from the &lt;code class=&quot;language-text&quot;&gt;gh-pages&
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;For my Mac, I needed a DP to USB-C cable. I liked this one because it was also reversible (USB-C to DP or DP to USB-C). I got the 2M cable which cost $55&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/audio-video-products/cdp2dp141mbd&quot;&gt;https://www.startech.com/en-au/audio-video-products/cdp2dp141mbd&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/audio-video-products/cdp2dp142mbd&quot;&gt;https://www.startech.com/en-au/audio-video-products/cdp2dp142mbd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/audio-video-products/cdp2dp141mbd&quot;&gt;cdp2dp141mbd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.startech.com/en-au/audio-video-products/cdp2dp142mbd&quot;&gt;cdp2dp142mbd&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -2280,22 +2280,20 @@ every single file from the &lt;code class=&quot;language-text&quot;&gt;gh-pages&
      id: 11082528084113358057
   state: ONLINE
  status: The pool was last accessed by another system.
- action: The pool can be imported using its name or numeric identifier and
-	the &apos;-f&apos; flag.
-   see: http://zfsonlinux.org/msg/ZFS-8000-EY
+ action: The pool can be imported using its name or numeric identifier and the &apos;-f&apos; flag. see: http://zfsonlinux.org/msg/ZFS-8000-EY
  config:
 
-	files       ONLINE
-	  raidz2-0  ONLINE
-	    sdi     ONLINE
-	    sdk     ONLINE
-	    sdj     ONLINE
-	    sdd     ONLINE
-	    sda     ONLINE
-	    sdm     ONLINE
-	    sdl     ONLINE
-	    sdc     ONLINE
-	    sdb     ONLINE&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+  files       ONLINE
+    raidz2-0  ONLINE
+      sdi     ONLINE
+      sdk     ONLINE
+      sdj     ONLINE
+      sdd     ONLINE
+      sda     ONLINE
+      sdm     ONLINE
+      sdl     ONLINE
+      sdc     ONLINE
+      sdb     ONLINE&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;I imported the pool with the special &lt;code class=&quot;language-text&quot;&gt;-d /dev/disk/by-id&lt;/code&gt; option so it auto-mounts after reboots:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell-session&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell-session line-numbers&quot;&gt;&lt;code class=&quot;language-shell-session&quot;&gt;&lt;span class=&quot;token command&quot;&gt;&lt;span class=&quot;token shell-symbol important&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;token bash language-bash&quot;&gt;zpool &lt;span class=&quot;token function&quot;&gt;import&lt;/span&gt; -f -d /dev/disk/by-id files&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;I also performed an upgrade to get the latest features:&lt;/p&gt;
@@ -19965,7 +19963,7 @@ Had to get the N40L to run vCenter to edit the settings on the other host. Canno
 &lt;!-- more --&gt;
 &lt;p&gt;WordPress provides a new default theme every year  which strives to bring out the most important blogging principles and features as possible. With the arrival of WordPress 4.1, they bring along Twenty Fifteen, the replacement of the last theme Twenty Fourteen.&lt;/p&gt;
 &lt;p&gt;I really wanted a theme that could flesh my content in a easily readable and presentable way. These are the problems I are stopping me switching to Twenty Fifteen:&lt;/p&gt;
-&lt;h3 id=&quot;1-everything-is-a-big&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-everything-is-a-big&quot; aria-label=&quot;1 everything is a big permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. Everything is a big&lt;/h3&gt;
+&lt;h3 id=&quot;everything-is-big&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#everything-is-big&quot; aria-label=&quot;everything is big permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Everything is big&lt;/h3&gt;
 &lt;p&gt;The font is a lot bigger than Twenty Fourteen but amazing still fits everything Twenty Fourteen did. It feels if I&apos;m just trying to make content for the sake of it, like when you write a report and waffle on and on to pad the word count.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -20000,7 +19998,7 @@ Had to get the N40L to run vCenter to edit the settings on the other host. Canno
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;### 2. Mobile theme&lt;/p&gt;
+&lt;h3 id=&quot;mobile-theme&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#mobile-theme&quot; aria-label=&quot;mobile theme permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Mobile theme&lt;/h3&gt;
 &lt;p&gt;When on your mobile, the Twenty Fourteen theme nicely compacted your posts into a list, only showing their title, date and author.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Viewing Twenty Fourteen on a Galaxy S4&lt;/em&gt;:&lt;/p&gt;
 &lt;p&gt;&lt;span
@@ -20064,7 +20062,7 @@ Had to get the N40L to run vCenter to edit the settings on the other host. Canno
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Now if I&apos;m on a mobile, I&apos;d prefer the most compact and easily navigable layout as possible - which Twenty Fourteen does better than Twenty Fifteen. On a tablet this looks okay but not on mobiles.&lt;/p&gt;
-&lt;h3 id=&quot;3-existing-featured-images-from-twenty-fourteen-dont-stretch&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-existing-featured-images-from-twenty-fourteen-dont-stretch&quot; aria-label=&quot;3 existing featured images from twenty fourteen dont stretch permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Existing Featured Images from Twenty Fourteen don&apos;t stretch&lt;/h3&gt;
+&lt;h3 id=&quot;existing-featured-images-from-twenty-fourteen-dont-stretch&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#existing-featured-images-from-twenty-fourteen-dont-stretch&quot; aria-label=&quot;existing featured images from twenty fourteen dont stretch permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Existing Featured Images from Twenty Fourteen don&apos;t stretch&lt;/h3&gt;
 &lt;p&gt;This is a bit annoying, creating a lump of white space on either side of the image&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
@@ -20609,7 +20607,7 @@ Had to get the N40L to run vCenter to edit the settings on the other host. Canno
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Both these commands will generate a certificate and key file valid for 365 days (1 year) within the directory you ran the command. Increasing 365 to 3650 would make it valid for 10 years.&lt;/p&gt;
 &lt;p&gt;There are a variety of commands available to convert your .CRT and .KEY file into another encoding format. The .CRT and .KEY files are definitely the most popular option but I&apos;ve had situations where a .PVK or .PEM file was needed (Sonarr I&apos;m looking at you!). SSLShopper has a &lt;a href=&quot;https://www.sslshopper.com/article-most-common-openssl-commands.html&quot;&gt;guide for these commands&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;encrypt-everything-everything&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#encrypt-everything-everything&quot; aria-label=&quot;encrypt everything everything permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Encrypt Everything. EVERYTHING.&lt;/h2&gt;
+&lt;h2 id=&quot;encrypt-everythingeverything&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#encrypt-everythingeverything&quot; aria-label=&quot;encrypt everythingeverything permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Encrypt Everything...EVERYTHING&lt;/h2&gt;
 &lt;p&gt;With a (unsigned) certificate in one hand and a key in the other (sorry people with no hands), you can now encrypt everything you want...as long as it supports it. Sure sure you should generate new certificates for every new thing but does it really matter if its only going to be private? The fact that data will be encrypted is well, good enough for a home network.&lt;/p&gt;
 &lt;p&gt;Once the certificate is ready, locked, and loaded...it&apos;s time to deploy.&lt;/p&gt;
 &lt;p&gt;Here is an example of how you can deploy SSL to encrypt the front-end of several applications:&lt;/p&gt;
