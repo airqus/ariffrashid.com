@@ -297,7 +297,7 @@
 <p>There are two problems with vnstat, it does not have a database and it still lists the old interfaces.</p>
 <p>To create the database, run these two commands:</p>
 <div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">mkdir -p /var/lib/vnstat
-/usr/local/bin/vnstat -u -i vmx0 # replace vmx0 with your preferred interface</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+</span><span class="token command"><span class="token info punctuation"><span class="token path">/usr/local/bin/vnstat -u -i vmx0 </span></span><span class="token shell-symbol important">#</span> <span class="token bash language-bash">replace vmx0 with your preferred interface</span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
 <p>To fix the issue with the old interfaces, edit the file /usr/local/www/vnstat2/config.php where it holds the list of interfaces.</p>
 <div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">vi /usr/local/www/vnstat2/config.php</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
 <p>You will need to change the following line to match your new interfaces:</p>

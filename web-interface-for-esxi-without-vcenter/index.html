@@ -66,9 +66,9 @@
 <ul>
 <li>On ESXi hosts which are assigned a VMware vSphere Hypervisor license, all modification operations will fail silently. We are working on a solution to this issue.</li>
 <li>On ESXi hosts which have a sub-domain name with large, shared cookies a web console session may fail to initialize. A workaround is to clear cookies or run the host client in an incognito-type window.</li>
-<li>For ESXi 5.5U2 and prior, and ESXi 6.0 hosts upgraded from any 5.5U2 or prior version, you will get a 503 error returned after visiting <code class="language-text">https://&lt;esxhost&gt;/ui/</code>. To resolve this issue, please remove the line starting with /ui from /etc/vmware/rhttpproxy/endpoints.conf and restart rhttpproxy with /etc/init.d/rhttpproxy restart</li>
+<li>For ESXi 5.5U2 and prior, and ESXi 6.0 hosts upgraded from any 5.5U2 or prior version, you will get a 503 error returned after visiting <code class="language-text">https://&lt;esxhost>/ui/</code>. To resolve this issue, please remove the line starting with /ui from /etc/vmware/rhttpproxy/endpoints.conf and restart rhttpproxy with /etc/init.d/rhttpproxy restart</li>
 <li>For ESXi 5.5 hosts, in-browser consoles are not supported. Please use VMRC to access guest VM consoles.</li>
-<li>For ESXi 5.5U2 and prior hosts, you must ensure to append a trailing / (forward slash) to the URL after /ui. The URL must be <code class="language-text">https://&lt;esxhost&gt;/ui/</code></li>
+<li>For ESXi 5.5U2 and prior hosts, you must ensure to append a trailing / (forward slash) to the URL after /ui. The URL must be <code class="language-text">https://&lt;esxhost>/ui/</code></li>
 <li>For some Windows guests, send Ctrl-Alt-Del does not work.</li>
 </ul>
 <p>The first issue is a real killer. Only hosts running the evaluation license can perform power operations at the moment. Hopefully the next update fixes this as the evaluation license only lasts 60 days.</p>
@@ -90,7 +90,7 @@
 <div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">esxcli software vib install -v /tmp/esxui_signed.vib</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
 <p>Making sure you include the full path name to the file or else installation will fail</p>
 <h2 id="try-it-out" style="position:relative;"><a href="#try-it-out" aria-label="try it out permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Try it out</h2>
-<p>If the VIB installation completes successfully, you should now be able to navigate a web browser to <code class="language-text">https://&lt;esxip&gt;/ui</code> and the login page should be displayed.</p>
+<p>If the VIB installation completes successfully, you should now be able to navigate a web browser to <code class="language-text">https://&lt;esxip>/ui</code> and the login page should be displayed.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 300px; "

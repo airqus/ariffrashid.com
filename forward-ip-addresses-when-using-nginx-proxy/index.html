@@ -54,33 +54,33 @@
 <h2 id="edit-the-proxy-configuration" style="position:relative;"><a href="#edit-the-proxy-configuration" aria-label="edit the proxy configuration permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Edit the proxy configuration</h2>
 <p>First thing is to edit your proxy server block located on the proxy server. Here's what mine basically looks like:</p>
 <div class="gatsby-highlight" data-language="nginx"><pre style="counter-reset: linenumber NaN" class="language-nginx line-numbers"><code class="language-nginx"><span class="token comment">## redirect calvin.me to https</span>
-<span class="token keyword">server</span> <span class="token punctuation">{</span>
-  <span class="token keyword">listen</span>      <span class="token number">80</span> default_server<span class="token punctuation">;</span>
-  <span class="token keyword">server_name</span> calvin<span class="token punctuation">.</span>me<span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token number">301</span> <span class="token keyword">https</span><span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>calvin<span class="token punctuation">.</span>me<span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+  <span class="token directive"><span class="token keyword">listen</span>      <span class="token number">80</span> default_server</span><span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">server_name</span> calvin.me</span><span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">return</span> <span class="token number">301</span> https://calvin.me</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment">## redirect www prefix to https</span>
-<span class="token keyword">server</span> <span class="token punctuation">{</span>
-  <span class="token keyword">listen</span>      <span class="token number">80</span><span class="token punctuation">;</span>
-  <span class="token keyword">server_name</span> www<span class="token punctuation">.</span>calvin<span class="token punctuation">.</span>me<span class="token punctuation">;</span>
-  <span class="token keyword">return</span> <span class="token number">301</span> <span class="token keyword">https</span><span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>www<span class="token punctuation">.</span>calvin<span class="token punctuation">.</span>me<span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+  <span class="token directive"><span class="token keyword">listen</span>      <span class="token number">80</span></span><span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">server_name</span> www.calvin.me</span><span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">return</span> <span class="token number">301</span> https://www.calvin.me</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">server</span> <span class="token punctuation">{</span>
+<span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
   <span class="token comment">#listen 80;</span>
-  <span class="token keyword">listen</span> <span class="token number">443</span> <span class="token keyword">ssl</span> default_server<span class="token punctuation">;</span>
-  <span class="token keyword">server_name</span> calvin<span class="token punctuation">.</span>me<span class="token punctuation">;</span>
-  <span class="token keyword">ssl_certificate</span> <span class="token operator">/</span>etc<span class="token operator">/</span>nginx<span class="token operator">/</span><span class="token keyword">ssl</span><span class="token operator">/</span>calvin<span class="token punctuation">.</span>me<span class="token punctuation">.</span>crt<span class="token punctuation">;</span>
-  <span class="token keyword">ssl_certificate_key</span> <span class="token operator">/</span>etc<span class="token operator">/</span>nginx<span class="token operator">/</span><span class="token keyword">ssl</span><span class="token operator">/</span>calvin<span class="token punctuation">.</span>me<span class="token punctuation">.</span>key<span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">listen</span> <span class="token number">443</span> ssl default_server</span><span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">server_name</span> calvin.me</span><span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">ssl_certificate</span> /etc/nginx/ssl/calvin.me.crt</span><span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">ssl_certificate_key</span> /etc/nginx/ssl/calvin.me.key</span><span class="token punctuation">;</span>
 
-  <span class="token keyword">location</span> <span class="token operator">/</span> <span class="token punctuation">{</span>
-    <span class="token keyword">proxy_set_header</span>  Host <span class="token variable">$host</span><span class="token punctuation">;</span>
-    <span class="token keyword">proxy_set_header</span>  X<span class="token operator">-</span>Real<span class="token operator">-</span>IP <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
-    <span class="token keyword">proxy_set_header</span>  X<span class="token operator">-</span>Forwarded<span class="token operator">-</span>Proto <span class="token keyword">https</span><span class="token punctuation">;</span>
-    <span class="token keyword">proxy_set_header</span>  X<span class="token operator">-</span>Forwarded<span class="token operator">-</span>For <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
-    <span class="token keyword">proxy_set_header</span>  X<span class="token operator">-</span>Forwarded<span class="token operator">-</span>Host <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
-    <span class="token keyword">proxy_pass</span>        <span class="token keyword">http</span><span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>wp<span class="token punctuation">.</span>calvin<span class="token punctuation">.</span>me<span class="token punctuation">;</span>
+  <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">proxy_set_header</span>  Host <span class="token variable">$host</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">proxy_set_header</span>  X-Real-IP <span class="token variable">$remote_addr</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">proxy_set_header</span>  X-Forwarded-Proto https</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">proxy_set_header</span>  X-Forwarded-For <span class="token variable">$remote_addr</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">proxy_set_header</span>  X-Forwarded-Host <span class="token variable">$remote_addr</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">proxy_pass</span>        http://wp.calvin.me</span><span class="token punctuation">;</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>It's very important to include these three lines:</p>
@@ -91,13 +91,13 @@
 </ul>
 <h2 id="edit-your-proxied-server-configuration" style="position:relative;"><a href="#edit-your-proxied-server-configuration" aria-label="edit your proxied server configuration permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Edit your proxied server configuration</h2>
 <p>Now on your proxied server's configuration you'll need to include three importants lines within the server block, but outside of any location blocks.</p>
-<div class="gatsby-highlight" data-language="nginx"><pre style="counter-reset: linenumber NaN" class="language-nginx line-numbers"><code class="language-nginx"><span class="token keyword">server</span> <span class="token punctuation">{</span>
+<div class="gatsby-highlight" data-language="nginx"><pre style="counter-reset: linenumber NaN" class="language-nginx line-numbers"><code class="language-nginx"><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
     <span class="token comment">#other junk here blah blah</span>
-    <span class="token keyword">set_real_ip_from</span> <span class="token number">10.0</span><span class="token number">.0</span><span class="token number">.0</span><span class="token operator">/</span><span class="token number">8</span><span class="token punctuation">;</span>
-    <span class="token keyword">real_ip_header</span> X<span class="token operator">-</span>Real<span class="token operator">-</span>IP<span class="token punctuation">;</span>
-    real_ip_recursive on<span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">set_real_ip_from</span> 10.0.0.0/8</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">real_ip_header</span> X-Real-IP</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">real_ip_recursive</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
 
-    <span class="token keyword">location</span> <span class="token operator">/</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
        <span class="token comment">#some junk here</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>

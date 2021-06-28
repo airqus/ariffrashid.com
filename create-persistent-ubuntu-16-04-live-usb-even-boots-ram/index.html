@@ -63,7 +63,7 @@
 * Update UI and frontend code to drop the persistence widgets.
 * Drop Erase Disk widgets too.
 
--- Mathieu Trudel-Lapierre &lt;mathieu-tl@ubuntu.com&gt;  Fri, 11 Dec 2015 12:37:41 -0500</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+-- Mathieu Trudel-Lapierre &lt;mathieu-tl@ubuntu.com>  Fri, 11 Dec 2015 12:37:41 -0500</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p><em>Comparison of Startup Disk Creator from 15.10 to 16.04</em>:</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -100,9 +100,9 @@
 <h3 id="install-the-mkusb-tool" style="position:relative;"><a href="#install-the-mkusb-tool" aria-label="install the mkusb tool permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Install the mkusb tool</h3>
 <p>Open up terminal and run the following commands:</p>
 <p>If you run standard Ubuntu, you need an extra instruction to get the repository Universe. (Kubuntu, Lubuntu ... Xubuntu have the repository Universe activated automatically.)</p>
-<div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">sudo add-apt-repository universe  # only for standard Ubuntu
+<div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token command"><span class="token info punctuation"><span class="token path">sudo add-apt-repository universe  </span></span><span class="token shell-symbol important">#</span> <span class="token bash language-bash">only <span class="token keyword">for</span> standard Ubuntu</span></span>
 
-sudo add-apt-repository ppa:mkusb/ppa  # and press Enter
+<span class="token output">sudo add-apt-repository ppa:mkusb/ppa  # and press Enter
 sudo apt-get update
 sudo apt-get install mkusb</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>and if you want also the command line version without graphics:</p>

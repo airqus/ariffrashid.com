@@ -386,54 +386,54 @@
 </ul>
 <h3 id="milestone-nginx-proxy-configuration" style="position:relative;"><a href="#milestone-nginx-proxy-configuration" aria-label="milestone nginx proxy configuration permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Milestone NGINX Proxy Configuration</h3>
 <p>If by chance you are like me and perhaps you're running other web servers at home, here's a working NGINX Proxy configuration. I found other configurations would allow the mobile apps to work but the web interface would show cameras as unavailable. Using a proxy also meant I didn't have to put in the port numbers (8081, 8082) when accessing the web interface.</p>
-<div class="gatsby-highlight" data-language="nginx"><pre style="counter-reset: linenumber NaN" class="language-nginx line-numbers"><code class="language-nginx"><span class="token keyword">server</span> <span class="token punctuation">{</span>
-    <span class="token keyword">listen</span> <span class="token number">80</span><span class="token punctuation">;</span>
-    <span class="token keyword">listen</span> <span class="token number">8081</span><span class="token punctuation">;</span>
-    <span class="token keyword">server_name</span> xxxx<span class="token punctuation">;</span>
-    <span class="token keyword">root</span> <span class="token operator">/</span>var<span class="token operator">/</span>www<span class="token operator">/</span>nvr<span class="token operator">/</span><span class="token punctuation">.</span>well<span class="token operator">-</span>known<span class="token punctuation">;</span>
+<div class="gatsby-highlight" data-language="nginx"><pre style="counter-reset: linenumber NaN" class="language-nginx line-numbers"><code class="language-nginx"><span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">listen</span> <span class="token number">80</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">listen</span> <span class="token number">8081</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">server_name</span> xxxx</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">root</span> /var/www/nvr/.well-known</span><span class="token punctuation">;</span>
 
-    <span class="token keyword">location</span> <span class="token operator">/</span> <span class="token punctuation">{</span>
-        <span class="token keyword">proxy_pass</span> <span class="token keyword">http</span><span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>vms<span class="token operator">-</span>dmz<span class="token punctuation">:</span><span class="token number">8081</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_buffering</span> off<span class="token punctuation">;</span>
-        <span class="token keyword">proxy_http_version</span> <span class="token number">1.1</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> Upgrade <span class="token variable">$http_upgrade</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> Connection <span class="token string">"upgrade"</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> Host <span class="token variable">$host</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> X<span class="token operator">-</span>Forwarded<span class="token operator">-</span>Proto <span class="token variable">$scheme</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> X<span class="token operator">-</span>Forwarded<span class="token operator">-</span>For <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> X<span class="token operator">-</span>Forwarded<span class="token operator">-</span>Port <span class="token variable">$server_port</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> X<span class="token operator">-</span>Request<span class="token operator">-</span>Start <span class="token variable">$msec</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> X<span class="token operator">-</span>Real<span class="token operator">-</span>IP <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">proxy_pass</span> http://vms-dmz:8081</span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_buffering</span> <span class="token boolean">off</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_http_version</span> 1.1</span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> Upgrade <span class="token variable">$http_upgrade</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> Connection <span class="token string">"upgrade"</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> Host <span class="token variable">$host</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Forwarded-Proto <span class="token variable">$scheme</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Forwarded-For <span class="token variable">$remote_addr</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Forwarded-Port <span class="token variable">$server_port</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Request-Start <span class="token variable">$msec</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Real-IP <span class="token variable">$remote_addr</span></span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
-    <span class="token keyword">location</span> <span class="token operator">/</span><span class="token punctuation">.</span>well<span class="token operator">-</span>known <span class="token punctuation">{</span>
-        <span class="token keyword">alias</span> <span class="token operator">/</span>var<span class="token operator">/</span>www<span class="token operator">/</span>nvr<span class="token operator">/</span><span class="token punctuation">.</span>well<span class="token operator">-</span>known<span class="token punctuation">;</span> <span class="token comment"># have this as the webroot</span>
+    <span class="token directive"><span class="token keyword">location</span> /.well-known</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">alias</span> /var/www/nvr/.well-known</span><span class="token punctuation">;</span> <span class="token comment"># have this as the webroot</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">server</span> <span class="token punctuation">{</span>
-    <span class="token keyword">listen</span> <span class="token number">443</span> <span class="token keyword">ssl</span><span class="token punctuation">;</span>
-    <span class="token keyword">listen</span> <span class="token number">8082</span> <span class="token keyword">ssl</span><span class="token punctuation">;</span>
-    <span class="token keyword">server_name</span> xxxx<span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">server</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">listen</span> <span class="token number">443</span> ssl</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">listen</span> <span class="token number">8082</span> ssl</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">server_name</span> xxxx</span><span class="token punctuation">;</span>
 
-    <span class="token keyword">ssl_certificate_key</span> <span class="token operator">/</span>etc<span class="token operator">/</span>letsencrypt<span class="token operator">/</span>live<span class="token operator">/</span>xxx<span class="token operator">/</span>privkey<span class="token punctuation">.</span>pem<span class="token punctuation">;</span>
-    <span class="token keyword">ssl_trusted_certificate</span> <span class="token operator">/</span>etc<span class="token operator">/</span>letsencrypt<span class="token operator">/</span>live<span class="token operator">/</span>xxx<span class="token operator">/</span>chain<span class="token punctuation">.</span>pem<span class="token punctuation">;</span>
-    <span class="token keyword">ssl_certificate</span> <span class="token operator">/</span>etc<span class="token operator">/</span>letsencrypt<span class="token operator">/</span>live<span class="token operator">/</span>xxx<span class="token operator">/</span>fullchain<span class="token punctuation">.</span>pem<span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">ssl_certificate_key</span> /etc/letsencrypt/live/xxx/privkey.pem</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">ssl_trusted_certificate</span> /etc/letsencrypt/live/xxx/chain.pem</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">ssl_certificate</span> /etc/letsencrypt/live/xxx/fullchain.pem</span><span class="token punctuation">;</span>
 
-    <span class="token keyword">root</span> <span class="token operator">/</span>var<span class="token operator">/</span>www<span class="token operator">/</span>nvr<span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">root</span> /var/www/nvr</span><span class="token punctuation">;</span>
 
-    <span class="token keyword">location</span> <span class="token operator">/</span> <span class="token punctuation">{</span>
-        <span class="token keyword">proxy_pass</span> <span class="token keyword">https</span><span class="token punctuation">:</span><span class="token operator">/</span><span class="token operator">/</span>vms<span class="token operator">-</span>dmz<span class="token punctuation">:</span><span class="token number">8082</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_buffering</span> off<span class="token punctuation">;</span>
-        <span class="token keyword">proxy_http_version</span> <span class="token number">1.1</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> Upgrade <span class="token variable">$http_upgrade</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> Connection <span class="token string">"upgrade"</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> Host <span class="token variable">$host</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> X<span class="token operator">-</span>Forwarded<span class="token operator">-</span>Proto <span class="token variable">$scheme</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> X<span class="token operator">-</span>Forwarded<span class="token operator">-</span>For <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> X<span class="token operator">-</span>Forwarded<span class="token operator">-</span>Port <span class="token variable">$server_port</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> X<span class="token operator">-</span>Request<span class="token operator">-</span>Start <span class="token variable">$msec</span><span class="token punctuation">;</span>
-        <span class="token keyword">proxy_set_header</span> X<span class="token operator">-</span>Real<span class="token operator">-</span>IP <span class="token variable">$remote_addr</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
+        <span class="token directive"><span class="token keyword">proxy_pass</span> https://vms-dmz:8082</span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_buffering</span> <span class="token boolean">off</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_http_version</span> 1.1</span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> Upgrade <span class="token variable">$http_upgrade</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> Connection <span class="token string">"upgrade"</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> Host <span class="token variable">$host</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Forwarded-Proto <span class="token variable">$scheme</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Forwarded-For <span class="token variable">$remote_addr</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Forwarded-Port <span class="token variable">$server_port</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Request-Start <span class="token variable">$msec</span></span><span class="token punctuation">;</span>
+        <span class="token directive"><span class="token keyword">proxy_set_header</span> X-Real-IP <span class="token variable">$remote_addr</span></span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <h3 id="network-diagram" style="position:relative;"><a href="#network-diagram" aria-label="network diagram permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Network Diagram</h3>

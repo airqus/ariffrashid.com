@@ -64,9 +64,9 @@
 # This is an example of a backup job being run everyday at 2:00 a.m.
 # change according to your needs and run ./xsibackup --update-cron
 # min hour day mon dow command
-# 0 2 * * * &quot;/vmfs/volumes/datastore1/xsi-dir/jobs/001&quot;
-0 4 * * * &quot;/vmfs/volumes/files/Misc/VMs/xsi-dir/jobs/002&quot;
-0 6 * * * /bin/python /vmfs/volumes/files/Misc/VMs/clean_backups.py -p &#39;/vmfs/volumes/files/Misc/VMs/&#39; -r &#39;backup*&#39; -k 5</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+# 0 2 * * * "/vmfs/volumes/datastore1/xsi-dir/jobs/001"
+0 4 * * * "/vmfs/volumes/files/Misc/VMs/xsi-dir/jobs/002"
+0 6 * * * /bin/python /vmfs/volumes/files/Misc/VMs/clean_backups.py -p '/vmfs/volumes/files/Misc/VMs/' -r 'backup*' -k 5</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <ol start="4">
 <li>Install xsibackup's crontab: <code class="language-text">./xsibackup --install-cron</code></li>
 <li>Update xsibackup's crontab: <code class="language-text">./xsibackup --update-cron</code></li>

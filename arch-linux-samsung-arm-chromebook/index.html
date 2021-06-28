@@ -124,17 +124,17 @@ calvin ALL=(ALL) ALL</span></code><span aria-hidden="true" class="line-numbers-r
 <p>Install the driver first:</p>
 <div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">pacman -S xf86-input-synaptics</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
 <p>Then set-up the config file at <em>/etc/X11/xorg.conf.d/70-synaptics.conf</em></p>
-<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Section &quot;InputClass&quot;
-        Identifier &quot;touchpad&quot;
-        Driver &quot;synaptics&quot;
-        MatchIsTouchpad &quot;on&quot;
-        Option &quot;FingerHigh&quot; &quot;5&quot;
-        Option &quot;FingerLow&quot; &quot;5&quot;
-        Option &quot;TapButton1&quot; &quot;1&quot;
-        Option &quot;TapButton2&quot; &quot;3&quot;
-        Option &quot;TapButton3&quot; &quot;2&quot;
-        Option &quot;HorizTwoFingerScroll&quot; &quot;on&quot;
-        Option &quot;VertTwoFingerScroll&quot; &quot;on&quot;
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">Section "InputClass"
+        Identifier "touchpad"
+        Driver "synaptics"
+        MatchIsTouchpad "on"
+        Option "FingerHigh" "5"
+        Option "FingerLow" "5"
+        Option "TapButton1" "1"
+        Option "TapButton2" "3"
+        Option "TapButton3" "2"
+        Option "HorizTwoFingerScroll" "on"
+        Option "VertTwoFingerScroll" "on"
 EndSection</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>Reboot when done.</p>
 <p>This should enable a good working trackpad on boot with tapping working. Afterwards, you can edit trackpad settings under '<em>System > Preferences  > Hardware > Mouse</em>' to enable two finger scrolling, two finger taps, three finger taps, etc.</p>
@@ -348,15 +348,15 @@ Shortcut F7</code><span aria-hidden="true" class="line-numbers-rows" style="whit
 <p>Install the relevant power manager for your environment, e.g. for <em>MATE</em> it should be:</p>
 <div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">pacman -S mate-power-manager</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
 <p>The trackpad has a tendency to wake up the computer as almost any movement to the computer will cause it to activate. To disable it from waking the computer during sleep, I use a systemd unit file <em>/etc/systemd/system/tp-wake-disable.service</em></p>
-<div class="gatsby-highlight" data-language="ini"><pre style="counter-reset: linenumber NaN" class="language-ini line-numbers"><code class="language-ini"><span class="token selector">[Unit]</span>
-<span class="token constant">Description</span><span class="token attr-value"><span class="token punctuation">=</span>Disable trackpad waking computer</span>
+<div class="gatsby-highlight" data-language="ini"><pre style="counter-reset: linenumber NaN" class="language-ini line-numbers"><code class="language-ini"><span class="token header"><span class="token punctuation">[</span><span class="token section-name selector">Unit</span><span class="token punctuation">]</span></span>
+<span class="token key attr-name">Description</span><span class="token punctuation">=</span><span class="token value attr-value">Disable trackpad waking computer</span>
 
-<span class="token selector">[Service]</span>
-<span class="token constant">Type</span><span class="token attr-value"><span class="token punctuation">=</span>oneshot</span>
-<span class="token constant">ExecStart</span><span class="token attr-value"><span class="token punctuation">=</span>/bin/sh -c "echo disabled > /sys/devices/12c70000.i2c/i2c-1/1-0067/power/wakeup"</span>
+<span class="token header"><span class="token punctuation">[</span><span class="token section-name selector">Service</span><span class="token punctuation">]</span></span>
+<span class="token key attr-name">Type</span><span class="token punctuation">=</span><span class="token value attr-value">oneshot</span>
+<span class="token key attr-name">ExecStart</span><span class="token punctuation">=</span><span class="token value attr-value">/bin/sh -c "echo disabled > /sys/devices/12c70000.i2c/i2c-1/1-0067/power/wakeup"</span>
 
-<span class="token selector">[Install]</span>
-<span class="token constant">WantedBy</span><span class="token attr-value"><span class="token punctuation">=</span>multi-user.target</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
+<span class="token header"><span class="token punctuation">[</span><span class="token section-name selector">Install</span><span class="token punctuation">]</span></span>
+<span class="token key attr-name">WantedBy</span><span class="token punctuation">=</span><span class="token value attr-value">multi-user.target</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>Then enable the unit:</p>
 <div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">systemctl enable tp-wake-disable.service</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
 <h3 id="suspend-after-idle" style="position:relative;"><a href="#suspend-after-idle" aria-label="suspend after idle permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Suspend after idle</h3>
@@ -410,23 +410,23 @@ IdleActionSec=1min
 <p>Create the configuration file:</p>
 <div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">touch ~/.xbindkeysrc</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
 <p>Add the following to the configuration file:</p>
-<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">&quot;xvkbd -xsendevent -text &quot;[Prior]&quot;&quot;
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">"xvkbd -xsendevent -text "[Prior]""
     m:0x4 + c:111
     Control + Up
 
-&quot;xvkbd -xsendevent -text &quot;[Next]&quot;&quot;
+"xvkbd -xsendevent -text "[Next]""
     m:0x4 + c:116
     Control + Down
 
-&quot;xvkbd -xsendevent -text &quot;[Delete]&quot;&quot;
+"xvkbd -xsendevent -text "[Delete]""
     m:0x4 + c:22
     Control + BackSpace
 
-&quot;xvkbd -xsendevent -text &quot;[End]&quot;&quot;
+"xvkbd -xsendevent -text "[End]""
     m:0x4 + c:114
     Control + Right
 
-&quot;xvkbd -xsendevent -text &quot;[Home]&quot;&quot;
+"xvkbd -xsendevent -text "[Home]""
     m:0x4 + c:113
     Control + Left</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>I prefer using <em>CTRL + Arrow</em> keys as it's easier than <em>ALT + Arrow</em> keys. If you prefer ALT, change 'm:0x4' to 'm:0x8' and 'Control' to 'Alt'</p>

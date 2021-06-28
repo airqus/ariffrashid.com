@@ -81,7 +81,7 @@
 <div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">chmod +x configure</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
 <p>Now you will need to configure your environment for building. I ran into a few problems at the beginning as I forgot a lot of additional modules which come standard in Linux package managers like SSL (HTTPS), IPv6 and even logging. Another disadvantage are the file paths differ from a package manager installation as well as the 'sites-enabled' and 'sites-available' folder structure. I tried my best to make identical to a package manager installation as I could. This is my personal configure script:</p>
 <p>note: please change the path of the NGINX LDAP module in the command below if it differs from mine ( --add-module=/home/$USER/nginx-auth-ldap).</p>
-<div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">./configure --user=nginx --group=nginx --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx --conf-path=/etc/nginx/nginx.conf --pid-path=/var/run/nginx.pid --lock-path=/var/run/nginx.lock --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-http_gzip_static_module --with-http_stub_status_module --with-http_ssl_module --with-pcre --with-file-aio --with-http_realip_module --add-module=/home/$USER/nginx-auth-ldap/ --with-ipv6 --with-debug</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
+<div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token command"><span class="token info punctuation"><span class="token path">./configure --user=nginx --group=nginx --prefix=/etc/nginx --sbin-path=/usr/sbin/nginx --conf-path=/etc/nginx/nginx.conf --pid-path=/var/run/nginx.pid --lock-path=/var/run/nginx.lock --error-log-path=/var/log/nginx/error.log --http-log-path=/var/log/nginx/access.log --with-http_gzip_static_module --with-http_stub_status_module --with-http_ssl_module --with-pcre --with-file-aio --with-http_realip_module --add-module=/home/</span></span><span class="token shell-symbol important">$</span><span class="token bash language-bash"><span class="token environment constant">USER</span>/nginx-auth-ldap/ --with-ipv6 --with-debug</span></span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
 <p>If it does not run successfully then there are some dependencies missing. Looking through the output and reading the error messages can determine which specific libraries are missing. The successful output will look like:</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -225,16 +225,16 @@
 <p>Open up your nginx.conf file for editing:</p>
 <div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">sudo editor /etc/nginx/nginx.conf</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
 <p>In here you will define an LDAP server. It is possible to define multiple servers by creating multiple 'ldap_server' blocks. This is what I use to allow all users to login is:</p>
-<div class="gatsby-highlight" data-language="nginx"><pre style="counter-reset: linenumber NaN" class="language-nginx line-numbers"><code class="language-nginx">auth_ldap_cache_enabled on<span class="token punctuation">;</span>
-auth_ldap_cache_expiration_time <span class="token number">10000</span><span class="token punctuation">;</span>
-auth_ldap_cache_size <span class="token number">1000</span><span class="token punctuation">;</span>
+<div class="gatsby-highlight" data-language="nginx"><pre style="counter-reset: linenumber NaN" class="language-nginx line-numbers"><code class="language-nginx"><span class="token directive"><span class="token keyword">auth_ldap_cache_enabled</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">auth_ldap_cache_expiration_time</span> <span class="token number">10000</span></span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">auth_ldap_cache_size</span> <span class="token number">1000</span></span><span class="token punctuation">;</span>
 
-ldap_server adds <span class="token punctuation">{</span>
-    url <span class="token string">"ldaps://10.0.0.0/dc=home,dc=net?sAMAccountName?sub?"</span><span class="token punctuation">;</span>
-    binddn <span class="token string">"homenginx"</span><span class="token punctuation">;</span>
-    binddn_passwd <span class="token string">"password"</span><span class="token punctuation">;</span>
-    require valid_user<span class="token punctuation">;</span>
-    <span class="token keyword">satisfy</span> any<span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">ldap_server</span> adds</span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">url</span> <span class="token string">"ldaps://10.0.0.0/dc=home,dc=net?sAMAccountName?sub?"</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">binddn</span> <span class="token string">"homenginx"</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">binddn_passwd</span> <span class="token string">"password"</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">require</span> valid_user</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">satisfy</span> any</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
 <span class="token comment"># 'adds' will be the module reference</span>
@@ -244,49 +244,49 @@ ldap_server adds <span class="token punctuation">{</span>
 <span class="token comment"># 'homenginx' is my domain user. note the double slash.</span>
 <span class="token comment"># 'password' is my domain user's (nginx) password.</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>So put this into the nginx.conf file, here's mine!</p>
-<div class="gatsby-highlight" data-language="nginx"><pre style="counter-reset: linenumber NaN" class="language-nginx line-numbers"><code class="language-nginx"><span class="token keyword">worker_processes</span> <span class="token number">1</span><span class="token punctuation">;</span>
+<div class="gatsby-highlight" data-language="nginx"><pre style="counter-reset: linenumber NaN" class="language-nginx line-numbers"><code class="language-nginx"><span class="token directive"><span class="token keyword">worker_processes</span> <span class="token number">1</span></span><span class="token punctuation">;</span>
 
-<span class="token keyword">events</span> <span class="token punctuation">{</span>
-    <span class="token keyword">worker_connections</span> <span class="token number">1024</span><span class="token punctuation">;</span>
+<span class="token directive"><span class="token keyword">events</span></span> <span class="token punctuation">{</span>
+    <span class="token directive"><span class="token keyword">worker_connections</span> <span class="token number">1024</span></span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">http</span>
+<span class="token directive"><span class="token keyword">http</span></span>
 <span class="token punctuation">{</span>
-    <span class="token keyword">include</span> mime<span class="token punctuation">.</span><span class="token keyword">types</span><span class="token punctuation">;</span>
-    <span class="token keyword">default_type</span> application<span class="token operator">/</span>octet<span class="token operator">-</span>stream<span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">include</span> mime.types</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">default_type</span> application/octet-stream</span><span class="token punctuation">;</span>
 
-    <span class="token keyword">client_body_timeout</span> <span class="token number">12</span><span class="token punctuation">;</span>
-    <span class="token keyword">client_header_timeout</span> <span class="token number">12</span><span class="token punctuation">;</span>
-    <span class="token keyword">keepalive_timeout</span> <span class="token number">15</span><span class="token punctuation">;</span>
-    <span class="token keyword">send_timeout</span> <span class="token number">10</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">client_body_timeout</span> <span class="token number">12</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">client_header_timeout</span> <span class="token number">12</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">keepalive_timeout</span> <span class="token number">15</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">send_timeout</span> <span class="token number">10</span></span><span class="token punctuation">;</span>
 
-    <span class="token keyword">gzip</span> on<span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">gzip</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
 
-    auth_ldap_cache_enabled on<span class="token punctuation">;</span>
-    auth_ldap_cache_expiration_time <span class="token number">10000</span><span class="token punctuation">;</span>
-    auth_ldap_cache_size <span class="token number">1000</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">auth_ldap_cache_enabled</span> <span class="token boolean">on</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">auth_ldap_cache_expiration_time</span> <span class="token number">10000</span></span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">auth_ldap_cache_size</span> <span class="token number">1000</span></span><span class="token punctuation">;</span>
 
-    ldap_server adds <span class="token punctuation">{</span>
-         url <span class="token string">"ldaps://10.0.0.0/dc=home,dc=net?sAMAccountName?sub?"</span><span class="token punctuation">;</span>
-         binddn <span class="token string">"homenginx"</span><span class="token punctuation">;</span>
-         binddn_passwd <span class="token string">"password"</span><span class="token punctuation">;</span>
-         require valid_user<span class="token punctuation">;</span>
-         <span class="token keyword">satisfy</span> any<span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">ldap_server</span> adds</span> <span class="token punctuation">{</span>
+         <span class="token directive"><span class="token keyword">url</span> <span class="token string">"ldaps://10.0.0.0/dc=home,dc=net?sAMAccountName?sub?"</span></span><span class="token punctuation">;</span>
+         <span class="token directive"><span class="token keyword">binddn</span> <span class="token string">"homenginx"</span></span><span class="token punctuation">;</span>
+         <span class="token directive"><span class="token keyword">binddn_passwd</span> <span class="token string">"password"</span></span><span class="token punctuation">;</span>
+         <span class="token directive"><span class="token keyword">require</span> valid_user</span><span class="token punctuation">;</span>
+         <span class="token directive"><span class="token keyword">satisfy</span> any</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 
-    <span class="token keyword">server</span>
+    <span class="token directive"><span class="token keyword">server</span></span>
     <span class="token punctuation">{</span>
-        <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+        ....
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>Now that it's in place, you can apply it under different 'location' blocks. You will need an 'auth_ldap' which displays the message to be shown and the 'auth_ldap_servers' which is the server to authenticate against:</p>
-<div class="gatsby-highlight" data-language="nginx"><pre style="counter-reset: linenumber NaN" class="language-nginx line-numbers"><code class="language-nginx"><span class="token keyword">location</span> <span class="token operator">/</span> <span class="token punctuation">{</span>
+<div class="gatsby-highlight" data-language="nginx"><pre style="counter-reset: linenumber NaN" class="language-nginx line-numbers"><code class="language-nginx"><span class="token directive"><span class="token keyword">location</span> /</span> <span class="token punctuation">{</span>
     <span class="token comment"># message shown when accessing this location</span>
-    auth_ldap <span class="token string">"Enter AD credentials e.g. 'calvin'"</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">auth_ldap</span> <span class="token string">"Enter AD credentials e.g. 'calvin'"</span></span><span class="token punctuation">;</span>
     <span class="token comment"># LDAP block 'adds' I defined earlier</span>
-    auth_ldap_servers adds<span class="token punctuation">;</span>
-    <span class="token keyword">root</span>   html<span class="token punctuation">;</span>
-    <span class="token keyword">index</span>  <span class="token keyword">index</span><span class="token punctuation">.</span>html <span class="token keyword">index</span><span class="token punctuation">.</span>htm<span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">auth_ldap_servers</span> adds</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">root</span>   html</span><span class="token punctuation">;</span>
+    <span class="token directive"><span class="token keyword">index</span>  index.html index.htm</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></pre></div>
 <p>Restart NGINX when done</p>
 <div class="gatsby-highlight" data-language="shell-session"><pre style="counter-reset: linenumber NaN" class="language-shell-session line-numbers"><code class="language-shell-session"><span class="token output">sudo service nginx restart</span></code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span></span></pre></div>
