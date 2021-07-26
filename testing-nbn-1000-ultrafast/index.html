@@ -98,7 +98,7 @@
 <p>NBN 1000 / Home Ultrafast is rated between <strong>500 Mbps to 1000 Mbps (1 Gbps)</strong> downloads and up to <strong>50 Mbps</strong> upload. Converting that from megabits to megabytes, it would be <strong>62.5 MB/s to 125 MB/s</strong> downloads and <strong>6.25 MB/s</strong> upload.</p>
 <h2 id="test-methodology" style="position:relative;"><a href="#test-methodology" aria-label="test methodology permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Test methodology</h2>
 <p>All tests performed were late at night during off-peak/evening hours (~2 AM to ~8 AM) to get the most of the connection.</p>
-<p>I ran the tests on my PC I have shared in my <a href="/sff-desktop">previous posts</a>. It has a a gigabit LAN connection.</p>
+<p>I ran the tests on my PC I have shared in my <a href="/sff-desktop">previous posts</a>. It has a gigabit LAN connection.</p>
 <p>I am on a HFC connection from Aussie Broadband. It goes through the NBN provided Arris CM8200 modem into my <a href="https://opnsense.org/">OPNsense router</a>. From there it goes to a <a href="https://www.ui.com/unifi-switching/unifi-switch-8-150w/">UniFi Switch 8-150W</a> and then into my computer.</p>
 <p>All connections are direct without any proxies or VPN connections unless specified.</p>
 <p>During peak hours, the highest I achieved was 589 Mbps on speedtest.net. Any result here you can assume around a <strong>40% reduction in speed</strong> during peak hours.</p>
@@ -111,7 +111,7 @@
 </video>
 <p>During off-peak, I was able to max it out at 946 Mbps (118.25 MB/s) after a few tests.</p>
 <p>I attempted the same tests while connected to <a href="https://mullvad.net/en/servers/">Mullvad's OpenVPN server and WireGuard server</a> in Australia through OPNsense. I also performed the same test on my MacBook Pro through OpenVPN as a real-world example.</p>
-<p>There is overhead when using a VPN service. WireGuard is faster than OpenVPN, however neither were able to break the 900 Mbps barrier.</p>
+<p>There is an overhead when using a VPN service. WireGuard is faster than OpenVPN, however, neither were able to break the 900 Mbps barrier.</p>
 <p>When running OpenVPN directly on my MacBook I assume the CPU overhead and traffic hops was the reason it scored so low.</p>
 <table>
 <thead>
@@ -139,7 +139,7 @@
 </tr>
 </tbody>
 </table>
-<p>During peak hours, my speed went down to around ~589 Mbps. It was of useable of course.</p>
+<p>During peak hours, my speed went down to around ~589 Mbps. It was useable of course.</p>
 <video autoplay loop controls width="100%" height="auto">
   <source type="video/webm" src="/70b96a05fd6129f410051bad31c8ab0d/speedtest-peak.webm">
   <p>Your browser does not support the video element.</p>
