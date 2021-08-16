@@ -1,7 +1,111 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Fri, 13 Aug 2021 03:28:16 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Homer Service Discovery]]></title><description><![CDATA[I wrote a tool to automatically add and remove new services to the popular Homer dashboard. Homer Service Discovery is available over on GitHub at calvinbui/homer-service-discovery…]]></description><link>https://calvin.me/homer-service-discovery</link><guid isPermaLink="false">https://calvin.me/homer-service-discovery</guid><category><![CDATA[homer]]></category><category><![CDATA[dashboard]]></category><category><![CDATA[golang]]></category><pubDate>Sat, 07 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I wrote a tool to automatically add and remove new services to the popular &lt;a href=&quot;https://github.com/bastienwirtz/homer&quot;&gt;Homer dashboard&lt;/a&gt;. Homer Service Discovery is available over on GitHub at &lt;a href=&quot;https://github.com/calvinbui/homer-service-discovery&quot;&gt;calvinbui/homer-service-discovery&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Mon, 16 Aug 2021 14:32:08 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Prometheus Traefik Service Discovery]]></title><description><![CDATA[I wrote a tool to generate Prometheus targets from Traefik. Prometheus Traefik Service Discovery is available over on GitHub at calvinbui/prometheus-traefik-sd. The Idea Following…]]></description><link>https://calvin.me/prometheus-traefik-service-discovery</link><guid isPermaLink="false">https://calvin.me/prometheus-traefik-service-discovery</guid><category><![CDATA[prometheus]]></category><category><![CDATA[traefik]]></category><category><![CDATA[golang]]></category><pubDate>Mon, 16 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I wrote a tool to generate &lt;a href=&quot;https://github.com/prometheus/prometheus&quot;&gt;Prometheus&lt;/a&gt; targets from &lt;a href=&quot;https://github.com/traefik/traefik&quot;&gt;Traefik&lt;/a&gt;. Prometheus Traefik Service Discovery is available over on GitHub at &lt;a href=&quot;https://github.com/calvinbui/prometheus-traefik-sd&quot;&gt;calvinbui/prometheus-traefik-sd&lt;/a&gt;.&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&quot;the-idea&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-idea&quot; aria-label=&quot;the idea permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Idea&lt;/h2&gt;
+&lt;p&gt;Following on from my previous post about &lt;a href=&quot;/homer-service-discovery&quot;&gt;Homer Service Discovery&lt;/a&gt;, I wrote a tool to automate generating targets for Prometheus from Traefik. The need idea was the same: adding, changing or removing a self-hosted service also required updating my &lt;a href=&quot;https://github.com/prometheus/blackbox_exporter&quot;&gt;blackbox exporter&lt;/a&gt; config to monitor the new service.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/485a47de69acab650224df9565b1a445/52180/prometheus-service-discovery.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 84.03755868544602%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6klEQVQ4y4WSS29TRxiGz74KFU585ptvruf4XO1jH+N4bCeObcjFLiSAAziECEwApRKVgKY3kKKWBTsuQkKi3bCilGUlpC4qpKqrdtGqf6H9K5VPUtQKqUivRqOZeTSj5x2ru3ziaH/NtBfr88caC4ut7nKzszTXXanPH52d672dWqvbWFg8Nbp4fLhh1UyrVquZet2YepqmTHvC8YX2+P9GuoF0A8uvdqKTe25/Nzj+qT/YBR0DcuAOcP2uKAsLqW3G+XRoV9dJ/Tz4BlREhabCeWcs7cWulhjP22GLIlLlU+m9fQ6li9Kl2TiZ7MONRjPtDXH1LsRtAE65g8qlqvBvErgmyAlyQE5AAMoDuHykkbRPBGbAlKOSGJUieQSCKPQ/l2jlxRXTDavzPDI6nZXFCmZvsdxLz8Kbr8MbP8YfvTRffhNs7JWGp4K1C0QnwDgIhwDh1eX4xg/exn21ME42t/yVPgFOpWPJnVfeV3/J8Uvi1oiIqFdV5QovVkEUgEvgahKhQXk2ZfnD7+dzedtG4IoKbRVGD73t75xmRyUFGyUBtAkjlGVYVglTVAckMKxoVK1J3ZCKyXpm+/Jz5+Yvjcc/NfeeuP3t8uZINE9OAJEplQWgyNMl/8Pv/fN3k3NrLEopk/v+rfD6q8q9P/XoqQ0Rd30RFtEJKP9Pzyg0YwgEpqdmbJvTrKoJLM4+kuMXzKwWej1WrKN0QQVUvqnKpVxSr0zNOs6uxiu9oD0LTB/A/vhZ8ZOfy3d+PXLrkbd63VwdRqc3iSpNVHMNQhNKedIJL33tDj4uDXrRMUOoPBDmXPk2vP0HH3yROzRjT89QqYAJQHHgeV81on34PXt6KjeVy03Z+y1MYHf00LvyXHcuJqMtr39GRiWnkqAT02x78nLGWWScD27J7rXS2tBsLaH2KVcoHUtvvwg+/8377Pf46n3v9G7l7Jm5nXVMesAEzT4zRc6KbX3uAe/uuI12vNQC4dHs//0N6dW0ergT4L0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;prometheus service discovery&quot;
+        title=&quot;prometheus service discovery&quot;
+        src=&quot;/static/485a47de69acab650224df9565b1a445/d6170/prometheus-service-discovery.png&quot;
+        srcset=&quot;/static/485a47de69acab650224df9565b1a445/53f68/prometheus-service-discovery.png 213w,
+/static/485a47de69acab650224df9565b1a445/df70d/prometheus-service-discovery.png 425w,
+/static/485a47de69acab650224df9565b1a445/d6170/prometheus-service-discovery.png 850w,
+/static/485a47de69acab650224df9565b1a445/52180/prometheus-service-discovery.png 1177w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;about&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#about&quot; aria-label=&quot;about permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About&lt;/h2&gt;
+&lt;p&gt;The application is written in Golang and is free and open-source including the CI and release process on &lt;a href=&quot;https://github.com/calvinbui/prometheus-traefik-sd/actions&quot;&gt;GitHub Actions&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I made it available for all operating systems and architectures that Prometheus does to support all users. It is available as static binary files on the &lt;a href=&quot;https://github.com/calvinbui/prometheus-traefik-sd/releases&quot;&gt;GitHub release page&lt;/a&gt; or Docker images on &lt;a href=&quot;https://github.com/calvinbui/prometheus-traefik-sd/pkgs/container/prometheus-traefik-sd&quot;&gt;GitHub&apos;s Container registry&lt;/a&gt; using &lt;a href=&quot;https://github.com/goreleaser/goreleaser&quot;&gt;goreleaser&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 548px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3071d8c2216359ef4de47f734ec27f87/9079b/releases.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 176.99530516431926%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAjCAIAAAAblL1PAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC4ElEQVRIx41W23LiMAzlW0oSS86NXBzbCXRvbUnJhUC7O7P//yM7slMIbBuY0TDm4XCkoyOJhednq+IxSEuXJ0uITMSTT/v4JB5YtAizkqVPrOigaNjqm4OJw03g6uMROxDT10n4iYZQLGKxwaLG8ohqD0WD+gD5C4hXKHaoetQDS38SFa5GTha5fhLmFURiEedrAqsBZQey5dUbiBpki6oD2fDyyMt3lvxYsvCUreenYVaxIDdgUaM+oOwN8xuILRQtFjuULRYtr95Z9jQt1fWzIKtYeAYPBtzyEdxwfTC/2HGqqHdDNZITOA3S8hZYdqj3XB9AbE+yn9P+AlxT/mqPqodix/URsqdTzcTMr8BqrJmXFtxyPZD++RbLIwnOogtwvp4IdgE2gpH+DVr98+cLZj+dF6w1+D2qgeUvXrw+e8uA/VnBWhCvqHpevkP2fGHSu8Cmz7ykhrlBcar5ptoW3JDmZLXe4emU3OGJn5ZwB7hHtXd4SuMx2pvUDu5iLhqueoKx0GZu7JmG+YW3/xdsB9absqOZybeQPTuYPLB7mK3aZJWel2/ksw+TujwJbrWK5nkk1wNXg7d6tFYhcHYLTD4h8Bu5RXaun5+Zb6XdmISPKFvXF6ZbY6tuMcvWTqUZ5r0XrR9YsITVaQ3Np90Y8JHrAYpX2oqXO2wGXIPYkc62YNlNc16aTWq251fzTAUPqFrbJ5b+mi5AM5IlmwFbZpvC1facd1htmkxryA6Gt9osp4LNOqw2G//A1UD2qH6z5PtFzTRVGsI55gH13oz00UxlZh1yz/Y0zNSnhjS3g/X59hzPzaTPlll29oBdb8+zYGKNYkvHgcag5dWfjwVE2aIa/M1fyF9Oh25UO6voSkZiw2VjAB2I2os3bqjcULtR5UWVG5X0oNN73kQOJl6QuX66iMWjr+kyoB5Atl5cmZZGSwjHYNGShXYNncJqvnD91Amk4xcU5jHzb+Aq/gFwW6LbjeKM0QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;releases&quot;
+        title=&quot;releases&quot;
+        src=&quot;/static/3071d8c2216359ef4de47f734ec27f87/9079b/releases.png&quot;
+        srcset=&quot;/static/3071d8c2216359ef4de47f734ec27f87/53f68/releases.png 213w,
+/static/3071d8c2216359ef4de47f734ec27f87/df70d/releases.png 425w,
+/static/3071d8c2216359ef4de47f734ec27f87/9079b/releases.png 548w&quot;
+        sizes=&quot;(max-width: 548px) 100vw, 548px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;More information, including how to use it, can be found on the &lt;a href=&quot;https://github.com/calvinbui/prometheus-traefik-sd/blob/master/README.md&quot;&gt;project&apos;s README file&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;how-it-works&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#how-it-works&quot; aria-label=&quot;how it works permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;How It Works&lt;/h2&gt;
+&lt;p&gt;Prometheus offers a variety of &lt;a href=&quot;https://github.com/prometheus/prometheus/tree/main/discovery&quot;&gt;service discovery options&lt;/a&gt; for discovering scrape targets. When something doesn&apos;t exist, they recommend using &lt;a href=&quot;https://prometheus.io/docs/prometheus/latest/configuration/configuration/#file_sd_config&quot;&gt;file-based service discovery&lt;/a&gt;, by generating the files yourself.&lt;/p&gt;
+&lt;p&gt;The application connects to &lt;a href=&quot;https://doc.traefik.io/traefik/operations/api/&quot;&gt;Traefik&apos;s API&lt;/a&gt; and gets all &lt;a href=&quot;https://doc.traefik.io/traefik/routing/routers/&quot;&gt;HTTP routes&lt;/a&gt; rules configured. It places these rules into JSON files within a folder that Prometheus watches for changes. When a file is added, Prometheus reads the file for new scrape targets. When a file is deleted, Prometheus will stop scraping the target.&lt;/p&gt;
+&lt;p&gt;I also added a &apos;grace period&apos; before a target file is deleted. This is in case a service isn&apos;t working as expected and needs to be alerted on.&lt;/p&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[Homer Service Discovery]]></title><description><![CDATA[I wrote a tool to automatically add and remove new services to the popular Homer dashboard. Homer Service Discovery is available over on GitHub at calvinbui/homer-service-discovery…]]></description><link>https://calvin.me/homer-service-discovery</link><guid isPermaLink="false">https://calvin.me/homer-service-discovery</guid><category><![CDATA[homer]]></category><category><![CDATA[dashboard]]></category><category><![CDATA[golang]]></category><pubDate>Sat, 07 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I wrote a tool to automatically add and remove new services to the popular &lt;a href=&quot;https://github.com/bastienwirtz/homer&quot;&gt;Homer dashboard&lt;/a&gt;. Homer Service Discovery is available over on GitHub at &lt;a href=&quot;https://github.com/calvinbui/homer-service-discovery&quot;&gt;calvinbui/homer-service-discovery&lt;/a&gt;.&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;h2 id=&quot;the-idea&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#the-idea&quot; aria-label=&quot;the idea permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;The Idea&lt;/h2&gt;
 &lt;p&gt;The initial idea came from my personal experience. Adding, changing or removing a self-hosted service also required updating the Homer dashboard configuration. I wanted to automate this similar to how Traefik would reverse proxy any new containers using its labels.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d5432fdeeedc336ed200a058cd9bf7ef/fe4d8/dashboard.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 91.07981220657277%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAIAAADUsmlHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADFklEQVQ4y0VS227bRhDVY+PGDinVEkWKS3J53RtJkcuLeRfppnZit4idQjbQPgQoUKC/JOtfC1KOczAvO5gzZ2b2zNj+wPYH/+klfD6eInh6YfsXf4zDW9LfH/z9IXh62T4f+V/H8tsx+fs4cy3d1oEOJOHinXhx9uH9T9Kl6OgS1GRdleYffhYvzoTzd4a2sSGQLkXhfCo7PxPOz2YmMdLrJEuuEMauhxzH0U0b3X8ruyGOYsdxXdeFpo0c4yqLCPVt2xmTnrdRwcwNo+HLY9+2ScJ932eUmpYVPvwzfLwpy4JSyhjzPM+xvaqsm6YmhFBKfd/XNG2GAj58emjq0vd9z0OEEAghHx6rqvJ9HyFECLUtiMKq2t3X1RUhBCFEKQEAzKC5bpuw64YsTeM4ZpQZ0CDJcFUUcRxTSgmhpqGn7a+fHp67pmZTR0rpSF4rcpQlTd0EQTCWUmqZ8N8bp6uLbRQRggnB0PLyWL3/LaibnvOx4yt5ubwkBJdleZqHYGxYdvr03/DxNktTjDFjDHmuiVhetWkS4wmETGNj6l/ffi7yPI5jfxI3IJQcphsQALCWZUVWJEmyoVkVVVEWZMKrMk/4l6+PURQFEwghmqYJF+8FQRBFcT5BFEUItIzzKI4RQj+UtyH98/H3JM0452E4Kuu6vlgsfpmw+A6gAs550zSMsdMuI9kwYFXXaZJG0TYMAoQQAEAQhJPmqYsoipZlcc7btg2CwPM8hJCqqjNVVRV5fapbLBbz+Xy5WsmbjSzLy8ul+B26rm82ylpar1art+KZbbs8yRzH3kxQFAWoaordNOGMsfEJgKIoBGPOY845hFBRFFVVV6vVzEZkuL0rrvJodMjoRscy70PUNXVRFJSM9nRdjxLUt1VV1aejvtpTw5viJt01fRiGnocwIZYJPwf4etfleT7ZkziO67hmUeW7XY8xPiXHnYHm8qTp+3boh1NX0zTvcq9takrHw1LKPMc2/Ig3fVNVYRj++OcgTu/++FpV5Xa7ZePc1DRNhq2u67I0m8jUtu0g3rb9LktTxtgb+X+AVL5wLrPGJQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;dashboard&quot;
+        title=&quot;dashboard&quot;
+        src=&quot;/static/d5432fdeeedc336ed200a058cd9bf7ef/d6170/dashboard.png&quot;
+        srcset=&quot;/static/d5432fdeeedc336ed200a058cd9bf7ef/53f68/dashboard.png 213w,
+/static/d5432fdeeedc336ed200a058cd9bf7ef/df70d/dashboard.png 425w,
+/static/d5432fdeeedc336ed200a058cd9bf7ef/d6170/dashboard.png 850w,
+/static/d5432fdeeedc336ed200a058cd9bf7ef/12c14/dashboard.png 1275w,
+/static/d5432fdeeedc336ed200a058cd9bf7ef/fe4d8/dashboard.png 1388w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&quot;about&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#about&quot; aria-label=&quot;about permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;About&lt;/h2&gt;
 &lt;p&gt;The application is written in Golang and is free and open-source including the CI and release process on &lt;a href=&quot;https://github.com/calvinbui/homer-service-discovery/actions&quot;&gt;GitHub Actions&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I made it available in multi-arch (x86_64, ARM64 and ARMv7) so all Homer users can use it. It is available as static binary files on the &lt;a href=&quot;https://github.com/calvinbui/homer-service-discovery/releases&quot;&gt;GitHub release page&lt;/a&gt; or Docker images on &lt;a href=&quot;https://github.com/calvinbui/homer-service-discovery/pkgs/container/homer-service-discovery&quot;&gt;GitHub&apos;s Container registry&lt;/a&gt; using &lt;a href=&quot;https://github.com/goreleaser/goreleaser&quot;&gt;goreleaser&lt;/a&gt;.&lt;/p&gt;
