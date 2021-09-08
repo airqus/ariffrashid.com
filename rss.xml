@@ -1,4 +1,110 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Sun, 05 Sep 2021 17:01:53 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Chicory: A Colorful Tale]]></title><description><![CDATA[I enjoyed playing this game. The themes it explores were deep. The music matched the environments. The boss fights remind me of Undertale. Chicory: A Colorful Tale is a 2D…]]></description><link>https://calvin.me/chicory</link><guid isPermaLink="false">https://calvin.me/chicory</guid><category><![CDATA[chicory]]></category><pubDate>Mon, 23 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I enjoyed playing this game. The themes it explores were deep. The music matched the environments. The boss fights remind me of Undertale.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Wed, 08 Sep 2021 14:09:15 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Cross-Platform Dotfiles]]></title><description><![CDATA[How I manage configs across different computers and operating systems. From my previous post, I'm still thoroughly enjoying dotbot for managing my dotfiles and bootstrapping new…]]></description><link>https://calvin.me/cross-platform-dotfiles</link><guid isPermaLink="false">https://calvin.me/cross-platform-dotfiles</guid><category><![CDATA[dotbot]]></category><category><![CDATA[dotfiles]]></category><pubDate>Wed, 08 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;How I manage configs across different computers and operating systems.&lt;/p&gt;
+&lt;p&gt;From my &lt;a href=&quot;/managing-dotfiles&quot;&gt;previous post&lt;/a&gt;, I&apos;m still thoroughly enjoying &lt;a href=&quot;https://github.com/anishathalye/dotbot&quot;&gt;dotbot&lt;/a&gt; for managing my dotfiles and bootstrapping new computers. It is lightweight, has no external dependencies and requires no installation.&lt;/p&gt;
+&lt;p&gt;My &lt;a href=&quot;https://github.com/calvinbui/dotfiles&quot;&gt;dotfiles repo&lt;/a&gt; only supported macOS. In my day-to-day, I&apos;m using Windows, Linux and macOS for personal and work purposes. I did a fresh install of Windows on my PC and decided now would be the time to support Windows and Linux as well.&lt;/p&gt;
+&lt;h2 id=&quot;uname&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#uname&quot; aria-label=&quot;uname permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;uname&lt;/h2&gt;
+&lt;p&gt;The &lt;code class=&quot;language-text&quot;&gt;uname&lt;/code&gt; command stands for Unix Name. It&apos;s a useful command that outputs details about the current machine like its operating system. I&apos;ll be using &lt;code class=&quot;language-text&quot;&gt;uname&lt;/code&gt; extensively to differentiate between my operating systems. It&apos;s the special sauce holding everything together.&lt;/p&gt;
+&lt;p&gt;Wikipedia has a &lt;a href=&quot;https://en.wikipedia.org/wiki/Uname&quot;&gt;compatibility list&lt;/a&gt; for &lt;code class=&quot;language-text&quot;&gt;uname&lt;/code&gt;. The main operating systems are supported like Android, Debian, Fedora, macOS, Ubuntu and Windows. This will be okay for me as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;the operating systems are known (Windows, macOS, Ubuntu) and not likely to change&lt;/li&gt;
+&lt;li&gt;the computers are known (personal, work, server) and not likely to change&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;dotbot&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dotbot&quot; aria-label=&quot;dotbot permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;dotbot&lt;/h2&gt;
+&lt;p&gt;dotbot&apos;s config has two main functions: linking files and running scripts. It&apos;s possible to split each function for each operating system.&lt;/p&gt;
+&lt;h3 id=&quot;links&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#links&quot; aria-label=&quot;links permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Links&lt;/h3&gt;
+&lt;p&gt;For symlinks, use the &lt;code class=&quot;language-text&quot;&gt;if&lt;/code&gt; parameter to link different files. In this example, I&apos;m linking a different &lt;code class=&quot;language-text&quot;&gt;.gitlocal&lt;/code&gt; file based on the output of &lt;code class=&quot;language-text&quot;&gt;uname -s&lt;/code&gt;.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-yaml line-numbers&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;~/.gitconfig&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; git/gitconfig
+
+&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;~/.gitlocal&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token key atrule&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; git/linux
+      &lt;span class=&quot;token key atrule&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;[ &quot;$(uname -s)&quot; = &quot;Linux&quot; ]&apos;&lt;/span&gt;
+
+&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;~/.gitlocal&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token key atrule&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; git/mac
+      &lt;span class=&quot;token key atrule&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;[ &quot;$(uname -s)&quot; = &quot;Darwin&quot; ]&apos;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;It&apos;s also possible to use the &lt;code class=&quot;language-text&quot;&gt;defaults&lt;/code&gt; key inbetween each &lt;code class=&quot;language-text&quot;&gt;link&lt;/code&gt; step to not repeat yourself:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-yaml line-numbers&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# link all the Linux stuff&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;defaults&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token key atrule&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;[ &quot;$(uname -s)&quot; = &quot;Linux&quot; ]&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;~/.gitlocal&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;  git/linux
+    &lt;span class=&quot;token key atrule&quot;&gt;~/.config/sublime-text-3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; subl/linux
+    &lt;span class=&quot;token key atrule&quot;&gt;~/.bashrc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; bash/bashrc
+
+&lt;span class=&quot;token comment&quot;&gt;# change defaults and link all the Mac stuff&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;defaults&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;token key atrule&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;[ &quot;$(uname -s)&quot; = &quot;Darwin&quot; ]&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;~/.gitlocal&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;  git/mac
+    &lt;span class=&quot;token key atrule&quot;&gt;~/Library/Application Support/Sublime Text 3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; subl/mac
+    &lt;span class=&quot;token key atrule&quot;&gt;~/.zshrc&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; zsh/zshrc&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;scripts&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#scripts&quot; aria-label=&quot;scripts permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Scripts&lt;/h3&gt;
+&lt;p&gt;For scripts, a &lt;code class=&quot;language-text&quot;&gt;|&lt;/code&gt; block scalar can be used on the &lt;code class=&quot;language-text&quot;&gt;command&lt;/code&gt; parameter to run a multiline script. Once again, I&apos;m using &lt;code class=&quot;language-text&quot;&gt;uname&lt;/code&gt; to determine the operating system and if the script should execute.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-yaml line-numbers&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;shell&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;token key atrule&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; apt&lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt;get install
+    &lt;span class=&quot;token key atrule&quot;&gt;command&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;token scalar string&quot;&gt;
+      if [ &quot;$(uname -s)&quot; = &quot;Linux&quot; ]; then
+        sudo apt-get update
+        sudo apt-get install -y $(cat apt/packages.txt)
+      fi&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;stdout&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean important&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;token key atrule&quot;&gt;stdin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean important&quot;&gt;true&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;gitconfig&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gitconfig&quot; aria-label=&quot;gitconfig permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;gitconfig&lt;/h2&gt;
+&lt;p&gt;My &lt;code class=&quot;language-text&quot;&gt;gitconfig&lt;/code&gt; file differs between operating systems because of the GPG signing keys, credential store and diff tool. Newer versions of &lt;code class=&quot;language-text&quot;&gt;git&lt;/code&gt; support an &lt;a href=&quot;https://git-scm.com/docs/git-config#_includes&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;include&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;includeIf&lt;/code&gt; section&lt;/a&gt; to pull in config directives from another source. For example, I&apos;m linking to &lt;code class=&quot;language-text&quot;&gt;.gitlocal&lt;/code&gt; file which is different on each Linux and Mac:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ini&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-ini line-numbers&quot;&gt;&lt;code class=&quot;language-ini&quot;&gt;&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token section-name selector&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt;
+	&lt;span class=&quot;token key attr-name&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token value attr-value&quot;&gt;Calvin Bui&lt;/span&gt;
+	&lt;span class=&quot;token key attr-name&quot;&gt;email&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token value attr-value&quot;&gt;3604363+calvinbui@users.noreply.github.com&lt;/span&gt;
+
+&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token section-name selector&quot;&gt;include&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt;
+	&lt;span class=&quot;token key attr-name&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token value attr-value&quot;&gt;.gitlocal&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Linux specific &lt;code class=&quot;language-text&quot;&gt;gitconfig&lt;/code&gt; options:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ini&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-ini line-numbers&quot;&gt;&lt;code class=&quot;language-ini&quot;&gt;&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token section-name selector&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token key attr-name&quot;&gt;signingkey&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token value attr-value&quot;&gt;MyLinuxSigningKey&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Mac-specific &lt;code class=&quot;language-text&quot;&gt;gitconfig&lt;/code&gt;, which uses a different credential store:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ini&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-ini line-numbers&quot;&gt;&lt;code class=&quot;language-ini&quot;&gt;&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token section-name selector&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token key attr-name&quot;&gt;signingkey&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token value attr-value&quot;&gt;MyMacSigningKey&lt;/span&gt;
+
+&lt;span class=&quot;token header&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token section-name selector&quot;&gt;credential&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/span&gt;
+	&lt;span class=&quot;token key attr-name&quot;&gt;helper&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token value attr-value&quot;&gt;osxkeychain&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;zsh&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#zsh&quot; aria-label=&quot;zsh permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;ZSH&lt;/h2&gt;
+&lt;p&gt;I use ZSH with oh-my-zsh. It has a &lt;a href=&quot;https://github.com/ohmyzsh/ohmyzsh#custom-directory&quot;&gt;custom directory&lt;/a&gt; which is loads any &lt;code class=&quot;language-text&quot;&gt;.zsh&lt;/code&gt; files when the terminal is initialised. This is the recommended method of adding paths or custom functions instead of appending them onto &lt;code class=&quot;language-text&quot;&gt;~/.zshrc&lt;/code&gt;. Using the &lt;code class=&quot;language-text&quot;&gt;uname&lt;/code&gt; method as before, I can selectively include different paths and functions based on the operating system:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-bash line-numbers&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;# ~/.oh-my-zsh/custom/paths.zsh&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;uname&lt;/span&gt; -s&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Darwin&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+  &lt;span class=&quot;token function-name function&quot;&gt;do_mac_stuff&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hi From Mac&quot;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;# homebrew path&lt;/span&gt;
+  &lt;span class=&quot;token builtin class-name&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;&lt;span class=&quot;token environment constant&quot;&gt;PATH&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/usr/local/sbin:&lt;span class=&quot;token variable&quot;&gt;${&lt;span class=&quot;token environment constant&quot;&gt;PATH&lt;/span&gt;}&lt;/span&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;uname&lt;/span&gt; -s&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Linux&quot;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;
+  &lt;span class=&quot;token function-name function&quot;&gt;do_linux_stuff&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Hi from Linux&quot;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;token comment&quot;&gt;# Python on Linux&lt;/span&gt;
+  &lt;span class=&quot;token builtin class-name&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token assign-left variable&quot;&gt;&lt;span class=&quot;token environment constant&quot;&gt;PATH&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;&lt;span class=&quot;token variable&quot;&gt;${&lt;span class=&quot;token environment constant&quot;&gt;HOME&lt;/span&gt;}&lt;/span&gt;/.local/bin:&lt;span class=&quot;token variable&quot;&gt;${&lt;span class=&quot;token environment constant&quot;&gt;PATH&lt;/span&gt;}&lt;/span&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;fi&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;chocolatey&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#chocolatey&quot; aria-label=&quot;chocolatey permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Chocolatey&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://chocolatey.org/&quot;&gt;Chocolatey&lt;/a&gt; is a package manager for Windows. I&apos;ve used it many years ago and it has gotten a lot better since then for me to recommend it. Chocolately contained almost all of the applications I commonly installed. The only applications I had to install manually were &lt;a href=&quot;https://www.videohelp.com/software/LAV-Filters-Megamix&quot;&gt;LAV Filters Megamix&lt;/a&gt; and drivers for my printer.&lt;/p&gt;
+&lt;p&gt;After installing everything, I used &lt;a href=&quot;https://community.chocolatey.org/packages/choco-package-list-backup&quot;&gt;choco-package-list-backup&lt;/a&gt;, a tool by &lt;a href=&quot;https://github.com/bcurran3/ChocolateyPackages/tree/master/choco-package-list-backup&quot;&gt;bcurran3&lt;/a&gt; to backup the list of currently installed packages including their &lt;strong&gt;installation parameters&lt;/strong&gt;. The standard Chocolately backup does not backup &lt;strong&gt;installation parameters&lt;/strong&gt; as they can be sensitive. To do this, I set the &lt;code class=&quot;language-text&quot;&gt;&amp;lt;SaveArguments&gt;&lt;/code&gt; value to &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt; inside of the XML config:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;xml&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-xml line-numbers&quot;&gt;&lt;code class=&quot;language-xml&quot;&gt;&lt;span class=&quot;token prolog&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot;?&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Settings&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;Preferences&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;SaveArguments&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;true&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;SaveArguments&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;Preferences&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;Settings&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&quot;future-plans&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#future-plans&quot; aria-label=&quot;future plans permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Future Plans&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Continually sync changes (but safely to not include secrets) so the repo always remains up to date&lt;/li&gt;
+&lt;li&gt;Do more Windows-specific configuration&lt;/li&gt;
+&lt;li&gt;Add tests to validate everything works (CI for all OSes?)&lt;/li&gt;
+&lt;/ul&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[Chicory: A Colorful Tale]]></title><description><![CDATA[I enjoyed playing this game. The themes it explores were deep. The music matched the environments. The boss fights remind me of Undertale. Chicory: A Colorful Tale is a 2D…]]></description><link>https://calvin.me/chicory</link><guid isPermaLink="false">https://calvin.me/chicory</guid><category><![CDATA[chicory]]></category><pubDate>Mon, 23 Aug 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I enjoyed playing this game. The themes it explores were deep. The music matched the environments. The boss fights remind me of Undertale.&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;&lt;a href=&quot;http://chicorygame.com/&quot;&gt;Chicory: A Colorful Tale&lt;/a&gt; is a 2D adventure colouring game. I first heard about it on the &lt;a href=&quot;https://maximumfun.org/episodes/triple-click/the-games-of-summer/&quot;&gt;Triple Click podcast (Episode 63, The Games of Summer)&lt;/a&gt;.&lt;/p&gt;
 &lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden; &quot; &gt; &lt;iframe src=&quot;https://www.youtube.com/embed/zqSZrq5LzSU&quot; allowfullscreen=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
@@ -4319,7 +4425,7 @@ Session completed&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot;
 &lt;p&gt;Writing a blog post was always a big pain for me. I removed almost all of these pain points:&lt;/p&gt;
 &lt;h4 id=&quot;finding-a-featured-image-and-formatting-it&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#finding-a-featured-image-and-formatting-it&quot; aria-label=&quot;finding a featured image and formatting it permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Finding a featured image and formatting it.&lt;/h4&gt;
 &lt;p&gt;After writing each post I would have to find a featured image. This image then had to be edited in Photoshop, exported in two sizes (small and large), renamed and optimised using &lt;a href=&quot;https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer&quot;&gt;FileOptimizer&lt;/a&gt; or &lt;a href=&quot;https://imageoptim.com/mac&quot;&gt;ImageOptim&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Now all I have to do is find an image and rename it to &lt;code class=&quot;language-text&quot;&gt;thumbnail.png&lt;/code&gt; so that &lt;a href=&quot;https://www.gatsbyjs.org/packages/gatsby-image/&quot;&gt;gatsby-image&lt;/a&gt; and &lt;a href=&quot;https://www.gatsbyjs.org/packages/gatsby-transformer-sharp&quot;&gt;gatsby-transformer-sharp&lt;/a&gt; can take care of the rest.&lt;/p&gt;
+&lt;p&gt;Now all I have to do is find an image and rename it to &lt;code class=&quot;language-text&quot;&gt;thumbnail.svg&lt;/code&gt; so that &lt;a href=&quot;https://www.gatsbyjs.org/packages/gatsby-image/&quot;&gt;gatsby-image&lt;/a&gt; and &lt;a href=&quot;https://www.gatsbyjs.org/packages/gatsby-transformer-sharp&quot;&gt;gatsby-transformer-sharp&lt;/a&gt; can take care of the rest.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 797px; &quot;
@@ -4472,7 +4578,7 @@ Session completed&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot;
 &lt;p&gt;There are some things that still need to be done:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Hamburger menu on mobile devices for &lt;a href=&quot;/categories/&quot;&gt;Categories&lt;/a&gt; and &lt;a href=&quot;/tags/&quot;&gt;Tags&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Automatically load &lt;code class=&quot;language-text&quot;&gt;thumbnail.png&lt;/code&gt; instead of having to specify it in the frontmatter&lt;/li&gt;
+&lt;li&gt;Automatically load &lt;code class=&quot;language-text&quot;&gt;thumbnail.svg&lt;/code&gt; instead of having to specify it in the frontmatter&lt;/li&gt;
 &lt;li&gt;A fuzzy filter search&lt;/li&gt;
 &lt;/ul&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[OpenCore for ASUS ROG STRIX Z270-I]]></title><description><![CDATA[OpenCore bootloader configuration and files for the ASUS ROG STRIX Z270-I GAMING motherboard. Over the weekend I played around with the OpenCore bootloader for Hackintosh. I've…]]></description><link>https://calvin.me/opencore-for-asus-rog-strix-z270i</link><guid isPermaLink="false">https://calvin.me/opencore-for-asus-rog-strix-z270i</guid><category><![CDATA[hackintosh]]></category><pubDate>Thu, 16 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;OpenCore bootloader configuration and files for the ASUS ROG STRIX Z270-I GAMING motherboard.&lt;/p&gt;
 &lt;!-- more --&gt;
@@ -6050,68 +6156,9 @@ Installation finished. No error reported.&lt;/code&gt;&lt;span aria-hidden=&quot
 &lt;p&gt;Previously I was using Dropbox, then moved to &lt;strong&gt;&lt;a href=&quot;https://cryptomator.org/&quot;&gt;Cryptomator&lt;/a&gt;&lt;/strong&gt; with Dropbox to make use of all my free space. I got a bit tired of having to encrypt the entire Dropbox directory and decided to run my personal cloud storage server with &lt;a href=&quot;https://nextcloud.com/&quot;&gt;&lt;strong&gt;Nextcloud&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;I have &lt;a href=&quot;/my-72tb-freenas-server&quot;&gt;shared my 72TB FreeNAS server before&lt;/a&gt; and thought it would better to keep everything in there instead of keeping certain things separately as I did with Dropbox.&lt;/p&gt;
 &lt;p&gt;Nextcloud provides a complete self-hosted productivity platform but I won&apos;t be focussing on that. There&apos;s an &lt;a href=&quot;https://docs.nextcloud.com/server/16/admin_manual/configuration_files/external_storage_configuration_gui.html&quot;&gt;External Storage&lt;/a&gt; feature which allows for a lot of different backends such as SMB/CIFS, FTP and cloud providers. This mounts the share as a folder in Nextcloud natively so files and folders can be created, viewed and edited just as if they were any other.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/961b25e856d5875a7f959e277e712ba5/00c79/nextcloud-ext-storage.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 45.07042253521127%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAy0lEQVQoz5WRS27DMAxEdf/ruavewLKLAI4+Q1IjBTJTo2iQRR60IPgRMcOw73tc1xhj3DaSrTWetF+u2MyumJwvmBmAUjJEVFVEygkAEQGQS661ADMGYKZmJhOEMUYjzayPJ+cO630meu+qStJLqrIsy7quXgrjE0Qkxngch0sL/scr18DfTK1wOe5F+Lp9b+lHqngHW8tp6vdJkm5BztktAEBydpJBqX30fxveAeB+P1JKrbUxxmeaz7uU66JPzXzDq2EpT1JKqvoAlH0R75ThRtUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;nextcloud ext storage&quot;
-        title=&quot;nextcloud ext storage&quot;
-        src=&quot;/static/961b25e856d5875a7f959e277e712ba5/d6170/nextcloud-ext-storage.png&quot;
-        srcset=&quot;/static/961b25e856d5875a7f959e277e712ba5/53f68/nextcloud-ext-storage.png 213w,
-/static/961b25e856d5875a7f959e277e712ba5/df70d/nextcloud-ext-storage.png 425w,
-/static/961b25e856d5875a7f959e277e712ba5/d6170/nextcloud-ext-storage.png 850w,
-/static/961b25e856d5875a7f959e277e712ba5/00c79/nextcloud-ext-storage.png 879w&quot;
-        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/961b25e856d5875a7f959e277e712ba5/nextcloud-ext-storage.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Combine that with a web browser, mobile phone or their desktop applications and I can easily access and even sync files back and forth from my devices to Nextcloud.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 726px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c9a86a0186ae44b53f1418f76ea0caf9/c04c8/nextcloud-freenas.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 103.75586854460093%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAIAAADJt1n/AAAACXBIWXMAAAsTAAALEwEAmpwYAAABmElEQVQ4y41Uy27bMBDU//9Tr0kP/YMCiWsHPQSyGovkkvsuSDqK7Fp2FzoROzs7w6GG8RRmKFNIiWSa4/gxo1pmvfMVqQ3v08dAiG7GRKqqIiLsG2Wt3J2ZzEyYB1VNrIWYiVvHuem63EWEiMw058ws7j64+7fX08/3WQmtjb8iVFVmNjNmjjESMwDMp7mUUsHf38J+SpSBmG9uy+0cEWNMIgIAOWczq+Dnt7CbIuXUl9kCE1FKFZxSKqX0te3pML+MgTLcFLusjUQhhAaOX8xPh7A7RmXaMllE+qDODGvm50P4NSUqsDT9y6ytAIC5gb80N+aSQkHcYOY+COBTc84XmpVxScJtzYghBGZuzGXl9hhdxTY0d7c7Z7uqC7fDbkpuesftnt0UY2Wu4JXbr2NgzA/dzjmLSC4F4AyumnfHaEL3mVs8EzPnVivNx6rZtzW3KRJjFJHSyszPa+//QO37v7WxICJeJMxNH2oGgP4wsSViBVZ+HM/2qjr4bNiP33E/Jasx8ofxXMCqOnyOV+bNH9DVCsvJXxGz0M1yoFkDAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;nextcloud freenas&quot;
-        title=&quot;nextcloud freenas&quot;
-        src=&quot;/static/c9a86a0186ae44b53f1418f76ea0caf9/c04c8/nextcloud-freenas.png&quot;
-        srcset=&quot;/static/c9a86a0186ae44b53f1418f76ea0caf9/53f68/nextcloud-freenas.png 213w,
-/static/c9a86a0186ae44b53f1418f76ea0caf9/df70d/nextcloud-freenas.png 425w,
-/static/c9a86a0186ae44b53f1418f76ea0caf9/c04c8/nextcloud-freenas.png 726w&quot;
-        sizes=&quot;(max-width: 726px) 100vw, 726px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/c9a86a0186ae44b53f1418f76ea0caf9/nextcloud-freenas.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 802px; &quot;
@@ -6207,37 +6254,7 @@ Installation finished. No error reported.&lt;/code&gt;&lt;span aria-hidden=&quot
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;To view photos, I spun up Piwigo which is an open-source photo gallery software. Viewing photos on Nextcloud however horrendous. Piwigo&apos;s interface is better, but not the best. There are millions of plugins for it which slightly improve it but it&apos;s still far away from what you can expect with Google Photos.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/086cd5304482b4d28ec90e7fc0de2f2a/b842e/piwigo.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 52.58215962441315%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAACI0lEQVQoz32O3WtScRjHfx49NNQLp+ILiC+d05/g39FdxFYhs3OO5nXWCEf0cjO6cY7QYpCMGoGbBBXBeqENCqwNs9xcOk2Px/l2ji/naEdSfuGO0C6qz9XDw/fzPF+g1U4rFAoAgEwmA39DpVJZLBaz2YxhOI7jU1OnUBRVKpUIgvzTAQDI5XIAgMvlajQaX1NJURRpmjYajQAARI6MExqNRqfTGQwGvV4/PnYCqRFFUYPBoFgsQgg5jjOZTH9qSrJer1er1QiCyE6AoigAgCAIURRLpRKEkGVZSZaS4D9InwmC6PV65XJZkqXaE9NutTpsE+x2m8M+ma02G3baodNOz89fF4RepVKBELZaLafTabPbMQw7g+PgkpucmSMIkvRQ5EU3MTN3mSRJL0V5PR6313f2/OxKdLXT6TAMAyEUBMHvv0qRpM935dzsBfD8oLyaPPz8g6arlbVUfjtbpBmmWa92K/nEp61osrDDNPlOm+NaEMLhcNioHXXrTLpSW3yyAdbTxbVk7umX3LtM4XWmsH1QYMr0eMjkXiTT0d1cgq7znTbP8xBCOBp9PCy93c9v5pjFx+vgA8NtZKuxbHWr1EhV2Xiulig3Y9+rr4rs/t5OfK+w2+DbLNs9ln+NRpuFeizDfOP4B89egjtL9wOhSCAUubUcCYTCgVDkxlJ44XhzOxi6di8Yf/Ne7PcFQYAQ9vo/gyuP7gaXF8MP/Qs3fwOMnihQqMv29wAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;piwigo&quot;
-        title=&quot;piwigo&quot;
-        src=&quot;/static/086cd5304482b4d28ec90e7fc0de2f2a/d6170/piwigo.png&quot;
-        srcset=&quot;/static/086cd5304482b4d28ec90e7fc0de2f2a/53f68/piwigo.png 213w,
-/static/086cd5304482b4d28ec90e7fc0de2f2a/df70d/piwigo.png 425w,
-/static/086cd5304482b4d28ec90e7fc0de2f2a/d6170/piwigo.png 850w,
-/static/086cd5304482b4d28ec90e7fc0de2f2a/b842e/piwigo.png 1142w&quot;
-        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/086cd5304482b4d28ec90e7fc0de2f2a/piwigo.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Piwigo does not automatically load new photos from Nextcloud. New items must be synchronised which is a very intensive task if done incorrectly. After setting up my synchronisation settings, I updated &lt;a href=&quot;https://github.com/calvinbui/piwigo-playbook/blob/master/files/piwigo_refresh.pl&quot;&gt;this Perl script&lt;/a&gt; to be run by cron each hour to perform a sync with Nextcloud.&lt;/p&gt;
 &lt;p&gt;To finish it off, I have the following plugins installed:&lt;/p&gt;
 &lt;ul&gt;
@@ -7138,36 +7155,7 @@ Installation finished. No error reported.&lt;/code&gt;&lt;span aria-hidden=&quot
 &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/privacytoolsIO/comments/bia6sx/test_your_privacy/&quot;&gt;A list of sites from Reddit&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;My fingerprint from Browser Leaks:&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 533px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/de1a14e185c48453f787f537396d7ff1/4907d/browser-leaks.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 14.084507042253522%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVQI14WKOQ6DMBAA+f8LfezFQkSKBNvrdD4UCYqUGY2mmkVVmRgRj+cxxpxzjjF67621+Y8FYty3hxWrVj9WsxXdN0IS0ZyS5VKtWrFr+PV28c4hwPt13lM6E0RQUWaBEDHCyhKcRyAmYmRABIDgvcj6BaZXpmPtRj5iAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;browser leaks&quot;
-        title=&quot;browser leaks&quot;
-        src=&quot;/static/de1a14e185c48453f787f537396d7ff1/4907d/browser-leaks.png&quot;
-        srcset=&quot;/static/de1a14e185c48453f787f537396d7ff1/53f68/browser-leaks.png 213w,
-/static/de1a14e185c48453f787f537396d7ff1/df70d/browser-leaks.png 425w,
-/static/de1a14e185c48453f787f537396d7ff1/4907d/browser-leaks.png 533w&quot;
-        sizes=&quot;(max-width: 533px) 100vw, 533px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/de1a14e185c48453f787f537396d7ff1/browser-leaks.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;android-google-chrome&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#android-google-chrome&quot; aria-label=&quot;android google chrome permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Android Google Chrome&lt;/h2&gt;
 &lt;p&gt;On my phone, I&apos;m using &lt;a href=&quot;https://www.bromite.org/&quot;&gt;Bromite&lt;/a&gt;. Similar to ungoogled-chromium, it is a privacy enhanced web browser. From their website, it has:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -7206,69 +7194,11 @@ Installation finished. No error reported.&lt;/code&gt;&lt;span aria-hidden=&quot
 &lt;h2 id=&quot;dropbox&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dropbox&quot; aria-label=&quot;dropbox permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dropbox&lt;/h2&gt;
 &lt;p&gt;My fear with Dropbox is that they scan and keep every single file I upload even after I delete it from my account. They are a US based company and I wouldn&apos;t be surprised.&lt;/p&gt;
 &lt;p&gt;Storage is expensive, and I don&apos;t like paying for things that were already free. I use Dropbox because I have 53GB from a whole bunch of different campaigns and promotions.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 596px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/6342e8ee1066cedd8c573fc2089d355d/fe133/dropbox-space.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 98.59154929577466%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAACSklEQVQ4y21Uy5LVIBDl/7/CzejOhY5f4EJrdGPpXc52yklCbkLTD5oGLMLccRxv1ylCAqebHA642lqpHfVAqS2X+n+0a+GKcsvYFKvG3jG5Oo9ZAkS/ns/bFhH3PRCR+3of33zx776fb+7Wm7v17bftw0k2Kq0da3lBBiQAhIjMCYklqft8n97/wE8n+nii21/44We8PdHDlrOqiCZVSarZamvZ7EDRbElztuIettwEmmEr1IxajsXyHHIIAY8IAUSk1BYRY4wAgEeHmV27CNbR2tDvVXQpr2nmsplZGcjZVPuCzEp5zvH8/Ff2Wpvb9rCs67L4afZTb5dpXn5PU0QqtR6pewyamfXFIwUAzdkFgMd5mRe/+PO0+J7I+3nxjz3XOnv/OC/T4s1skKFH3MOuqk41J9UBvXSGyEmz5o6kWi7x0jmOU1q3sG47svBBSNlSNtHMqacIESe/kiiJnndY1s2fQyRJml3OOUCMSFaKlULEiBwRWdL4wix7AGIptSLSDgET9CErzqwEACIeGiJRjH1vWZ58miQdZB6jIQTSfYjvzIyIRXRspkhiFiJOScePpZSQiIjHaJSYi7TaSumVLUIgppGMiIkYAFPSUVmkHwmkPoFYgHat3Mm1umwVsHHqXqi1EXGXIOIeYNvDQePDmFRKrwwhAtBxfp/IhaUeJmzUj07sHo5ARCIswp17eEaki4d4IT/bcFwGT7Jxi9QRYttifx0TXnqzlOqGYV/gEEkrS+XUW5IqqV6m/b1aeuVar146r3E1/gA65YuD5afpvgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;dropbox space&quot;
-        title=&quot;dropbox space&quot;
-        src=&quot;/static/6342e8ee1066cedd8c573fc2089d355d/fe133/dropbox-space.png&quot;
-        srcset=&quot;/static/6342e8ee1066cedd8c573fc2089d355d/53f68/dropbox-space.png 213w,
-/static/6342e8ee1066cedd8c573fc2089d355d/df70d/dropbox-space.png 425w,
-/static/6342e8ee1066cedd8c573fc2089d355d/fe133/dropbox-space.png 596w&quot;
-        sizes=&quot;(max-width: 596px) 100vw, 596px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/6342e8ee1066cedd8c573fc2089d355d/dropbox-space.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;p&gt;A good workaround I found was to encrypt and decrypt Dropbox files on the fly. There were already a few solutions floating around and one of them, gocryptfs, even has a &lt;a href=&quot;https://nuetzlich.net/gocryptfs/comparison/&quot;&gt;comparison page&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;While the page doesn&apos;t list it, only one of them supported Windows, MacOS and &lt;em&gt;Android&lt;/em&gt; devices and that was &lt;strong&gt;&lt;a href=&quot;https://cryptomator.org/&quot;&gt;Cryptomator&lt;/a&gt;&lt;/strong&gt;. It was the only one that supported Android and was a good enough for my use. &lt;a href=&quot;https://play.google.com/store/apps/details?id=org.cryptomator&amp;#x26;hl=en_AU&quot;&gt;Cryptomator&apos;s Android app&lt;/a&gt; at time of writing is $15 AUD.&lt;/p&gt;
 &lt;p&gt;One downside of Cryptomator is it encrypts entire folders so &lt;a href=&quot;https://help.dropbox.com/syncing-uploads/selective-sync-overview&quot;&gt;Dropbox&apos;s Selective Sync&lt;/a&gt; feature no longer works. To work around this I made a normal &lt;code class=&quot;language-text&quot;&gt;cryptomator&lt;/code&gt; folder of everything I usually sync and an &lt;code class=&quot;language-text&quot;&gt;archive&lt;/code&gt; folder for everything else. It isn&apos;t a perfect solution as something like this will require a big download and upload whenever I decide to move folders around. &lt;a href=&quot;https://nuetzlich.net/gocryptfs/&quot;&gt;gocryptfs&lt;/a&gt; is able to work around this issue by encrypting the files contents while leaving folder and filenames in plain text. It is also much faster than cryptomator (and cryptfs) in my tests. &lt;a href=&quot;https://github.com/rfjakob/gocryptfs/issues/239&quot;&gt;If only a gocryptfs Android app existed&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 654px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/c60bcc2f1acd753e9fecd440a156e06a/ba4a2/cryptomator.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 72.30046948356808%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAABHElEQVQoz93O22rDMAwG4Lz/I2U90L5DL3qVjSX4JMuW7PjASjOSUNbB1u56H8JYhl9WY8B474l5jDGlNI5jCCEud16E5SQiviGiGKMQomGPifH17U0pVWudpqmU0vd913WIyERgUftkQwXKc/Fa5b0fGgAwxggpx0WtNcaotZZSIiIASKW0AXTzep7YeXKeOMRhGBpjjLVWa01EOedaawhhXRIAuq47nU7n81kphYjGmGEYlJSe/Bz23k/flVKcc36xTiGitb29OyL6Cl+v1x/Da+C+XTHz859/89/Ctda/hq21H3cul0tKCRHdQ0TU9/0cVkoBADOnlLTWQoic8/hQzllr3bTty2az2W63h8V+v9/tdodnjsdj27afQyUNvCYkZzAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;cryptomator&quot;
-        title=&quot;cryptomator&quot;
-        src=&quot;/static/c60bcc2f1acd753e9fecd440a156e06a/ba4a2/cryptomator.png&quot;
-        srcset=&quot;/static/c60bcc2f1acd753e9fecd440a156e06a/53f68/cryptomator.png 213w,
-/static/c60bcc2f1acd753e9fecd440a156e06a/df70d/cryptomator.png 425w,
-/static/c60bcc2f1acd753e9fecd440a156e06a/ba4a2/cryptomator.png 654w&quot;
-        sizes=&quot;(max-width: 654px) 100vw, 654px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/c60bcc2f1acd753e9fecd440a156e06a/cryptomator.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;keepassxc-password-manager&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#keepassxc-password-manager&quot; aria-label=&quot;keepassxc password manager permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;KeePassXC Password Manager&lt;/h2&gt;
 &lt;p&gt;I&apos;ve been using KeePass for a few years now so there is no change required here. The KeePass database is already encrypted so it is safe enough for me to store in the database.&lt;/p&gt;
 &lt;p&gt;For clients, I use:&lt;/p&gt;
@@ -7281,37 +7211,7 @@ Installation finished. No error reported.&lt;/code&gt;&lt;span aria-hidden=&quot
 &lt;h2 id=&quot;windows-10&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#windows-10&quot; aria-label=&quot;windows 10 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Windows 10&lt;/h2&gt;
 &lt;p&gt;I&apos;m sticking with Windows 10 because of the support it has for games I play. Gaming on Linux has gotten really good, but not at the level I&apos;m satisfied with.&lt;/p&gt;
 &lt;p&gt;Windows 10 sends a lot of telemetry data by default and this can be turned down from the Settings App. I took things a bit further and used &lt;a href=&quot;https://www.winprivacy.de/english-home/&quot;&gt;W10Privacy&lt;/a&gt; turned off everything that was possible to turn off.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/24e2f362aab9bb6c081481489bdd775f/68327/w10privacy.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 87.32394366197182%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAsTAAALEwEAmpwYAAACVUlEQVQ4y33RzW/aMBgG8Pz/t522yw6tpk7VWmjJB4FAoEkcO4FCV2ACgsZnSNI0xA6FUCriKbSaNhX66newbD2y9LwMwWTo/265rY7baTvt7qJnYasf9i0y6O3PFhkMyMDCVi/sdxfd9Cm9tGbejInIsvZYy86ueIfnPaG8lMvLcpmUtRcNUQNS+BdKIUQRTKBBjXE4ZkhIkIsuRxfsjM3ZrBQW5SdZfpJhokOq68n/aAokAFE0CkdMGISGV8vOWNbOc3ORd0V5pVRjtbJStBcIqfmenhiI1kfhmME4GgyF29anu87nVu/LYPR14pzM3NOpczL3v7mLs/ec4OwBf/f8LoPDqD2taMNTfXhWs3/U5xe/lnx/I/Y3Yi/O99YHdFeCtRHtYMBEmDTwTz4oFnG1/KSAnWnQhk7rHwBJDdLGKJykhTWCW27OCrbATdhyUJKxDJ41kxpGggx6AEqgSc23tg3fvJxecnNOIlKJlIpYqm6qkEJAwUFaokEK07ZxSEzXvJ5eCzYvBZJBDZQguIP6DsJdus/X3f7rbc94/3P9oXY1vsrbeXbMclOOnXDchM2NcoKTV1aKQY2D3LXLRCRqBI2czYqOKLqpwkPhFdgCtEPHwl7speFm2BQf86XHkhRISqwpa01ZaUoMwFY/lnwLE0yaiwY35wtuUbCFvCNWyE0F31TIDXgGJjWP2YdDAl39fHieGWcyk0x2milEBXkjV55lNVFVepQTO8wyWnYWnapXVX1N9VUQgOb2rk3bLdq+p/cf8GOf2W639P0kex/Oer3+Aw4KY1jctM6PAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;w10privacy&quot;
-        title=&quot;w10privacy&quot;
-        src=&quot;/static/24e2f362aab9bb6c081481489bdd775f/d6170/w10privacy.png&quot;
-        srcset=&quot;/static/24e2f362aab9bb6c081481489bdd775f/53f68/w10privacy.png 213w,
-/static/24e2f362aab9bb6c081481489bdd775f/df70d/w10privacy.png 425w,
-/static/24e2f362aab9bb6c081481489bdd775f/d6170/w10privacy.png 850w,
-/static/24e2f362aab9bb6c081481489bdd775f/68327/w10privacy.png 950w&quot;
-        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/24e2f362aab9bb6c081481489bdd775f/w10privacy.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;google-keep&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#google-keep&quot; aria-label=&quot;google keep permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Google Keep&lt;/h2&gt;
 &lt;p&gt;I&apos;m a big user of Google Keep to store notes, lists and to-do lists. While there is nothing there that is sensitive besides some gift card numbers, I wanted to see if I could rid myself of this Google product.&lt;/p&gt;
 &lt;p&gt;The very good, non-Google alternative is &lt;a href=&quot;https://www.zoho.com/notebook/&quot;&gt;Notebook by Zoho&lt;/a&gt;. Their &lt;a href=&quot;https://www.zoho.com/notebook/business-model.html&quot;&gt;privacy policy&lt;/a&gt; states they never read your notes, but do mention their &apos;Zia AI technology&apos; will scan it. Zoho Notebook also has &lt;a href=&quot;https://www.zoho.com/notebook/blog/notebook-update-introducing-encryption-at-rest-night-mode-enhanced-apple-pencil-support-and-more.html&quot;&gt;encryption at rest&lt;/a&gt; and an Android app (with widgets!). Ultimately, Zoho was a US company and I opted not to trust them with this.&lt;/p&gt;
@@ -7323,37 +7223,7 @@ Installation finished. No error reported.&lt;/code&gt;&lt;span aria-hidden=&quot
 &lt;li&gt;Google Keep &apos;tick box&apos; becomes a Joplin &apos;To do&apos; title&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;As every &apos;To do&apos; is a technically a note, I could add some more information underneath each.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/186862df7e67d7f16da2ef1380e15acc/9a8ca/joplin.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 49.29577464788733%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABf0lEQVQoz5WO2UrDQBhG8yDapjPJTCZJk8yWmSx2URGLPoNWq13j8qxee+2tRQimTQWpFe8U/DgXB34O/MbT88vbcllVVVmWq9WqXq/r9XY72dT1x2bzsd2mLMvX1+X2VNfv71VVVcZ0Nh9P5je30/F0XhQPi+K+uHso7h4Xxf10Vowns6vr2+HVzfVoPJktdn45HF0MR5fDkREyEVFhAtvzI8Y1tF0ToIZpO27QjlgQMj+glk0aTQgg3muC/SY0WwhYjgmQQZmMdWohopP86Pik0+13+4eUSRFnlKtY51ymUuVp3ut0jyiPpcpCKg46fZUeGEHIKJMNE4ZU6CSLVZKkORcyjLIkPVfqNFanSXqm9EDrgdKDWJ14bYVJBCzHYEIxofabYPeJCbAJUAtiTELXF673DfG450vic/dLMAm3MedxEFGECSY+tF0LfQNtAiz8Ow60idHrHTIhXa+NsAdsAr/46f/GUEkWRMxx2y2I4X9jP6Aqyf0gakH03/gT8jOj/Gtu8IcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;joplin&quot;
-        title=&quot;joplin&quot;
-        src=&quot;/static/186862df7e67d7f16da2ef1380e15acc/d6170/joplin.png&quot;
-        srcset=&quot;/static/186862df7e67d7f16da2ef1380e15acc/53f68/joplin.png 213w,
-/static/186862df7e67d7f16da2ef1380e15acc/df70d/joplin.png 425w,
-/static/186862df7e67d7f16da2ef1380e15acc/d6170/joplin.png 850w,
-/static/186862df7e67d7f16da2ef1380e15acc/9a8ca/joplin.png 868w&quot;
-        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/186862df7e67d7f16da2ef1380e15acc/joplin.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;gmail&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gmail&quot; aria-label=&quot;gmail permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Gmail&lt;/h2&gt;
 &lt;p&gt;We all know Google scans Gmail. According to Google, I have 58000 emails in my Gmail. That&apos;s a lot to go through but I&apos;m sure they&apos;ll find something they like in there. The truth ultimately is most people use Google or Microsoft to send their emails, and when I reply, Google will get my reply too. There&apos;s not much I can do here, but I&apos;ll try my best.&lt;/p&gt;
 &lt;p&gt;For an email provider, I had the following requirements:&lt;/p&gt;
@@ -7591,36 +7461,7 @@ Installation finished. No error reported.&lt;/code&gt;&lt;span aria-hidden=&quot
 &lt;li&gt;Multi connections option&lt;/li&gt;
 &lt;li&gt;3 runs with an average taken&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 451px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/8c1efcadb65f853d94692919c41e2b3c/99c16/speedtest.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 115.49295774647888%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAIAAACEf/j0AAAACXBIWXMAAAsTAAALEwEAmpwYAAACXklEQVQ4y41UWW6cQBD1HWKW7q5mnd6gYQCzNMzI64zzEceRcgT/5wCW/GUp944AW5rYZCZSCdFNvVp4r+qMkOTAlOdlQrRaD6nugyAPw0Ipk2VDmhqA9G/n5OzwgLHy/bwoLvv+vut2UVRw3pTlVd/fG7On9Ch4xrsudxxuOxxjhbByXGHb3LbZB88FMCEJQAokAawImgyr8eZTzctgghXxNKgWtBmNXYw3WP0HGCkSriHfQFyCp8HPpij9Qo4FMKSQDUC1a3PXFY7Nsc2B1aA6guRRMJIQV8Ab7HDGa87rNO09P8NY0XQ4lRlJiErKW+tL9PT06+Xl9/Pza93cWucxFR2EBcHyOLgC1iKH5eutMfuu24VhgZGkaiBwgmdFqAa1AZI69sqyRsMOGyMKc6rnkScJYUXVFoJipJdqiBuQG0KO8jwrYRQDVuDllPdUbKjYQNyOXw8dPoMRkpa1si2GJlXhtyIVRgJPIrWs1fl5fKjTszmn64pcby+vHzqzW8VlEBZhWBCSUKoZa3w/13q4vvl+e/ejrm7e475nRkhyVpvha9PcCVZL1XPeAqSel2+2D0oZpbq223VmX+Sbj+AZj/HcmI6iamRoPOrVqvb9nAYVDS+IV7iQEX9NqP7HYEyDid8nAU/9Q3JF60d68UjLb7R6AN4TJJfBb7/0cJKQJEiMCkP87WUx87gDkOKslcJIaeKoQnOTc8TxOdvSJvH9XMg2jkohO8bqICiCYE2nJk8oDCGZKHO7/5kmjeAtY42QJl9fhUGBP+2DhbJntSCkgqDwvAwhMRGxsEn+ANv/wA+gqxnkAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;speedtest&quot;
-        title=&quot;speedtest&quot;
-        src=&quot;/static/8c1efcadb65f853d94692919c41e2b3c/99c16/speedtest.png&quot;
-        srcset=&quot;/static/8c1efcadb65f853d94692919c41e2b3c/53f68/speedtest.png 213w,
-/static/8c1efcadb65f853d94692919c41e2b3c/df70d/speedtest.png 425w,
-/static/8c1efcadb65f853d94692919c41e2b3c/99c16/speedtest.png 451w&quot;
-        sizes=&quot;(max-width: 451px) 100vw, 451px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/8c1efcadb65f853d94692919c41e2b3c/speedtest.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -8112,7 +7953,7 @@ Installation finished. No error reported.&lt;/code&gt;&lt;span aria-hidden=&quot
         decoding=&quot;async&quot;
       /&gt;
   &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[Managing Dotfiles]]></title><description><![CDATA[How I backup, restore and sync preferences and settings across computers. Recently, I upgraded my Macbook at work but had to spend a few hours setting everything up again from…]]></description><link>https://calvin.me/managing-dotfiles</link><guid isPermaLink="false">https://calvin.me/managing-dotfiles</guid><category><![CDATA[dotbot]]></category><pubDate>Mon, 11 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;How I backup, restore and sync preferences and settings across computers.&lt;/p&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[Managing Dotfiles]]></title><description><![CDATA[How I backup, restore and sync preferences and settings across computers. Recently, I upgraded my Macbook at work but had to spend a few hours setting everything up again from…]]></description><link>https://calvin.me/managing-dotfiles</link><guid isPermaLink="false">https://calvin.me/managing-dotfiles</guid><category><![CDATA[dotbot]]></category><category><![CDATA[dotfiles]]></category><pubDate>Mon, 11 Feb 2019 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;How I backup, restore and sync preferences and settings across computers.&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;Recently, I upgraded my Macbook at work but had to spend a few hours setting everything up again from scratch. This meant switching back and forth between both machines when the newer one was missing something I needed.&lt;/p&gt;
 &lt;p&gt;The weekend came around and I started exploring the different dotfile options available. GitHub has a &lt;a href=&quot;https://dotfiles.github.io/&quot;&gt;curated list of dotfile tools&lt;/a&gt; I explored and eventually came to an approach I liked.&lt;/p&gt;
@@ -9775,257 +9616,26 @@ Refreshing &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span 
 &lt;p&gt;&lt;img src=&quot;/00f96c3f66230244f17da9670feb814b/post.gif&quot; alt=&quot;Post Differences&quot;&gt;&lt;/p&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[Remove Device from Windows Safely Remove Menu]]></title><description><![CDATA[A step-by-step guide to remove unwanted devices such as DVD drives, USB drives, capture cards and permanently attached hard drives from appearing in Window's Safely Remove and…]]></description><link>https://calvin.me/remove-device-from-safely-remove-menu</link><guid isPermaLink="false">https://calvin.me/remove-device-from-safely-remove-menu</guid><category><![CDATA[windows]]></category><pubDate>Sat, 09 Sep 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;A step-by-step guide to remove unwanted devices such as DVD drives, USB drives, capture cards and permanently attached hard drives from appearing in Window&apos;s Safely Remove and Eject Media.&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;First thing you want to do is find the device in Device Manager. Go to it&apos;s &apos;Details&apos; page and choose the &apos;Device instance path&apos; property. Take note of this value.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/f977c54592f4fff97ba8dca2ee3de28d/d9f49/device-manager.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 113.6150234741784%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAIAAACEf/j0AAAACXBIWXMAAAsTAAALEwEAmpwYAAACD0lEQVQ4y+2Sy27bMBBF9f9fUXRRoKt8QNF0kdZOUcBwbcu23k9btDgUSYniQ5KtQCjSpokRIF334Cw4iwsOLsZys9PeDR0/SfJTnBVBfIjS496L7J0fRLkXpmFayO6s+stTWzMgoBYCRnCJcUkAKkIIAK0IrSrAJaO0AuCMKSW1Vs9sW2F5cb617TjJXMdJs5wAxHFaFGi92QAhWmshBGP8msxiraGUlrjUWmMMlFKlNGesaRoAglBBKRvH8fI34zgaY6xGD3vPW65WWsk8yw+HAwaCiuKEEMaAUEFINV5jCpNaGq2kVJfxbUxh4CL0vY29JVXFGaOUMs6bZwjxTCGElNKqGhl4/mKxuJ/dz+fz2Wy+2+3zPE+SJH0ke0EUx5zzae0SoaaVv1q5uuHlBb/XbsMgWC5XURR7nmdvt34QBn7g+4HruOv1eu+4VUVrXvM/1JSyumkszERT12WJAQAwRugEAARgmjEcj0eMQRvTdZ15pOs6pTWv6yl8Pg9vbHq8jGMjxBQehv7yKtdaGJtGWCUT5+HtP/8P/2u477vzqwxPnMZh6IehboR1osJo00ot1XWV0mo6sV6bTmszvfuh6wfRSotUtJe1brl5oW55LzllbBWiH2t3sY/s+FQWB3+3CZwdoIN1uy3nHp65V/zm4nsP327LD/Ps3Rfn/V3w8Xv+aZnc3G1uvtqff6YPJzAgrMJS2x8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Device Manager&quot;
-        title=&quot;Device Manager&quot;
-        src=&quot;/static/f977c54592f4fff97ba8dca2ee3de28d/d9f49/device-manager.png&quot;
-        srcset=&quot;/static/f977c54592f4fff97ba8dca2ee3de28d/53f68/device-manager.png 213w,
-/static/f977c54592f4fff97ba8dca2ee3de28d/d9f49/device-manager.png 400w&quot;
-        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/f977c54592f4fff97ba8dca2ee3de28d/device-manager.png&quot; alt=&quot;Device Manager&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Open RegEdit and search for that device under &lt;code class=&quot;language-text&quot;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum&lt;/code&gt;, mine was under &lt;code class=&quot;language-text&quot;&gt;USB&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/e64f965f1374ed686a005057a4aa30c4/87817/regedit-path.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 51.64319248826291%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAAsTAAALEwEAmpwYAAABTUlEQVQoz42Ry3LaQBBF9f8flg2V2LFxJDECIRCyxIBmRvPsnlcMLmcVl30Wd9Wnqm93UR6m/nia6HVmCxfSOrSA2jjr0DhQxipjHXrwAUP0IYEPFoNH3F9MMby+nqfzNHb1y6/fj89VWTakoZTud+3p2NM7WivnrFwE58yBFZxbrbajKLTDnHPEy3h8qutdu2u5EDnn+XIVjMcY8wcAsCwy52ytVVK0VBXaQYw3edg/lH/quipP/ZBSUkrlT0jplj1zhbaQUkY7barVj9W6bvYhhBijUvobsoMUE6Adx81zRdr+nHP23kspvyXHGFNENTdN9TT0AyIaYyi93OfSl3L2durI6ufDCyGEMQ4AjPF3+R//kc392gmv9LRutt2hOzi47aL1V505FEzIZREz7dpmvdlsCSFdd1BKzTOTUi4fCCGcc/4Oos8pvL3qL2KxO8siUX2bAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Path to copy&quot;
-        title=&quot;Path to copy&quot;
-        src=&quot;/static/e64f965f1374ed686a005057a4aa30c4/d6170/regedit-path.png&quot;
-        srcset=&quot;/static/e64f965f1374ed686a005057a4aa30c4/53f68/regedit-path.png 213w,
-/static/e64f965f1374ed686a005057a4aa30c4/df70d/regedit-path.png 425w,
-/static/e64f965f1374ed686a005057a4aa30c4/d6170/regedit-path.png 850w,
-/static/e64f965f1374ed686a005057a4aa30c4/87817/regedit-path.png 857w&quot;
-        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/e64f965f1374ed686a005057a4aa30c4/regedit-path.png&quot; alt=&quot;Path to copy&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Find the &lt;code class=&quot;language-text&quot;&gt;Capabilities&lt;/code&gt; key in one of the subfolders and it&apos;s value (which should be greater than 0).&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 509px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/2de84319d5ebe745573df962bbb68a24/98235/unchanged-value.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 61.03286384976526%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+klEQVQoz2WSy5KbMBBF+f/fymZmkcx4HECA9UYyktAL2xiwQSnbU6lU5dSp7q5e3NXNKGWc8es0jeN1eszx+tjfjOMopTyfL/O8zPPsvZdCvu5pmrKOcQYhY3xd1/Qf27oShI0x99s9pTTPM6NMCqmUTlvKANR5jpq6GoZTSmndtm1L27a9sm63BRTl/msPymrdthjiz18fRVFyxpfbPROEMojqqlad9qcRMwmpQEwwqSAVXe+7PgjVH42P4+JPI5M6r3FdN7a3mcCEQdjUDUGECtU/cc4OMTrnLpfLuq7r/b6u99uy3JYlpQ0zsf9dyFZkGLUEsqauCabKht3u6+3tnfPWOWet7fvePFH6G2ftvqirBo7jJVMUteiAEDbaaDeUZbnb7YQQxhittTGGEtp1yjn7iFDK9j1oUFlWlNCso5hUpZTdPM/axaqqhRAhhOGJ9x4eYFEUANSM8ec/NojmedHyNlMUCwQxJi3jTCpjTIzR/yUEjFGe5/CAvPcxDpfzGTQYgOrQHLKOIASKvrfn4UTa4xBjCD6G8NL7AJja1RQw3WlDCT5K0UBSFIBRmmnBj5z11qeUlBvaoxbdt7LTVOr3kv/4qN5KXiL+8bkvQLMHh6IE03XKQoiPJm1bSmm8Xo11xvp/tT64MFgfeuddHGyINsRXhf4AKZaRikEMYl8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Capabilities&quot;
-        title=&quot;Capabilities&quot;
-        src=&quot;/static/2de84319d5ebe745573df962bbb68a24/98235/unchanged-value.png&quot;
-        srcset=&quot;/static/2de84319d5ebe745573df962bbb68a24/53f68/unchanged-value.png 213w,
-/static/2de84319d5ebe745573df962bbb68a24/df70d/unchanged-value.png 425w,
-/static/2de84319d5ebe745573df962bbb68a24/98235/unchanged-value.png 509w&quot;
-        sizes=&quot;(max-width: 509px) 100vw, 509px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/2de84319d5ebe745573df962bbb68a24/unchanged-value.png&quot; alt=&quot;Capabilities&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Right-click the folder and select &lt;code class=&quot;language-text&quot;&gt;Copy Key Name&lt;/code&gt; to grab the full path, i.e. &lt;code class=&quot;language-text&quot;&gt;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Enum\USB\VID_07CA&amp;amp;PID_4710\201128500097&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 282px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0d02068cd12ec322ae86e9488462043c/75fda/copy-key-path.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 84.50704225352112%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAIAAABSJhvpAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC6ElEQVQ4y12RS1fbRhiG9bO7SLrKaUM2oV12R9Mk7aI0NGkI0HA4IZQWbIFkXeY+utojaeSZkWxM8IUeG07q9D3f9pnv/Z6xZq07r//I82E/SwrRl2WRxnEaJaUQhSgWi8Xtl7meTPqirHGYodCajqNRdRqzziVg5x49uQg+nLunNujhRGlzjy7+y+TqKhelIiBHgXV9PS2knshXf8HoXYfvdvlBF9N0ICqV55nn+ZRyIQpjjF5FKSXrWqYJC31r9e58NP40Ve+bwQkiWZLljdFtYxAIDg4PX+3s+EHYjkZKqTveGKOMcV3Huqt1M7u91ftjccxZP4pYrVRjDAQw8IPx1WS8Rmqth2qY53noB9biplxMaFXpOj+L0N9eD3hOb/W85oxBCKWs18D7VFWFILTmrXtT/k5JzHnieOHlhQ0BWbGKUXZhXxYDcXfq52it67oO/NCaj3pT+YbTlCDoeZ7rOCBEWi/1yKoSAyFEMfwySqlKyp7jWLNRMK33l5sZdVy32+2EwRJujEYAfDw+AQC2bavXqhtjhsOh67rWfORN5duIZ5wzRhlEiBCitW6MQRB6XhAEYZqmTdOsw1JKxpg1a3tTuctIzClFEIVhiBA0q29NkwRjihHOsmwpea12URRCCGs+Dqf1ASVJEkdgucrDGGuzPDqOIoJJmmZam/8Jq6pqMBjcC4t4zggGEIZBQBldyjaaEOI4LufxqulSoVqNNuYz7M7ka4LiLIkgQo7jABC2jR4bTRFwbDvouXa3E7hOXZXjVo8aPW6NqlfwpIlHlS0GJaMUYxLxqJQyKQ0XGqUlTCVMK5BWIC552fLC0H7NBgomRZr3LQBgCAjCiBAMAAC+jwn9wb5+ej779r148Gv4YBt+vYMfboOvful982f5fXfxXWe2efbpuOtbGxtPV7P5eGPz0aMnP/382z9u+OYMvzzyXxw6W29Pn+11nu2dPz+wt3bPXhw6L4+8rX37xz17+93Rv/rhf/7QDnoGAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Copy Key Path&quot;
-        title=&quot;Copy Key Path&quot;
-        src=&quot;/static/0d02068cd12ec322ae86e9488462043c/75fda/copy-key-path.png&quot;
-        srcset=&quot;/static/0d02068cd12ec322ae86e9488462043c/53f68/copy-key-path.png 213w,
-/static/0d02068cd12ec322ae86e9488462043c/75fda/copy-key-path.png 282w&quot;
-        sizes=&quot;(max-width: 282px) 100vw, 282px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/0d02068cd12ec322ae86e9488462043c/copy-key-path.png&quot; alt=&quot;Copy Key Path&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Open Task Scheduler and click on &apos;Create Task&apos;.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 531px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/b1b72a6407bfca63872da930616157de/b2c14/task-scheduler-create.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 33.80281690140845%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/UlEQVQY032NTU/CMABA+ye56EEPMPFA9J95MBL8SCRhcRkoZoIENjrWwbqu7b5YdJsbq1G5Cby868sDJoSus/IIXkdhHAVx6EcBP6zPvGrzdXJ6Bjp3D1ed3k13oGhQ0aA6Xgx1/Gq4LzPnebraqfqOJsivHdXB3LRlzbpVJtddrS2P2vL4cWjd943eaNU3mKrT/z5NyZsd144bAML5ZxIGnFPX5ZQwj2QfSRKFRZ6LPZRlKYSoSy1g6DNGECEesm2f8yzbNpUQVbXboviJG1ILmBBuipxRih2crJPfbsvhs9S8ALquM+ajhWUjtERL6lEX4zRNxX7+4ub55Tcc23cvfPyGYgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Task Scheduler General&quot;
-        title=&quot;Task Scheduler General&quot;
-        src=&quot;/static/b1b72a6407bfca63872da930616157de/b2c14/task-scheduler-create.png&quot;
-        srcset=&quot;/static/b1b72a6407bfca63872da930616157de/53f68/task-scheduler-create.png 213w,
-/static/b1b72a6407bfca63872da930616157de/df70d/task-scheduler-create.png 425w,
-/static/b1b72a6407bfca63872da930616157de/b2c14/task-scheduler-create.png 531w&quot;
-        sizes=&quot;(max-width: 531px) 100vw, 531px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/b1b72a6407bfca63872da930616157de/task-scheduler-create.png&quot; alt=&quot;Task Scheduler General&quot;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Change User or Group (under Security Options)&lt;/strong&gt;: &lt;code class=&quot;language-text&quot;&gt;SYSTEM&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Configure for&lt;/strong&gt;: Choose your version of Windows&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 632px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/3ca08eba9e694e6552914f6d86906a1a/afa26/task-scheduler-general.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 76.05633802816901%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB8UlEQVQoz42SyW7dMAxF/f9flm3RIG2S53mUKYqSJWvyVNgvSJo0i14caFhcXkJU0gJ1PesB63YYGG861vZjz6DtWTcAA2x7xkn5ZXNx/RtlbNIzDmysyrIsirIo2qZOX291VWVpWpVlnmWvz89d206TUkp+IQFxHkKI5ektbq+39Jamt/Tl+SXPcxSIiOIbIRElgLJv2xCCQMEYA4BJa2vtfPGu+V/mOWGchq6TSgNplIZLPYfFr/sby/e45Zhml9A0LyEY6/2yH/+t/TiUcYky/jiOuG6TX8MVFdY9rMd9dWfI9kF8w8adtE2EMgJx6AfgwvlgXbDWWxecP4nrtu7Hne1zZ9a505ynWdt0HABGQMSRjSMbAYADzPO8LDGGsCxRa10WZVM3dV0Pw3A+mDROEQkhtDHGaKWU1vqese/7um3rpW3bvPcAgJwjcCHIWnuaYwh0+kkpxZEj4jSpGGNc3rSu633f94/WnXMJ6XNkHDgb2HjN2cyz+yzv3Dnq2Trn3v3e+wRoQg5KTXqaSBCR9N5rrY35WiJ4H/xV57oaYxJOihCNMce+Cc6v78h/Pz3lWTb0/Ttd16Vlk5ZN1XRd29ZVBTAmDRNcSIbEuACkEQmERDkhKS4kFxKEFCRrRg+/6ofH7LGEvKh+/Hwqm/4Pd7ZR8cYFEq8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Task Scheduler General&quot;
-        title=&quot;Task Scheduler General&quot;
-        src=&quot;/static/3ca08eba9e694e6552914f6d86906a1a/afa26/task-scheduler-general.png&quot;
-        srcset=&quot;/static/3ca08eba9e694e6552914f6d86906a1a/53f68/task-scheduler-general.png 213w,
-/static/3ca08eba9e694e6552914f6d86906a1a/df70d/task-scheduler-general.png 425w,
-/static/3ca08eba9e694e6552914f6d86906a1a/afa26/task-scheduler-general.png 632w&quot;
-        sizes=&quot;(max-width: 632px) 100vw, 632px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/3ca08eba9e694e6552914f6d86906a1a/task-scheduler-general.png&quot; alt=&quot;Task Scheduler General&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Under Triggers, choose &lt;strong&gt;At start up&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 632px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/933a01413cf59c73d0549a1e24410a24/afa26/task-scheduler-triggers.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 76.05633802816901%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbElEQVQoz9WSzW6kMBCEef8Hy3W1UfaUHcADNm3a/2CwjQ0RmZEy2lUuUS751HKXWi71oauiQtMBYJRXOjCOPQMKfACkjDMYOcqecaFNSHmN22PZyVekYx0hI8DIeXcljNLmUtO+b5um7zrStpfXV4BhnqfJuck55+xdWFsJM2mltNaIAhGttYjI+YiIAPzUwAEAEWNK+74fx1He27qGSjtvjV6WNeccQtBKpW3LOW+fYK1Z1/PzsiyV0K5t6mGAGKOztmna255lWf8nhHAlZGBDznme50qaKW9bjLGUkktOKYV3yieklGKM+77fzPPxJX6y2c7Hsd8OeHsfxbdt3vd7fZiV9YxSxpjWmhAipOSc13XjpumfqJS8lfsol1LOkCg3CzzD6JwFxow1SkraU+/9ozmmZH0wPvg1xngGwfu56rhSxgltURlpHCojlFHGodSjUKNQXCghFRnk0x/y9Pz3uYZL3f76/dJe6RvAH2DXkNEoGAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Task Scheduler Triggers&quot;
-        title=&quot;Task Scheduler Triggers&quot;
-        src=&quot;/static/933a01413cf59c73d0549a1e24410a24/afa26/task-scheduler-triggers.png&quot;
-        srcset=&quot;/static/933a01413cf59c73d0549a1e24410a24/53f68/task-scheduler-triggers.png 213w,
-/static/933a01413cf59c73d0549a1e24410a24/df70d/task-scheduler-triggers.png 425w,
-/static/933a01413cf59c73d0549a1e24410a24/afa26/task-scheduler-triggers.png 632w&quot;
-        sizes=&quot;(max-width: 632px) 100vw, 632px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/933a01413cf59c73d0549a1e24410a24/task-scheduler-triggers.png&quot; alt=&quot;Task Scheduler Triggers&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Under Actions, click New and add the following:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Action&lt;/strong&gt;: Start a program&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Program/script&lt;/strong&gt;: &lt;code class=&quot;language-text&quot;&gt;C:\Windows\System32\reg.exe&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;For the arguments you will need the &lt;strong&gt;key path&lt;/strong&gt; (copied earlier) and the value of &lt;strong&gt;Capabilities minus 4&lt;/strong&gt;. Mine was 20 so I put in 16.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Arguments&lt;/strong&gt;: &lt;code class=&quot;language-text&quot;&gt;add &quot;&amp;lt;path&gt;&quot; /v Capabilities /t REG_DWORD /d &amp;lt;number&gt; /f&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 454px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/27289ac323c632acafd4db25b8d5f5da/d0486/task-scheduler-action.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 110.32863849765258%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAWCAIAAABPIytRAAAACXBIWXMAAAsTAAALEwEAmpwYAAACAUlEQVQ4y+2U227cIBCG/f6vVVU9XKRpEhuMbWANODaYAWy8zkFNK7zdbDZpq0q97adfiAt+mBkGskpaJnuu9PzwtDx+P+nhNMaHp/n+20uF9bGHOVMDmOFW9/0UQpyneQrzFOI0zUdNISwx3t+tL3W37mOcM6Z0y1lV1aQs66quqqoiFcElxmVJCEYov77Z7YTzHhyAcwcdyLjSnVJ93xdFgRDK85wQopSSPxFSKSHE7hxKqTEm450u8htKWdM0dV1jhCml3Tm3b1BKWWszqaEhpCwrSEH5eSMc8d4/T57nB1LYSruW86JAVcoQj+NoxzGl5c9IdufsOKYzAMDaZJaDVZ2klHK+Y5w1DRWiJZgMg17XdVmW/X6/X5a4X0frECYfPn6+uLzirQCAdLKSomkopYwxRhtKSiKk3HZPgLW9AUTlNWGXRf0lJ6hpLxC34DJlHGcUFRgXCOOSUipaYYw55em9sTBYNxibZJ0Br7SFZNYgpRCt2DFOKRsGHWM8Gn8CAKlVlrjETUtakMKWGuYppEaapq2dvHtdrM3v3Fap5ybxh2rDtv6E/zu2amt4FeR/8z+bQ5ILvzT786t6ywje+smAP1zj1g7HVzWF3wXm4xRoN77PxbsL9AmLa9ox2ny9vKqqOn0GfzJ7PwXfacC7HlNBxMA7c9spxpiU6TP4Ae2Ov0n+Ndi3AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Task Scheduler Action&quot;
-        title=&quot;Task Scheduler Action&quot;
-        src=&quot;/static/27289ac323c632acafd4db25b8d5f5da/d0486/task-scheduler-action.png&quot;
-        srcset=&quot;/static/27289ac323c632acafd4db25b8d5f5da/53f68/task-scheduler-action.png 213w,
-/static/27289ac323c632acafd4db25b8d5f5da/df70d/task-scheduler-action.png 425w,
-/static/27289ac323c632acafd4db25b8d5f5da/d0486/task-scheduler-action.png 454w&quot;
-        sizes=&quot;(max-width: 454px) 100vw, 454px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/27289ac323c632acafd4db25b8d5f5da/task-scheduler-action.png&quot; alt=&quot;Task Scheduler Action&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Save your new task and run it. You should see the results immediately as the device will no longer appear in the Safely Remove menu. Logoff/Restart and the Safely Remove menu icon will be gone if there are no removable devices connected.&lt;/p&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[Microsoft Outlook - Send a reply using an email template]]></title><description><![CDATA[A simple macro to send a range of email templates, prefilled with different items like your subject line, recipients, CC and BCC. I have tested this script on Windows 8.1 running…]]></description><link>https://calvin.me/outlook-reply-with-template</link><guid isPermaLink="false">https://calvin.me/outlook-reply-with-template</guid><category><![CDATA[outlook]]></category><category><![CDATA[email]]></category><pubDate>Sat, 19 Aug 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;A simple macro to send a range of email templates, prefilled with different items like your subject line, recipients, CC and BCC.&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;p&gt;I have tested this script on Windows 8.1 running Outlook 2013.&lt;/p&gt;
@@ -10079,36 +9689,7 @@ Refreshing &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span 
 &lt;h2 id=&quot;connecting-to-milestone-xprotect&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#connecting-to-milestone-xprotect&quot; aria-label=&quot;connecting to milestone xprotect permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Connecting to Milestone XProtect&lt;/h2&gt;
 &lt;p&gt;Once the RTSP stream is up and running at &lt;code class=&quot;language-text&quot;&gt;rtsp://ip-address:554/unicast&lt;/code&gt;, you can to connecting to it with VLC (File &gt; Media &gt; Open Network Stream). Connecting it to Milestone however using the Universal Driver does not work strangely. Others have run into this issue as well on the &lt;a href=&quot;https://force.milestonesys.com/support/MccSupportCommunity?id=9060O000000Xb0UQAS&quot;&gt;Milestone Support Community&lt;/a&gt;. Using Wireshark, I suspect the issue is the Universal Driver attempting to access &lt;code class=&quot;language-text&quot;&gt;/unicast/&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;/unicast/track1&lt;/code&gt; when &lt;code class=&quot;language-text&quot;&gt;/unicast&lt;/code&gt; without the trailing slash is the correct path.&lt;/p&gt;
 &lt;p&gt;The alternative is to open the stream in VLC and pass it onto Milestone.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 716px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/da9c0b1d7aa3caf4651243a62e2d84ed/62b6c/camera-stream.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 60.56338028169014%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC4ElEQVQozxXCS0zTAAAA0CbiJ+IgisYPSJTJRBiI+7Vd27Xr2q7tunZ0g7GNLWPs063tNhjjowwlSMT4IRFjMMZ4MfGTeNSLJiYa8RM1XjUxGoPx4sGLHsRE48sDCDeFESTuJkmSZrw8hhMgjIIwAiIY6MQgxGWHUAeEOEDYarNBsNNisfb0HO3s6jGZOgCPHPFEskxCE7S52uXbxeKk4HHLrM8Jug/sb7UcgxoNDcb9LT4mIJD0QEa98/TlzUcvV+4+8rho4LDbu5MK7JBTSG05lhmTpUg2yOXjSQSkdhnqG7Zt3bxhQ1N9He/hyyMl3t9348nrT3/+rn75HR/Rgd0OZBMpNSXHvdXFtpaDLMmkeNeIyAXFaNu+1r0GQ+OWjS27mgbkVLVQlVkPV5p79319dW09qU0AdDi+U4ztLcwTw2N7GrYHOSruxRNeV1pkwxzLOEGeIJKDwxVtojokhSWumYlPLS4///wrqU8AbCRu8EWaczU5rY8VtIXaTC7kT/uJLIcoLJznUc1PqH4ix9oypDnqcaBCqMMCzV28kipNATgv1SH8+fuPP7z/8OLZ80un58oRIcfYc7Qjz4AK5cgzkMohmg/RBEQT4XKYHh4MLd24Fc3qQC/oNLHy2o+fa1+/rZw7O5OJlUJuhbEr1P95xq77oFEJHZfxaogc78dLsmu+pDx4+3FIqwAWFHNK/a9evbl6YVEfZIt9REGAFa9doa0KZVO9jlG/sxJAJwfIyQg1HfVOJcTZXOLavYdySgVQQeCSmaUz88UYnw+68iKmCrDug3QfVBLgsh+pSOhEiDg+SNfi/Kl0fy0TXdCzC8vXyUAYcIsSFhpSM0k9xhdkXBVR1Q+XRLQcwMp9rjEZrwaJ6TB9IsbNjgRrmejJXOJMpRhNK2YrCLR3dTebOnstVtjSDfaYQHM7bDbC5ja40wh3tsFdRqT7kKu3A7d1E6DFZu4gICuFOY85IOORrn+qfPIHy45wXQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Add the camera&quot;
-        title=&quot;Add the camera&quot;
-        src=&quot;/static/da9c0b1d7aa3caf4651243a62e2d84ed/62b6c/camera-stream.png&quot;
-        srcset=&quot;/static/da9c0b1d7aa3caf4651243a62e2d84ed/53f68/camera-stream.png 213w,
-/static/da9c0b1d7aa3caf4651243a62e2d84ed/df70d/camera-stream.png 425w,
-/static/da9c0b1d7aa3caf4651243a62e2d84ed/62b6c/camera-stream.png 716w&quot;
-        sizes=&quot;(max-width: 716px) 100vw, 716px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/da9c0b1d7aa3caf4651243a62e2d84ed/camera-stream.png&quot; alt=&quot;Add the camera&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;1-vlc-passthrough&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-vlc-passthrough&quot; aria-label=&quot;1 vlc passthrough permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. VLC Passthrough&lt;/h3&gt;
 &lt;p&gt;Save the following as a &lt;code class=&quot;language-text&quot;&gt;.bat&lt;/code&gt; file:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell-session&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell-session line-numbers&quot;&gt;&lt;code class=&quot;language-shell-session&quot;&gt;&lt;span class=&quot;token output&quot;&gt;C:\..\..\vlc.exe rtsp://ip-address/unicast :sout=#rtp{sdp=rtsp://:8554/} :sout-keep&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -10120,36 +9701,7 @@ Refreshing &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span 
 &lt;span class=&quot;token key atrule&quot;&gt;Username&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &amp;lt;default&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;
 &lt;span class=&quot;token key atrule&quot;&gt;Password&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
 &lt;span class=&quot;token key atrule&quot;&gt;Driver&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Universal 1 channel driver&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 756px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1e3195c2aa8f937285210b26c9b8014b/68c0a/add-camera.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 15.96244131455399%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAIAAAAcOLh5AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjUlEQVQI103G0QrCMAxA0f3/jwkiDhEVQUEcODVtl3bdkrRN9UEYXs7DbcA6sG4ixjAaN4B1nPLbWAwxzvQGEycKY/RxHigt3Cycc3PvoXvCELm3eO0e3cvgJIDRU+oNrjbbdbtrD8f95XZ2sjhZDpQaImJmVS2lEJGI/L6q5pw9YvCeiYT581etVbV8AS/yqby8C8oPAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Add the camera&quot;
-        title=&quot;Add the camera&quot;
-        src=&quot;/static/1e3195c2aa8f937285210b26c9b8014b/68c0a/add-camera.png&quot;
-        srcset=&quot;/static/1e3195c2aa8f937285210b26c9b8014b/53f68/add-camera.png 213w,
-/static/1e3195c2aa8f937285210b26c9b8014b/df70d/add-camera.png 425w,
-/static/1e3195c2aa8f937285210b26c9b8014b/68c0a/add-camera.png 756w&quot;
-        sizes=&quot;(max-width: 756px) 100vw, 756px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/1e3195c2aa8f937285210b26c9b8014b/add-camera.png&quot; alt=&quot;Add the camera&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;3-configure-camera-settings&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-configure-camera-settings&quot; aria-label=&quot;3 configure camera settings permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. Configure camera settings&lt;/h3&gt;
 &lt;p&gt;Configure the camera with the same configuration as below:&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-yaml line-numbers&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;Video Settings&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
@@ -10169,70 +9721,12 @@ Refreshing &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span 
   &lt;span class=&quot;token key atrule&quot;&gt;Keep-alive type&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Default
   &lt;span class=&quot;token key atrule&quot;&gt;Connecting URI&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;token key atrule&quot;&gt;RTSP port&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;8554&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 747px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/18f0faf8f67b3e3e1a59f64fbffaf82a/a6dfb/camera-settings.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 41.78403755868545%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAIAAAB2/0i6AAAACXBIWXMAAAsTAAALEwEAmpwYAAABKUlEQVQY0z2Qa27EIAwGc//zdduGkBDCyxgbDMkBquwqHc2/TyMZpsW4r++f1dhSayaGQoAFkAApE4cEh4+ABbkicX7WBAi5TD4md9gYwnHY3WxMZfQuTUbvwbsYfPA+xXvVy1Iwj967SGt1t3bCwl1Ea62XxWw3lWtrTUScc61VRJxnZYxZFuW9l7tslfmwdgKkWllrvd7oEDyVwkT8npkZAJRS+77rdQWAUgoRIaLd9zsmot95/vQheGYuBZnpOGytNYTwer2MMQDp+ue8cs5TLjR6X9dVKQWQRFp/uO9rVURijM45gHSeQ0R6lzE6EU0+QgzBWrttm3NH7/JxjA6QmPn9QfJpHtsYAzNMIWWABJARsbV2jvHxOs/78cztQR5brdd5Lmr+AwNwtPCn9TfjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Camera Settings&quot;
-        title=&quot;Camera Settings&quot;
-        src=&quot;/static/18f0faf8f67b3e3e1a59f64fbffaf82a/a6dfb/camera-settings.png&quot;
-        srcset=&quot;/static/18f0faf8f67b3e3e1a59f64fbffaf82a/53f68/camera-settings.png 213w,
-/static/18f0faf8f67b3e3e1a59f64fbffaf82a/df70d/camera-settings.png 425w,
-/static/18f0faf8f67b3e3e1a59f64fbffaf82a/a6dfb/camera-settings.png 747w&quot;
-        sizes=&quot;(max-width: 747px) 100vw, 747px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/18f0faf8f67b3e3e1a59f64fbffaf82a/camera-settings.png&quot; alt=&quot;Camera Settings&quot;&gt;&lt;/p&gt;
 &lt;h3 id=&quot;optional-autostart-vlc&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#optional-autostart-vlc&quot; aria-label=&quot;optional autostart vlc permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Optional: Autostart VLC&lt;/h3&gt;
 &lt;p&gt;There are two options when it comes to autostarting VLC with Windows.&lt;/p&gt;
 &lt;h4 id=&quot;run-bat-file-on-startup&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#run-bat-file-on-startup&quot; aria-label=&quot;run bat file on startup permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Run .bat file on startup&lt;/h4&gt;
 &lt;p&gt;Use Windows Task Scheduler. &lt;strong&gt;Make sure you have the absolute path to vlc.exe in the &lt;code class=&quot;language-text&quot;&gt;.bat&lt;/code&gt; file.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 637px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a2e5c3de30e5a566fb42a6e5f085656b/90cda/task-scheduler.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 76.99530516431925%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAAsTAAALEwEAmpwYAAABjklEQVQoz8WSXa+cIBCG9///tnN7sm7r1gMKDorDlyBYVxukZzdNmrS96hNCGOBl3gEubT90LeWc9ZwLEMMgPj4+GGNtS6HvKSGUEIUYl2UJPgTv57k0a81FTFoIASJjjNFaA+SIcw4A/AQAFOIopdY6pRRPvPcX5UIIfjmZ59k5F2MMIZSZGGPZHU5ijI/HY9/34zhijJdROQGAiEXAGDPGzNmVLWc9KWEIIaX0EhujpZSImFLSWk/TJKUchgERyxgRx0+WZXHOreuaUsri48g2/oZimBACANu2ZfG+5zLKwv4njuNQSoUQ1nX9t8zl9HVdXzX/N7Hd9/x427Y9Ptn3HH7/Hdu2vZ5qMjMlpKpuTdNUVXW/3+u6vl6vhBD2K13HGONKqZcYbWCso5QiYtM04zgCQF3X1tqS/2nnafu88lMMUgWfP4+1Nv9652bngvc5PjHWzs6KSb/d2reKfOlG1tLb7QbQX6Y5Nh0MaLVfeqnZMPEBS8/Hn60fkYrpnYh3Ir4ySbn41va0H38AuhNZ5i4G+b4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Add the camera&quot;
-        title=&quot;Add the camera&quot;
-        src=&quot;/static/a2e5c3de30e5a566fb42a6e5f085656b/90cda/task-scheduler.png&quot;
-        srcset=&quot;/static/a2e5c3de30e5a566fb42a6e5f085656b/53f68/task-scheduler.png 213w,
-/static/a2e5c3de30e5a566fb42a6e5f085656b/df70d/task-scheduler.png 425w,
-/static/a2e5c3de30e5a566fb42a6e5f085656b/90cda/task-scheduler.png 637w&quot;
-        sizes=&quot;(max-width: 637px) 100vw, 637px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/a2e5c3de30e5a566fb42a6e5f085656b/task-scheduler.png&quot; alt=&quot;Add the camera&quot;&gt;&lt;/p&gt;
 &lt;h4 id=&quot;install-as-a-windows-service&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install-as-a-windows-service&quot; aria-label=&quot;install as a windows service permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Install as a Windows Service&lt;/h4&gt;
 &lt;p&gt;In my experience, running VLC as a Windows Service was caused Connection Errors with Milestone but your mileage may vary.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell-session&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell-session line-numbers&quot;&gt;&lt;code class=&quot;language-shell-session&quot;&gt;&lt;span class=&quot;token output&quot;&gt;vlc.exe -I ntservice --ntservice-install --ntservice-extraintf=http --ntservice-name=VLC --ntservice-options=&quot;rtsp://ip-address/unicast :sout=#rtp{sdp=rtsp://:8554/} :sout-keep&quot;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -13350,36 +12844,7 @@ Refreshing &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; &lt;span 
 &lt;/ol&gt;
 &lt;h2 id=&quot;flowchart&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#flowchart&quot; aria-label=&quot;flowchart permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Flowchart&lt;/h2&gt;
 &lt;p&gt;This is a basic flow chart of how this script works.&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 580px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/43cdc94146e652eb3012d6dd8c6ee2ea/12f38/flowchart.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 116.90140845070422%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAIAAACEf/j0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEW0lEQVQ4y33SW2wUVRgH8NEEEhKe0ESND2qUKi8mKpFEfTAYJKYakBBMjJcQEkVAY6BAiIgPBklICPKgEeTScpFSGmppKgVtoBQvUHrZ7Q5zZs7cdna3nd25nJnZuZ0zs3vMUK4+mPwfzy/fd/L/GMUlIoqMiO795+CiAwvX92948+iSj3vW6CHVPFKqJ0UPGxH9dmhP6/G31vWve/t4a9uFr6oRLdUT5iYOzZju/vPHVw8teu/0qsXtr7/f/eEM1m7jHRd3Ldz/wvLOZS8feOnzc213sezgcp0OFdn2XPfRXN+R691nJgdLdqLaccnGRTsuo3QQjh4e6Tw2dvbgWNeAdHUqaJb9m3jGV/zUjKiGqUZpkVJAqUBpoUHZJuUpVSnVKS1TamFaC2nZT8t+egsrLpFQLEYJHC2Djb1gY6+wuV/acSG39Vxh2zlp+wDYdJb7ogfuGiyavlYn5fr9WLFjhVJ53xXArAEPruUfWC/O2SrP2SLN3gxntwFmLWA+4eduUjlTjZuqS1QvuQe7RKmnihnJf1fk4bI8XJEvacJFjRvU4KUSvFKBF0ty3pL9RvbSS5T/Yi+R/UQNPDVw1ABpkVNw7IJjy4ED60jyPdWzVctWvMZ9WHKIhCIxpOX8SeeHuc7hJ92OZ932+ejQfOdIi9vxnNuxAB14zPlpXkX4XQ6p4sa3sJxVjUUHS3WqX95unXrN7F1m9a6wet41z6+q9a80epYbZ1eapxfXBtYoTih7qewR2UsYySHi3STQawgB5T3KhxRSOjZi59RIoJRzm4JPYUBFJ7kT5o6EWRIeYd6KgJ8AI+S3/QZmbRLm7xS7J0VMJQeLNp5h0r1YQFiwMY9wwYjyXsJdq0gv7lUe+UZu2SU/85388A5xdRcwY2hFghlCK+TNEDqEmZmpuqTiRtAKJDMQnZhVPWH3EHxqp8BsFGZthm/sF86wnIWBFfNWDBHmrJi1CAMR0bzkvBZu+cteP2R+ecXceR0VEGEblJ3QwYoOfvt5gDBIKcgw5m0sOYmASIZ5hKtB+n3Omfuz2nKi9Gi71nKiNF6LC7UoX09ZTEFCgZNwVgzCJoiafNSUvBTYhLUzTKaDZD/rPXGs9Pypcssv5VfOTI0ZccHGeSNmzZi3MI+IgAg/WeNHpoSxabkaQS9lLcxAhCUUCwiPV6Or0+G16XCiFmVfMqOChfMWzk2H45iO7RnmmU/hvK955rMbrQfH3ZSzMCPY8Y1aAK1QQdGE7heqvmAEeb2erwachXMGHtWz/W8MF+HqLnHDr/CjTuHQCPAbIiKMgMiU3+iEwdI+fWmfvqRP/+APY9IiACXAJnkTTxgxb2MhTCVKxZSKTSomzVs984hUg8a+nPvQYfXp46XHO4oLTpau6fGkmY2dMDBrY4AIb2PRxKJ1OzNYQKRST7ug39qvrxiovtOvrx408ibmrKwMLlshC4/IvYd59zyhkyhuotVT1cuiuClnkzv5H/wvLT52hTqpUgYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Flowchart&quot;
-        title=&quot;Flowchart&quot;
-        src=&quot;/static/43cdc94146e652eb3012d6dd8c6ee2ea/12f38/flowchart.png&quot;
-        srcset=&quot;/static/43cdc94146e652eb3012d6dd8c6ee2ea/53f68/flowchart.png 213w,
-/static/43cdc94146e652eb3012d6dd8c6ee2ea/df70d/flowchart.png 425w,
-/static/43cdc94146e652eb3012d6dd8c6ee2ea/12f38/flowchart.png 580w&quot;
-        sizes=&quot;(max-width: 580px) 100vw, 580px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-        decoding=&quot;async&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[Usenet Providers Speed Test from Sydney]]></title><description><![CDATA[I signed up for a few trials before the Black Friday sales to test out some different providers and their download speeds. Testing Setup All testing was performed on NZBGet 17.1 My…]]></description><link>https://calvin.me/usenet-speed-test</link><guid isPermaLink="false">https://calvin.me/usenet-speed-test</guid><category><![CDATA[usenet]]></category><pubDate>Thu, 08 Dec 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I signed up for a few trials before the Black Friday sales to test out some different providers and their download speeds.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/43cdc94146e652eb3012d6dd8c6ee2ea/flowchart.png&quot; alt=&quot;Flowchart&quot;&gt;&lt;/p&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[Usenet Providers Speed Test from Sydney]]></title><description><![CDATA[I signed up for a few trials before the Black Friday sales to test out some different providers and their download speeds. Testing Setup All testing was performed on NZBGet 17.1 My…]]></description><link>https://calvin.me/usenet-speed-test</link><guid isPermaLink="false">https://calvin.me/usenet-speed-test</guid><category><![CDATA[usenet]]></category><pubDate>Thu, 08 Dec 2016 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I signed up for a few trials before the Black Friday sales to test out some different providers and their download speeds.&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;h2 id=&quot;testing-setup&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#testing-setup&quot; aria-label=&quot;testing setup permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Testing Setup&lt;/h2&gt;
 &lt;ul&gt;
