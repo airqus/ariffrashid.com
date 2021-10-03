@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-js",
+    "path": "/tags/usb-pd/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"Super Fast Charging is Samsung's marketing term for charging their mobile phones between 25W to 45W. I went deep into a rabbit hole to…","timeToRead":7,"fileAbsolutePath":"/home/runner/work/calvin.me/calvin.me/master/posts/2021/2021-10-04-super-fast-charging/index.md","frontmatter":{"title":"Super Fast Charging","tags":["charging","cables","usb-pd"],"categories":["Mobile"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/3f1e153dd42b3c88de3e5723492505ec/thumbnail.svg"}}}}]}},"pageContext":{"tag":"usb-pd"}},
+    "staticQueryHashes": []}

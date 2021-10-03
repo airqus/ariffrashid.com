@@ -1,4 +1,467 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Tue, 28 Sep 2021 11:27:49 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Cross-Platform Dotfiles]]></title><description><![CDATA[How I manage configs across different computers and operating systems. From my previous post, I'm still thoroughly enjoying dotbot for managing my dotfiles and bootstrapping new…]]></description><link>https://calvin.me/cross-platform-dotfiles</link><guid isPermaLink="false">https://calvin.me/cross-platform-dotfiles</guid><category><![CDATA[dotbot]]></category><category><![CDATA[dotfiles]]></category><pubDate>Wed, 08 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;How I manage configs across different computers and operating systems.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Sun, 03 Oct 2021 13:04:48 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Super Fast Charging]]></title><description><![CDATA[Super Fast Charging is Samsung's marketing term for charging their mobile phones between 25W to 45W. I went deep into a rabbit hole to enable the feature recently upgraded after…]]></description><link>https://calvin.me/super-fast-charging</link><guid isPermaLink="false">https://calvin.me/super-fast-charging</guid><category><![CDATA[charging]]></category><category><![CDATA[cables]]></category><category><![CDATA[usb-pd]]></category><pubDate>Mon, 04 Oct 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://www.samsung.com/global/galaxy/what-is/super-fast-charging/&quot;&gt;Super Fast Charging&lt;/a&gt; is Samsung&apos;s marketing term for charging their mobile phones between 25W to 45W. I went deep into a rabbit hole to enable the feature recently upgraded after upgrading from a Galaxy S10+ to a Galaxy S21 (&lt;a href=&quot;https://www.ozbargain.com.au/node/648279&quot;&gt;on Telstra Day for AUD $624&lt;/a&gt;).&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;div class=&quot;table-of-contents&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#samsungs-charging-technologies&quot;&gt;Samsung&apos;s Charging Technologies&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#super-fast-charging-is-usb-pps&quot;&gt;Super Fast Charging is USB PPS&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#hardware-and-software-requirements&quot;&gt;Hardware and Software Requirements&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#wall-charger&quot;&gt;Wall Charger&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#car-charger&quot;&gt;Car Charger&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#cables&quot;&gt;Cables&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#blitzwolf-bw-fc1&quot;&gt;BlitzWolf BW-FC1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#ugreen-right-angle&quot;&gt;UGreen Right Angle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#belkin&quot;&gt;Belkin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#conclusion&quot;&gt;Conclusion&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;samsungs-charging-technologies&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#samsungs-charging-technologies&quot; aria-label=&quot;samsungs charging technologies permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Samsung&apos;s Charging Technologies&lt;/h2&gt;
+&lt;p&gt;Samsung (and other manufacturers) has made a couple of buzzwords for their charging technology. For Samsung, there&apos;s a couple to take note of:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Fast Charging&lt;/strong&gt;: Cable charging up to 15W. Also known as Adaptive Fast Charging.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fast Wireless Charging&lt;/strong&gt;: Wireless charging up to 9W.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fast Wireless Charging 2.0&lt;/strong&gt;: Wireless charging up to 15W. Only supported with official Samsung chargers.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super Fast Charging&lt;/strong&gt;: Cable charging up to 25W. Uses USB-PD and USB PPS.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Super Fast Charging 2.0&lt;/strong&gt;: Cable charging up to 45W. Uses USB-PD and USB PPS.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;super-fast-charging-is-usb-pps&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#super-fast-charging-is-usb-pps&quot; aria-label=&quot;super fast charging is usb pps permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Super Fast Charging is USB PPS&lt;/h2&gt;
+&lt;p&gt;Samsung&apos;s Super Fast Charging is another word for USB Power Delivery (USB-PD) 3.0 PPS (programmable power standard). To break that down:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;USB Power Delivery (USB-PD)&lt;/strong&gt; is a standard for chargers and devices to communicate with each other to charge at higher voltages (originally up to 5V). This standard is also used by laptops, cameras and computer monitors.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;USB PPS&lt;/strong&gt; is the third revision of the USB-PD standard. With PPS, the power being delivered can now be controlled in smaller steps in real-time.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These standards can be found on the &lt;a href=&quot;https://usb.org/document-library/usb-power-delivery&quot;&gt;USB Implementers Forum (USB-IF) document library&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;hardware-and-software-requirements&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#hardware-and-software-requirements&quot; aria-label=&quot;hardware and software requirements permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Hardware and Software Requirements&lt;/h2&gt;
+&lt;p&gt;My Galaxy S21 only charges up to 25W and my &lt;a href=&quot;/samsung-galaxy-tab-s7-plus-keyboard-case-mod&quot;&gt;Galaxy Tab S7+&lt;/a&gt; charges up to 45W. This is still a conservative number, given some phones are now charging over 100W. Instead of focusing on reaching 25W, &lt;strong&gt;I wanted to achieve around 100W&lt;/strong&gt; for future-proofing. To achieve this, I needed the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;USB PD 3.0 PPS wall charger&lt;/li&gt;
+&lt;li&gt;USB PD 3.0 PPS car charger&lt;/li&gt;
+&lt;li&gt;USB-C 5V Cables&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On the phone itself, fast charging has to be enabled under Settings &gt; Battery and Device Care &gt; Battery &gt; More battery settings.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;settings-s21.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;wall-charger&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#wall-charger&quot; aria-label=&quot;wall charger permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Wall Charger&lt;/h2&gt;
+&lt;p&gt;There aren&apos;t many wall chargers available with an Australia plug, so it simplified my choices. Furthermore, I wanted a charger with multiple ports to charge multiple items at once.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://huwder.com/products/100w-multi-usb-device-charger-station-for-cellhones-laptops-and-tablets?VariantsId=10001&quot;&gt;HUWDER 110W 5 Port Desktop PD Charger Station&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://satechi.net/products/108w-pro-usb-c-pd-desktop-charger?variant=32118454386776&quot;&gt;Satechi 108W Pro USB-C PD Desktop Charger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.nekteck.com/product/usb-if-certified-usb-c-charger-nekteck-5-port-111w-usb-wall-charger-with-type-c-87w-power-delivery-pd-charger-station-compatible-with-2017-macbook-pro-pixel-32xl-galaxy-s9-plus-ipad-pro-2018/&quot;&gt;Nekteck 5-Port 111W USB-IF Certified Charger&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I went with the HUWDER as it was the cheapest (use code &lt;code class=&quot;language-text&quot;&gt;huwder110w&lt;/code&gt;). They are also the OEM for &lt;a href=&quot;https://www.amazon.com.au/HEYMIX-Charging-Station-Charger-Compatible/dp/B092VKH7JX&quot;&gt;HEYMIX on Amazon&lt;/a&gt; and the reviews there were good as well. Shipping took two weeks to arrive, with the last mile being done by courier.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.33802816901409%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABQBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAZ3aiG0aJ//EABoQAAICAwAAAAAAAAAAAAAAAAECAxIAIjP/2gAIAQEAAQUCtVjiqzCZRdzvBy//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8Bla//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8BsY//xAAXEAEBAQEAAAAAAAAAAAAAAAABABEQ/9oACAEBAAY/AseaMOTF/8QAGhABAAIDAQAAAAAAAAAAAAAAAQAxESFBof/aAAgBAQABPyFQEizTO5UhnsDaRLW2P0n/2gAMAwEAAgADAAAAEFgP/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAEhUf/aAAgBAwEBPxDRNn//xAAYEQACAwAAAAAAAAAAAAAAAAAAASExUf/aAAgBAgEBPxDAUbP/xAAeEAEAAgEEAwAAAAAAAAAAAAABABEhMUFRgWGh0f/aAAgBAQABPxByxlKYb35iWLlNYD5FuoDLjqCYVpvuFAI0r8xDO5V7Z//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;huwder packaging&quot;
+        title=&quot;huwder packaging&quot;
+        src=&quot;/static/0f8b7f14a02051a6fe739d3e3cbb9450/8a34a/huwder-packaging.jpg&quot;
+        srcset=&quot;/static/0f8b7f14a02051a6fe739d3e3cbb9450/08b27/huwder-packaging.jpg 213w,
+/static/0f8b7f14a02051a6fe739d3e3cbb9450/6f6b2/huwder-packaging.jpg 425w,
+/static/0f8b7f14a02051a6fe739d3e3cbb9450/8a34a/huwder-packaging.jpg 850w,
+/static/0f8b7f14a02051a6fe739d3e3cbb9450/63107/huwder-packaging.jpg 1275w,
+/static/0f8b7f14a02051a6fe739d3e3cbb9450/fef31/huwder-packaging.jpg 1700w,
+/static/0f8b7f14a02051a6fe739d3e3cbb9450/1bc0c/huwder-packaging.jpg 3632w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The HUWDER has 2 USB-C and 3 USB-A ports. They have a &lt;a href=&quot;https://ueeshop.ly200-cdn.com/u_file/UPAK/UPAK437/2006/photo/ba90abd12e.jpg&quot;&gt;diagram on their website showing the power allocation&lt;/a&gt; when multiple ports are used. When both USB-C ports are used, they are split 60W/30W. HUWDER also sell a more &lt;a href=&quot;https://huwder.com/products/150w-dual-pd-usb-c-4-ports-portable-desktop-fast-charger-station-for-phones-and-laptops-huwder-38?VariantsId=10064,10065&quot;&gt;expensive model&lt;/a&gt; that splits &lt;a href=&quot;https://ueeshop.ly200-cdn.com/u_file/UPAK/UPAK437/2011/photo/7bcbfb154c.jpg&quot;&gt;87W/60W&lt;/a&gt; and &lt;a href=&quot;https://huwder.com/products/150w-4-ports-three-usb-c-pd-fast-charging-station-for-multi-devices-huwder-265?VariantsId=11401,11402&quot;&gt;an even more expensive model&lt;/a&gt; with three USB-C ports that split &lt;a href=&quot;https://ueeshop.ly200-cdn.com/u_file/UPAK/UPAK437/2106/photo/875a91b394.png&quot;&gt;60W/45W/45W&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 139.90610328638496%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAcABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAQD/2gAMAwEAAhADEAAAAbilVbtMzAIROVjBwV//xAAbEAACAgMBAAAAAAAAAAAAAAABAgADESEiEv/aAAgBAQABBQJm8qlvTW7tPAO2bdrjGRmMoi1rBP/EABkRAAEFAAAAAAAAAAAAAAAAAAABAhARMf/aAAgBAwEBPwF2lCx//8QAGREAAgMBAAAAAAAAAAAAAAAAAAECEBEx/9oACAECAQE/AY8NE1lf/8QAGhAAAgIDAAAAAAAAAAAAAAAAAAERMRAggf/aAAgBAQAGPwKS5LGLDQq5r//EABsQAQEBAAMBAQAAAAAAAAAAAAEAESExUUFh/9oACAEBAAE/IUfxMke7GzyYnCfyU5t5lY7br9YJ6c8LyfYhuWM6L//aAAwDAQACAAMAAAAQwA5A/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAEDAQE/EA4yzBW2/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAgEBPxBi1twMXL//xAAeEAEBAQEAAgIDAAAAAAAAAAABEQAxUYFBYXGRsf/aAAgBAQABPxABtQBfKzOGDAkj+szhIclu8pn9GfLoIUZ3xk7R9YGIJDg3n5xOXGvz94ppDJW9V17ukX7eaBCQTm//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;huwder front&quot;
+        title=&quot;huwder front&quot;
+        src=&quot;/static/21fca30a9eced175ed8b9eab565233e7/8a34a/huwder-front.jpg&quot;
+        srcset=&quot;/static/21fca30a9eced175ed8b9eab565233e7/08b27/huwder-front.jpg 213w,
+/static/21fca30a9eced175ed8b9eab565233e7/6f6b2/huwder-front.jpg 425w,
+/static/21fca30a9eced175ed8b9eab565233e7/8a34a/huwder-front.jpg 850w,
+/static/21fca30a9eced175ed8b9eab565233e7/63107/huwder-front.jpg 1275w,
+/static/21fca30a9eced175ed8b9eab565233e7/fef31/huwder-front.jpg 1700w,
+/static/21fca30a9eced175ed8b9eab565233e7/62f8d/huwder-front.jpg 2220w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;It uses a standard figure-8 cable and the base is rubber, so it doesn&apos;t slide around. The base is also removable.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 61.03286384976526%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCBf/EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAHJSbM6BH//xAAaEAACAwEBAAAAAAAAAAAAAAABAgMREgAT/9oACAEBAAEFAtLWoqQb6JB6NEjFRS//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPwFX/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEB/9oACAECAQE/AciP/8QAGRAAAwEBAQAAAAAAAAAAAAAAAAERIRIx/9oACAEBAAY/AudZ7BtNwpWtIj//xAAbEAEAAwEAAwAAAAAAAAAAAAABABExIUFRYf/aAAgBAQABPyGl5XBj1LXq2U+mVGpeOnyaPthFgT//2gAMAwEAAgADAAAAEE//AP/EABcRAAMBAAAAAAAAAAAAAAAAAAABIRH/2gAIAQMBAT8QesiH/8QAFhEBAQEAAAAAAAAAAAAAAAAAIQAB/9oACAECAQE/EMYZt//EAB0QAQADAAIDAQAAAAAAAAAAAAEAESExgUFRYeH/2gAIAQEAAT8QK8BNl/vUC7P5J3hM1BjL8Hw9wHlWheLmyOAOqurYCFcBP//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;huwder back&quot;
+        title=&quot;huwder back&quot;
+        src=&quot;/static/93efa62b5c70bb2f2646b75499b7bdcb/8a34a/huwder-back.jpg&quot;
+        srcset=&quot;/static/93efa62b5c70bb2f2646b75499b7bdcb/08b27/huwder-back.jpg 213w,
+/static/93efa62b5c70bb2f2646b75499b7bdcb/6f6b2/huwder-back.jpg 425w,
+/static/93efa62b5c70bb2f2646b75499b7bdcb/8a34a/huwder-back.jpg 850w,
+/static/93efa62b5c70bb2f2646b75499b7bdcb/63107/huwder-back.jpg 1275w,
+/static/93efa62b5c70bb2f2646b75499b7bdcb/fef31/huwder-back.jpg 1700w,
+/static/93efa62b5c70bb2f2646b75499b7bdcb/daa48/huwder-back.jpg 3864w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgADBP/EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAFDNGm75n//xAAaEAACAwEBAAAAAAAAAAAAAAABAgADERIh/9oACAEBAAEFAmtAY3ea5jKelQmZP//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/AVf/xAAWEQEBAQAAAAAAAAAAAAAAAAAAEiH/2gAIAQIBAT8BxL//xAAbEAACAgMBAAAAAAAAAAAAAAAAATEyAhJBof/aAAgBAQAGPwLVSVxKeCZwk//EABkQAQADAQEAAAAAAAAAAAAAAAEAESFhMf/aAAgBAQABPyFWVn2/I48OsBDR7TY0NYVFi8ThT//aAAwDAQACAAMAAAAQHx//xAAYEQACAwAAAAAAAAAAAAAAAAAAAREhcf/aAAgBAwEBPxBy7NH/xAAXEQEBAQEAAAAAAAAAAAAAAAABACFx/9oACAECAQE/EAGXF//EABsQAQEAAgMBAAAAAAAAAAAAAAERADEhQWGB/9oACAEBAAE/ENsGwkTp+5aONoUPXC6JOCh7KWZRqPy7rivuihbhFhLq5//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;huwder base&quot;
+        title=&quot;huwder base&quot;
+        src=&quot;/static/d927b725330e9df912ffceeaa2f6d2c9/8a34a/huwder-base.jpg&quot;
+        srcset=&quot;/static/d927b725330e9df912ffceeaa2f6d2c9/08b27/huwder-base.jpg 213w,
+/static/d927b725330e9df912ffceeaa2f6d2c9/6f6b2/huwder-base.jpg 425w,
+/static/d927b725330e9df912ffceeaa2f6d2c9/8a34a/huwder-base.jpg 850w,
+/static/d927b725330e9df912ffceeaa2f6d2c9/63107/huwder-base.jpg 1275w,
+/static/d927b725330e9df912ffceeaa2f6d2c9/fef31/huwder-base.jpg 1700w,
+/static/d927b725330e9df912ffceeaa2f6d2c9/5e692/huwder-base.jpg 2999w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;car-charger&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#car-charger&quot; aria-label=&quot;car charger permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Car Charger&lt;/h2&gt;
+&lt;p&gt;In my research, there were four 100W USB PD 3.0 PPS car chargers on the market:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.blitzwolf.com/18W-QC3.0-+100W-PD3.0-Car-Charger-p-734.html&quot;&gt;BlitzWolf BW-SD8&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Xiaomi CC07ZM 1A1C&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.aliexpress.com/item/1005003161602319.html&quot;&gt;Baseus CCZX-160C&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.aliexpress.com/item/1005002546381515.html&quot;&gt;Baseus Superme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I went with the BlitzWolf BW-SD8 as it was the cheapest. It has 1 USB-C and 1 USB-A port.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 77.46478873239437%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAABzovqi5aR/8QAGhAAAgMBAQAAAAAAAAAAAAAAAQIAAxIRIv/aAAgBAQABBQLlrlq8gYjElV8qLWn/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAeEAACAQMFAAAAAAAAAAAAAAAAAhEBITESIlGBof/aAAgBAQAGPwLEF6mPSF4Lpqk2olOj/8QAGxABAAMBAAMAAAAAAAAAAAAAAQARIUFRgaH/2gAIAQEAAT8hXLXxDbWqcOvJjo9qEE1pAPv6WpTwPAZ//9oADAMBAAIAAwAAABBo7//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EKj/xAAVEQEBAAAAAAAAAAAAAAAAAAAQIf/aAAgBAgEBPxCH/8QAHRABAAICAgMAAAAAAAAAAAAAARExAHEhQVGBof/aAAgBAQABPxBSMeWeAedZUf0VhbWIWm18x8hGddudbkhiJiLm9Y5AdiQj2i5//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;car 1&quot;
+        title=&quot;car 1&quot;
+        src=&quot;/static/cd8b26f587032a0eadbbb5f5fce120c7/8a34a/car-1.jpg&quot;
+        srcset=&quot;/static/cd8b26f587032a0eadbbb5f5fce120c7/08b27/car-1.jpg 213w,
+/static/cd8b26f587032a0eadbbb5f5fce120c7/6f6b2/car-1.jpg 425w,
+/static/cd8b26f587032a0eadbbb5f5fce120c7/8a34a/car-1.jpg 850w,
+/static/cd8b26f587032a0eadbbb5f5fce120c7/63107/car-1.jpg 1275w,
+/static/cd8b26f587032a0eadbbb5f5fce120c7/fef31/car-1.jpg 1700w,
+/static/cd8b26f587032a0eadbbb5f5fce120c7/07808/car-1.jpg 3390w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQT/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB4qtEwYl//8QAGxAAAgIDAQAAAAAAAAAAAAAAAQIAAxESIjH/2gAIAQEAAQUCV1hsIGbDLPAnOs//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAfEAABAwMFAAAAAAAAAAAAAAAAAQIREiEiMjOBkaH/2gAIAQEABj8CMXN4Jq9IVLGuHG4nR//EAB0QAAICAQUAAAAAAAAAAAAAAAARATFBIVFxseH/2gAIAQEAAT8ha20HvsjNA03LMC6+OaE9R//aAAwDAQACAAMAAAAQ68//xAAVEQEBAAAAAAAAAAAAAAAAAAAAIf/aAAgBAwEBPxBH/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAERQf/aAAgBAgEBPxDFS//EAB0QAQEAAgIDAQAAAAAAAAAAAAERACExUUFhgfD/2gAIAQEAAT8QKSVAtga7C5acEEDB9MgFs7RglAt0DfGbbcRRD04yepz88Z//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;car 2&quot;
+        title=&quot;car 2&quot;
+        src=&quot;/static/887d4eecdbff119a27ef751fb837afcd/8a34a/car-2.jpg&quot;
+        srcset=&quot;/static/887d4eecdbff119a27ef751fb837afcd/08b27/car-2.jpg 213w,
+/static/887d4eecdbff119a27ef751fb837afcd/6f6b2/car-2.jpg 425w,
+/static/887d4eecdbff119a27ef751fb837afcd/8a34a/car-2.jpg 850w,
+/static/887d4eecdbff119a27ef751fb837afcd/63107/car-2.jpg 1275w,
+/static/887d4eecdbff119a27ef751fb837afcd/fef31/car-2.jpg 1700w,
+/static/887d4eecdbff119a27ef751fb837afcd/320e6/car-2.jpg 2804w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 148.3568075117371%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAeABQDASIAAhEBAxEB/8QAGQAAAwADAAAAAAAAAAAAAAAAAAMEAQIF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAGNHQxTCcLZVBogKwf/xAAeEAACAQQDAQAAAAAAAAAAAAABAgADEhMxBBEyIf/aAAgBAQABBQLkjs4jH2fXyX3D0GYLE1RQtTegZgM//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8BKf/EAB4QAAIBAwUAAAAAAAAAAAAAAAABEQIxQRAgUXGR/9oACAEBAAY/AlHJarzYhdIzOlLnBdFz/8QAHxABAAICAgIDAAAAAAAAAAAAAQARITFhcUFRkbHB/9oACAEBAAE/IVCFbYOiIojZ80n1xbcH5MHa9wsOJTQauVgaNQe8H4DGKgAa/E//2gAMAwEAAgADAAAAEGjrcP/EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/ECH/xAAXEQADAQAAAAAAAAAAAAAAAAABEBEx/9oACAECAQE/EJiEL//EAB4QAQADAAEFAQAAAAAAAAAAAAEAESExQVFxkfCx/9oACAEBAAE/EHxvAtdIiqAuQIrD81hfJSW/IdQHjGeoCruHzcEYWVviGIvkNU55jcxj3isJijeM231MqHX7p//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;car 3&quot;
+        title=&quot;car 3&quot;
+        src=&quot;/static/acd3127da8e2c6b5ba8433c5f5be8e22/8a34a/car-3.jpg&quot;
+        srcset=&quot;/static/acd3127da8e2c6b5ba8433c5f5be8e22/08b27/car-3.jpg 213w,
+/static/acd3127da8e2c6b5ba8433c5f5be8e22/6f6b2/car-3.jpg 425w,
+/static/acd3127da8e2c6b5ba8433c5f5be8e22/8a34a/car-3.jpg 850w,
+/static/acd3127da8e2c6b5ba8433c5f5be8e22/63107/car-3.jpg 1275w,
+/static/acd3127da8e2c6b5ba8433c5f5be8e22/fef31/car-3.jpg 1700w,
+/static/acd3127da8e2c6b5ba8433c5f5be8e22/58125/car-3.jpg 1908w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;cables&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#cables&quot; aria-label=&quot;cables permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Cables&lt;/h2&gt;
+&lt;p&gt;There are two types of USB cables, charging and data. Charging cables are better suited for charging and data cables are better suited for data transfers. Generally, one can also do the other, but at a much slower rate. Charging cables are often still using the USB 2.0 standard and can only transfer up to 480 Mbps.&lt;/p&gt;
+&lt;p&gt;Cables capable of 100W charging must contain an &lt;strong&gt;e-marker chip&lt;/strong&gt;. An e-marker chip allows the charger and device to know the cable&apos;s power and data capabilities. It is required for all 5A applications (&gt;=60W power) or 5 Gbit/s and greater transfers (USB 3.1 Gen1).&lt;/p&gt;
+&lt;p&gt;When it comes to cables, there are only a few brands I would buy:&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet tw-align-center&quot; data-dnt=&quot;true&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;The best USB cables are by:&lt;br&gt;&lt;br&gt;1. Belkin / Cable Matters&lt;br&gt;2. Anker / AmazonBasics&lt;br&gt;3. UGreen / BlitzWolf / Baseus&lt;/p&gt;&amp;mdash; Calvin Bui (@ASAPCalvin) &lt;a href=&quot;https://twitter.com/ASAPCalvin/status/1434202732974338048?ref_src=twsrc%5Etfw&quot;&gt;September 4, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;p&gt;I landed on the following combination:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.blitzwolf.com/%C2%A05A-Type-C%C2%A0to%C2%A0Type-C%C2%A0Charging%C2%A0Data%C2%A0Cable-p-719.html&quot;&gt;Blitzwolf BW-FC1&lt;/a&gt; (1 m &amp;#x26; 1.8 m, 3-pack)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.ugreen.com/products/right-angle-100w-usb-c-cable&quot;&gt;UGreen 100W Right Angle&lt;/a&gt; (3 metres)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.belkin.com/au/cables/data/3-1-usb-a-to-usb-c-cable-usb-c-cable/p/p-f2cu029/&quot;&gt;Belkin 3.1 USB-A to USB-C cable&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;blitzwolf-bw-fc1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#blitzwolf-bw-fc1&quot; aria-label=&quot;blitzwolf bw fc1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;BlitzWolf BW-FC1&lt;/h3&gt;
+&lt;p&gt;The connectors on these are very tight. It&apos;s too early to tell if they loosen up. One cable has already broken on me because the connector bent when I nudged it while plugged in.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 136.61971830985917%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQL/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAdmqkJw0GpfM2hooH//EAB0QAAICAgMBAAAAAAAAAAAAAAECAAMREgQQEyH/2gAIAQEAAQUC5FhWe7KSMy6slittj462EJjnA2Mb6f/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABwQAAICAgMAAAAAAAAAAAAAAAECABEQMgNBYf/aAAgBAQAGPwIKuxlcgv2XA67CAstAZ6yMf//EAB0QAQABBAMBAAAAAAAAAAAAAAEAESFBUTFxkdH/2gAIAQEAAT8hN+FgMargQO6Ut9LklVzdxui9EaF0QhL4jWcxDDyLk1P/2gAMAwEAAgADAAAAEBzkvP/EABURAQEAAAAAAAAAAAAAAAAAAAEQ/9oACAEDAQE/ECE//8QAFxEBAAMAAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPxCtS//EABwQAQEAAwADAQAAAAAAAAAAAAERACFBMVHRcf/aAAgBAQABPxB1rvJz7cBCnRjfzuJAkAkbrABWnl9sJoQlD4bgCIByYINQDr5wNVC6eZIKEI+82BwNLjANKsn5jA7McnM//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;blitzwolf 1&quot;
+        title=&quot;blitzwolf 1&quot;
+        src=&quot;/static/209e405777ad842a670de332afc6994c/8a34a/blitzwolf-1.jpg&quot;
+        srcset=&quot;/static/209e405777ad842a670de332afc6994c/08b27/blitzwolf-1.jpg 213w,
+/static/209e405777ad842a670de332afc6994c/6f6b2/blitzwolf-1.jpg 425w,
+/static/209e405777ad842a670de332afc6994c/8a34a/blitzwolf-1.jpg 850w,
+/static/209e405777ad842a670de332afc6994c/63107/blitzwolf-1.jpg 1275w,
+/static/209e405777ad842a670de332afc6994c/fef31/blitzwolf-1.jpg 1700w,
+/static/209e405777ad842a670de332afc6994c/6caea/blitzwolf-1.jpg 2640w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 92.01877934272301%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAASABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHpzqTZCNBYB//EAB4QAAICAAcAAAAAAAAAAAAAAAEDAAIEEhMhIzIz/9oACAEBAAEFAmnTqGA2mLGZNF828d5q6T//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAdEAABBAIDAAAAAAAAAAAAAAABAAIQESKBQVFy/9oACAEBAAY/ArTW8kXG093WIjYR9GP/xAAfEAABAwMFAAAAAAAAAAAAAAAAAREhMVHwEEFhkdH/2gAIAQEAAT8h5xsMcUBiiVRHghbt6JFlBXwlDM30/9oADAMBAAIAAwAAABDAOMH/xAAVEQEBAAAAAAAAAAAAAAAAAAARIP/aAAgBAwEBPxBj/8QAFREBAQAAAAAAAAAAAAAAAAAAESD/2gAIAQIBAT8QI//EAB0QAQEAAgMAAwAAAAAAAAAAAAERACEQQVExsdH/2gAIAQEAAT8QuiUymYJYNPRqzHKzrVp1X9ZIrMd8FfRjrWuCWyvyovu/H//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;blitzwolf 2&quot;
+        title=&quot;blitzwolf 2&quot;
+        src=&quot;/static/6df1117418ebdb68287554d1f3d07cc4/8a34a/blitzwolf-2.jpg&quot;
+        srcset=&quot;/static/6df1117418ebdb68287554d1f3d07cc4/08b27/blitzwolf-2.jpg 213w,
+/static/6df1117418ebdb68287554d1f3d07cc4/6f6b2/blitzwolf-2.jpg 425w,
+/static/6df1117418ebdb68287554d1f3d07cc4/8a34a/blitzwolf-2.jpg 850w,
+/static/6df1117418ebdb68287554d1f3d07cc4/63107/blitzwolf-2.jpg 1275w,
+/static/6df1117418ebdb68287554d1f3d07cc4/fef31/blitzwolf-2.jpg 1700w,
+/static/6df1117418ebdb68287554d1f3d07cc4/3ea58/blitzwolf-2.jpg 2844w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;ugreen-right-angle&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#ugreen-right-angle&quot; aria-label=&quot;ugreen right angle permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;UGreen Right Angle&lt;/h3&gt;
+&lt;p&gt;I needed a right-angle cable for charging my tablet when I lie it on its side. UGreen was the only company offering a 3-metre cable that was had one right-angle end, so it was perfect for me. There are no issues with this cable so far.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 129.10798122065728%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAaABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBBAUC/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAElqzLR5OdxoVlsEhf/xAAeEAACAgEFAQAAAAAAAAAAAAABAgMREgAEECExMv/aAAgBAQABBQLCa8JtIJKJxAmWwbG4+JmUovhHUSrx/8QAFREBAQAAAAAAAAAAAAAAAAAAESD/2gAIAQMBAT8BI//EABURAQEAAAAAAAAAAAAAAAAAABEg/9oACAECAQE/ASP/xAAdEAACAgIDAQAAAAAAAAAAAAAAARAhETIiQVFx/9oACAEBAAY/AtkbI5Mt4O1C8MK3C+DpR//EAB0QAQEBAAICAwAAAAAAAAAAAAERACExQVEQcbH/2gAIAQEAAT8hskk+H1vTkC7LjFgzxZPlONAcpUoS6qROpuBOeA/MTYMIoJ+vj//aAAwDAQACAAMAAAAQhzgz/8QAFxEBAAMAAAAAAAAAAAAAAAAAAQAQcf/aAAgBAwEBPxDUC//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QD//EABsQAQADAQEBAQAAAAAAAAAAAAEAESExQWFR/9oACAEBAAE/EG745p0459hn7Fao/WuQGC/hHKPkucIXehkNjgFRQbBbPYqLB1PIBaIHTFv1BpzHIVKEWJ3IamOIRIcn/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;ugreen&quot;
+        title=&quot;ugreen&quot;
+        src=&quot;/static/ef02604947d716c57ed9616d512092b3/8a34a/ugreen.jpg&quot;
+        srcset=&quot;/static/ef02604947d716c57ed9616d512092b3/08b27/ugreen.jpg 213w,
+/static/ef02604947d716c57ed9616d512092b3/6f6b2/ugreen.jpg 425w,
+/static/ef02604947d716c57ed9616d512092b3/8a34a/ugreen.jpg 850w,
+/static/ef02604947d716c57ed9616d512092b3/63107/ugreen.jpg 1275w,
+/static/ef02604947d716c57ed9616d512092b3/fef31/ugreen.jpg 1700w,
+/static/ef02604947d716c57ed9616d512092b3/9ecaf/ugreen.jpg 2856w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;belkin&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#belkin&quot; aria-label=&quot;belkin permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Belkin&lt;/h3&gt;
+&lt;p&gt;I bought this Belkin cable to take advantage of fast transfer speeds between my computer and devices. Its transfer speed goes up to 10 Gbps while the charging speed tops out at 60W. It&apos;s not braided like the others, but that is not an issue for me. Belkin products are usually on the pricier side, but they are always of fantastic quality.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 70.89201877934272%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAE0LSS4wf/EABsQAAICAwEAAAAAAAAAAAAAAAECESEDEhMy/9oACAEBAAEFAmzNqnhTXESBABr/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAABBQEAAAAAAAAAAAAAAAABABAREiFx/9oACAEBAAY/AprnVJYqp0N//8QAGhABAAMBAQEAAAAAAAAAAAAAAQARITFBgf/aAAgBAQABPyHKi7Q9R3r+bAel+Q1fWzeTPz0hYCgn/9oADAMBAAIAAwAAABAHP//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EFf/xAAXEQEAAwAAAAAAAAAAAAAAAAAAARFh/9oACAECAQE/EJ1b/8QAHBABAAMBAAMBAAAAAAAAAAAAAQARITFRYXGx/9oACAEBAAE/EA6PZGGrrxcMjbuBRvqWYJfWH7EDdp7nO/sB25fodhTxgDhP/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;belkin&quot;
+        title=&quot;belkin&quot;
+        src=&quot;/static/061a94935a7d219530bf87feca44117f/8a34a/belkin.jpg&quot;
+        srcset=&quot;/static/061a94935a7d219530bf87feca44117f/08b27/belkin.jpg 213w,
+/static/061a94935a7d219530bf87feca44117f/6f6b2/belkin.jpg 425w,
+/static/061a94935a7d219530bf87feca44117f/8a34a/belkin.jpg 850w,
+/static/061a94935a7d219530bf87feca44117f/63107/belkin.jpg 1275w,
+/static/061a94935a7d219530bf87feca44117f/fef31/belkin.jpg 1700w,
+/static/061a94935a7d219530bf87feca44117f/e320f/belkin.jpg 3426w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h2 id=&quot;conclusion&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#conclusion&quot; aria-label=&quot;conclusion permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;It was a surreal feeling to see the words &lt;strong&gt;Super fast charging&lt;/strong&gt; to appear after all the research. I admit it is overkill aiming for 100W charging when my phone only does 25W max, but I could also charge my laptop and it slightly future-proofs it for future devices. Arguably, &lt;a href=&quot;https://en.wikipedia.org/wiki/USB4&quot;&gt;USB4&lt;/a&gt; cables and chargers are already on the market so, I didn&apos;t go all out yet.&lt;/p&gt;
+&lt;p&gt;From my S21 with Super Fast Charging enabled:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100.4694835680751%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAIBAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB8XLyzkpKoIB//8QAGRAAAwEBAQAAAAAAAAAAAAAAAAESEQIh/9oACAEBAAEFAo8hnSwh5I+SmazT/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFREBAQAAAAAAAAAAAAAAAAAAICH/2gAIAQIBAT8Bg//EABkQAAEFAAAAAAAAAAAAAAAAAAAQIDFBgf/aAAgBAQAGPwLCmyv/xAAcEAACAQUBAAAAAAAAAAAAAAAAAREhMUFhcVH/2gAIAQEAAT8hnX1cU8bZ8JC5InI0T0MRHkUrjZ5P/9oADAMBAAIAAwAAABAHyAD/xAAVEQEBAAAAAAAAAAAAAAAAAAAgIf/aAAgBAwEBPxCj/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPxAP/8QAGxABAAMBAQEBAAAAAAAAAAAAAQARMSFBUWH/2gAIAQEAAT8QtNTGWLX2LYEiOnxb7EBQWeEdIkB0+RzU1+RGrHnkBAEGQbS4tamf/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;super fast&quot;
+        title=&quot;super fast&quot;
+        src=&quot;/static/b3b5ed0917876d212abdf678f3ce4ffe/8a34a/super-fast.jpg&quot;
+        srcset=&quot;/static/b3b5ed0917876d212abdf678f3ce4ffe/08b27/super-fast.jpg 213w,
+/static/b3b5ed0917876d212abdf678f3ce4ffe/6f6b2/super-fast.jpg 425w,
+/static/b3b5ed0917876d212abdf678f3ce4ffe/8a34a/super-fast.jpg 850w,
+/static/b3b5ed0917876d212abdf678f3ce4ffe/b37e7/super-fast.jpg 1080w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 44.60093896713616%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAIDBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHIpgQF/8QAGBAAAgMAAAAAAAAAAAAAAAAAAQISICH/2gAIAQEAAQUCAWOV/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAICGx/9oACAEBAAY/AnC//8QAGxAAAgEFAAAAAAAAAAAAAAAAAAFhESAxUfD/2gAIAQEAAT8hpT05kaghxZ//2gAMAwEAAgADAAAAEGcP/8QAFxEBAAMAAAAAAAAAAAAAAAAAARARQf/aAAgBAwEBPxAK2P/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAAICAgMAAAAAAAAAAAAAAAERACEgUWGRwf/aAAgBAQABPxBorRuncLMFGi/YgNiRzh//2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;charging s21&quot;
+        title=&quot;charging s21&quot;
+        src=&quot;/static/b715d500d9085cc80f3b089d952aef51/8a34a/charging-s21.jpg&quot;
+        srcset=&quot;/static/b715d500d9085cc80f3b089d952aef51/08b27/charging-s21.jpg 213w,
+/static/b715d500d9085cc80f3b089d952aef51/6f6b2/charging-s21.jpg 425w,
+/static/b715d500d9085cc80f3b089d952aef51/8a34a/charging-s21.jpg 850w,
+/static/b715d500d9085cc80f3b089d952aef51/07029/charging-s21.jpg 1079w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;From my Tab S7+ with Super Fast Charging 2.0 enabled:&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 55.86854460093896%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqUlEQVQoz33Qz44SQRAG8Oru6v9Nbw8Nw0AMS3aYVQmGMcxA1AgxQuKEuXDYt/DmyaNv6WN48W6G1ewaN/5SSX2HSnfygTFmOBwhIiEUUTDGGCJDftmdx4ExppTKsmw8HocQwBqVDX2Wjay1AICMUUIIAGOMXDwO3QGiEKIoCu89aDeYLs8h9H3/Ot4cOacu3sbrHSUQQkiShBASY/TeU0rTNL3/I8/zLlw923388pOK/uj5Xfv1BwDc7r8dP38HgP1+dzgcAKBpPm3qGgDO5/O8KICQpmnSNAUUSic5ci1t2hsuORfapTbcMERtnLGOojDWaW0ZCmed0ZIjOueEECA4t1qgjia+8OM30vSkdlJpqT2XDqUTqofS8S54o3RipFNSCME574qRSjFK70tijLLfaDeUMkrow1Agl0W7M5BS5nkeY3S9Xkj6SRIvNT0IIVz9I4SglILJZPL23fvd7kNV16uyfH1R/tdqtaqqajabwXQ6bdv2dDo1TdO27fFw2G635Z9XnlSWZVVV8/kcBoPBZrNZr9dVXW+3m1fL5eJvL5+yWCyyLPsFjF8+/T90A2MAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;super fast 2 0&quot;
+        title=&quot;super fast 2 0&quot;
+        src=&quot;/static/d52905b0d987e3efb685392f241b6766/d6170/super-fast-2.0.png&quot;
+        srcset=&quot;/static/d52905b0d987e3efb685392f241b6766/53f68/super-fast-2.0.png 213w,
+/static/d52905b0d987e3efb685392f241b6766/df70d/super-fast-2.0.png 425w,
+/static/d52905b0d987e3efb685392f241b6766/d6170/super-fast-2.0.png 850w,
+/static/d52905b0d987e3efb685392f241b6766/12c14/super-fast-2.0.png 1275w,
+/static/d52905b0d987e3efb685392f241b6766/908d1/super-fast-2.0.png 1286w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 828px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 34.74178403755868%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsTAAALEwEAmpwYAAABA0lEQVQY043Qy0rEMBSA4bQu2jQd7S1pkzQZMJe21Kkz4CMMxcsguPIJRhB8Dx9DXQnzlJqAKwf0W51F/sMhIAgCcEwYhsFf3Lssy3BN8iJvaGOsSRcLmCQAgH/FdUWu1pub7bwZV7fbeTdfP+zulVJ931trEUJHT3NxAMDJWQJHgUYRD23UM7RappZXZZl7CCH4SxzHYRi6HcndJT68VO/76uOpettXn8/49ZGSmjFGKeVe6/EfUsooilx8WuRi3Re65ZPlk6UXmg2KYNJ4hLgBY1yWZe0JIRL/KU6KkGRcUD6Yrtd2yYU5V13XSSmVUm3bTtNkreWcG2O01sMwQAi/yy8HgyJ4xW25YwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;charging tab s7&quot;
+        title=&quot;charging tab s7&quot;
+        src=&quot;/static/b2f565da429326ee4761501f9e854ac8/9f1c6/charging-tab-s7.png&quot;
+        srcset=&quot;/static/b2f565da429326ee4761501f9e854ac8/53f68/charging-tab-s7.png 213w,
+/static/b2f565da429326ee4761501f9e854ac8/df70d/charging-tab-s7.png 425w,
+/static/b2f565da429326ee4761501f9e854ac8/9f1c6/charging-tab-s7.png 828w&quot;
+        sizes=&quot;(max-width: 828px) 100vw, 828px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[Cross-Platform Dotfiles]]></title><description><![CDATA[How I manage configs across different computers and operating systems. From my previous post, I'm still thoroughly enjoying dotbot for managing my dotfiles and bootstrapping new…]]></description><link>https://calvin.me/cross-platform-dotfiles</link><guid isPermaLink="false">https://calvin.me/cross-platform-dotfiles</guid><category><![CDATA[dotbot]]></category><category><![CDATA[dotfiles]]></category><pubDate>Wed, 08 Sep 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;How I manage configs across different computers and operating systems.&lt;/p&gt;
 &lt;p&gt;From my &lt;a href=&quot;/managing-dotfiles&quot;&gt;previous post&lt;/a&gt;, I&apos;m still thoroughly enjoying &lt;a href=&quot;https://github.com/anishathalye/dotbot&quot;&gt;dotbot&lt;/a&gt; for managing my dotfiles and bootstrapping new computers. It is lightweight, has no external dependencies and requires no installation.&lt;/p&gt;
 &lt;p&gt;My &lt;a href=&quot;https://github.com/calvinbui/dotfiles&quot;&gt;dotfiles repo&lt;/a&gt; only supported macOS. In my day-to-day, I&apos;m using Windows, Linux and macOS for personal and work purposes. I did a fresh install of Windows on my PC and decided now would be the time to support Windows and Linux as well.&lt;/p&gt;
 &lt;h2 id=&quot;uname&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#uname&quot; aria-label=&quot;uname permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;uname&lt;/h2&gt;
