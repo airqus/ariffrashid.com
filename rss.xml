@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Tue, 15 Feb 2022 14:27:42 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Daikin Airbase Across VLANs]]></title><description><![CDATA[The Daikin Airbase is a Wi-Fi connected interface for controlling Daikin ducted air conditioning units. This gives the convenience of controlling temperature, timers, and zones…]]></description><link>https://calvin.me/daikin-airbase-vlans-opnsense</link><guid isPermaLink="false">https://calvin.me/daikin-airbase-vlans-opnsense</guid><category><![CDATA[daikin]]></category><category><![CDATA[vlans]]></category><category><![CDATA[aircon]]></category><category><![CDATA[opnsense]]></category><pubDate>Fri, 21 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The &lt;a href=&quot;https://www.daikin.com.au/controllers/daikin-airbase&quot;&gt;Daikin Airbase&lt;/a&gt; is a Wi-Fi connected interface for controlling Daikin ducted air conditioning units. This gives the convenience of controlling temperature, timers, and zones from a mobile device or voice assistant.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Tue, 15 Feb 2022 15:07:05 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Daikin Airbase Across VLANs]]></title><description><![CDATA[The Daikin Airbase is a Wi-Fi connected interface for controlling Daikin ducted air conditioning units. This gives the convenience of controlling temperature, timers, and zones…]]></description><link>https://calvin.me/daikin-airbase-vlans-opnsense</link><guid isPermaLink="false">https://calvin.me/daikin-airbase-vlans-opnsense</guid><category><![CDATA[daikin]]></category><category><![CDATA[vlans]]></category><category><![CDATA[aircon]]></category><category><![CDATA[opnsense]]></category><pubDate>Fri, 21 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The &lt;a href=&quot;https://www.daikin.com.au/controllers/daikin-airbase&quot;&gt;Daikin Airbase&lt;/a&gt; is a Wi-Fi connected interface for controlling Daikin ducted air conditioning units. This gives the convenience of controlling temperature, timers, and zones from a mobile device or voice assistant.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
@@ -544,7 +544,139 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;From my testing, I went with the middle option to have one fan on the bottom, side, and top to balance fan noise, GPU and CPU temperatures (80/80).&lt;/p&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[3D Printer Upgrades Galore]]></title><description><![CDATA[A lot of upgrades and add-ons for my Prusa i3 MK3S. Current State Bear Frame Upgrade 2.1 Purchasing Assembly MK3S to MK3S+ Upgrade Kit Y Idler Tensioner Extruder Upgrades Bear…]]></description><link>https://calvin.me/3d-printer-upgrades-galore</link><guid isPermaLink="false">https://calvin.me/3d-printer-upgrades-galore</guid><category><![CDATA[3d-printing]]></category><category><![CDATA[prusa]]></category><category><![CDATA[bear-upgrade]]></category><pubDate>Wed, 24 Nov 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;A lot of upgrades and add-ons for my Prusa i3 MK3S.&lt;/p&gt;
+&lt;p&gt;From my testing, I went with the middle option to have one fan on the bottom, side, and top to balance fan noise, GPU and CPU temperatures (80/80).&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e79a382f097003c3ec41b2d1ac742e88/81f49/case-01.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQL/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAv/aAAwDAQACEAMQAAAB1Xc0VcND/8QAGRAAAgMBAAAAAAAAAAAAAAAAAQIAAxIh/9oACAEBAAEFAjb03RG2tqnZRiUGV//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EAB0QAAIBBAMAAAAAAAAAAAAAAAABIQIREjJRcaH/2gAIAQEABj8CfBDjovJlSjX0SP/EABsQAAMBAQADAAAAAAAAAAAAAAERIQAxYXGR/9oACAEBAAE/IRgTQQyvEcfat8omSMA9qwKRjxb3f//aAAwDAQACAAMAAAAQ0w//xAAVEQEBAAAAAAAAAAAAAAAAAAAQQf/aAAgBAwEBPxCH/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8QR//EAB4QAQACAgIDAQAAAAAAAAAAAAERIQAxQZFRYcHw/9oACAEBAAE/ELMCzJ/HzPH1yWjrEA3GUKn13iRMyPJEZGujYANy4ohYsO1tz//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;case 01&quot;
+        title=&quot;case 01&quot;
+        src=&quot;/static/e79a382f097003c3ec41b2d1ac742e88/8a34a/case-01.jpg&quot;
+        srcset=&quot;/static/e79a382f097003c3ec41b2d1ac742e88/08b27/case-01.jpg 213w,
+/static/e79a382f097003c3ec41b2d1ac742e88/6f6b2/case-01.jpg 425w,
+/static/e79a382f097003c3ec41b2d1ac742e88/8a34a/case-01.jpg 850w,
+/static/e79a382f097003c3ec41b2d1ac742e88/63107/case-01.jpg 1275w,
+/static/e79a382f097003c3ec41b2d1ac742e88/fef31/case-01.jpg 1700w,
+/static/e79a382f097003c3ec41b2d1ac742e88/81f49/case-01.jpg 4032w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/34b6fb9c4fba5b819182911d49516f3f/81f49/case-02.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAGJGqis8vE//8QAGxAAAwACAwAAAAAAAAAAAAAAAAECAxESFCL/2gAIAQEAAQUC9o57HbIlbrHVnWP/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAbEAACAQUAAAAAAAAAAAAAAAAAAUERISIy4f/aAAgBAQAGPwLpcgxVTRIg/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAERITFBYbH/2gAIAQEAAT8hnQhPNZJpMJXNbEUNLlCR59n/2gAMAwEAAgADAAAAELsv/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQMBAT8QR//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxBsf//EAB0QAQEAAgIDAQAAAAAAAAAAAAERACGRoVFxwdH/2gAIAQEAAT8QWHgtn9wQJQstb3gHyCZaKTSZ8ysN3sRxglm+l3n/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;case 02&quot;
+        title=&quot;case 02&quot;
+        src=&quot;/static/34b6fb9c4fba5b819182911d49516f3f/8a34a/case-02.jpg&quot;
+        srcset=&quot;/static/34b6fb9c4fba5b819182911d49516f3f/08b27/case-02.jpg 213w,
+/static/34b6fb9c4fba5b819182911d49516f3f/6f6b2/case-02.jpg 425w,
+/static/34b6fb9c4fba5b819182911d49516f3f/8a34a/case-02.jpg 850w,
+/static/34b6fb9c4fba5b819182911d49516f3f/63107/case-02.jpg 1275w,
+/static/34b6fb9c4fba5b819182911d49516f3f/fef31/case-02.jpg 1700w,
+/static/34b6fb9c4fba5b819182911d49516f3f/81f49/case-02.jpg 4032w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/683e4b3070f0370e8101a99735988a8d/81f49/case-03.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwUA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAXmUZ8UWHJ//xAAcEAEAAgEFAAAAAAAAAAAAAAABAgQAAxEhIjH/2gAIAQEAAQUCtrnMFd20kZ6j0PP/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAaEAACAwEBAAAAAAAAAAAAAAAAAQIRIRJx/9oACAEBAAY/AopM6WFydsges0//xAAaEAEBAQADAQAAAAAAAAAAAAABEQAhMUFx/9oACAEBAAE/IU1ARpiRK6uWxT1cIvNprRa0z+hv/9oADAMBAAIAAwAAABDAz//EABYRAQEBAAAAAAAAAAAAAAAAABEBEP/aAAgBAwEBPxCBn//EABYRAQEBAAAAAAAAAAAAAAAAABEBEP/aAAgBAgEBPxCrn//EABsQAQADAQADAAAAAAAAAAAAAAEAESFBUYHR/9oACAEBAAE/EB2nAy6m4mId559x1txQsARBy459mlDlQoCmZhcGf//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;case 03&quot;
+        title=&quot;case 03&quot;
+        src=&quot;/static/683e4b3070f0370e8101a99735988a8d/8a34a/case-03.jpg&quot;
+        srcset=&quot;/static/683e4b3070f0370e8101a99735988a8d/08b27/case-03.jpg 213w,
+/static/683e4b3070f0370e8101a99735988a8d/6f6b2/case-03.jpg 425w,
+/static/683e4b3070f0370e8101a99735988a8d/8a34a/case-03.jpg 850w,
+/static/683e4b3070f0370e8101a99735988a8d/63107/case-03.jpg 1275w,
+/static/683e4b3070f0370e8101a99735988a8d/fef31/case-03.jpg 1700w,
+/static/683e4b3070f0370e8101a99735988a8d/81f49/case-03.jpg 4032w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/23ada5f8d3a6d2e8dad0f8992df5cc75/81f49/case-04.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAQFAgP/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAAB5bXQiq5NE//EABoQAAIDAQEAAAAAAAAAAAAAAAECAAMRIRL/2gAIAQEAAQUC3ISoUWcs9At2BmUf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGxAAAQQDAAAAAAAAAAAAAAAAAQAQETECQbH/2gAIAQEABj8CA61Sp1bRiV//xAAbEAEAAgIDAAAAAAAAAAAAAAABABEhMUFRYf/aAAgBAQABPyGr29Cl8wdpmNw+4iILNImhXE1gek//2gAMAwEAAgADAAAAEJMP/8QAFhEBAQEAAAAAAAAAAAAAAAAAEQEQ/9oACAEDAQE/EEmf/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAR/9oACAECAQE/EA1sv//EABwQAQADAAMBAQAAAAAAAAAAAAEAESExQZFRYf/aAAgBAQABPxC261uJX68xGRz6XqkYWg6HslAXOByqM9mBBs2BsPpebRj2T//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;case 04&quot;
+        title=&quot;case 04&quot;
+        src=&quot;/static/23ada5f8d3a6d2e8dad0f8992df5cc75/8a34a/case-04.jpg&quot;
+        srcset=&quot;/static/23ada5f8d3a6d2e8dad0f8992df5cc75/08b27/case-04.jpg 213w,
+/static/23ada5f8d3a6d2e8dad0f8992df5cc75/6f6b2/case-04.jpg 425w,
+/static/23ada5f8d3a6d2e8dad0f8992df5cc75/8a34a/case-04.jpg 850w,
+/static/23ada5f8d3a6d2e8dad0f8992df5cc75/63107/case-04.jpg 1275w,
+/static/23ada5f8d3a6d2e8dad0f8992df5cc75/fef31/case-04.jpg 1700w,
+/static/23ada5f8d3a6d2e8dad0f8992df5cc75/81f49/case-04.jpg 4032w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[3D Printer Upgrades Galore]]></title><description><![CDATA[A lot of upgrades and add-ons for my Prusa i3 MK3S. Current State Bear Frame Upgrade 2.1 Purchasing Assembly MK3S to MK3S+ Upgrade Kit Y Idler Tensioner Extruder Upgrades Bear…]]></description><link>https://calvin.me/3d-printer-upgrades-galore</link><guid isPermaLink="false">https://calvin.me/3d-printer-upgrades-galore</guid><category><![CDATA[3d-printing]]></category><category><![CDATA[prusa]]></category><category><![CDATA[bear-upgrade]]></category><pubDate>Wed, 24 Nov 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;A lot of upgrades and add-ons for my Prusa i3 MK3S.&lt;/p&gt;
 &lt;!-- more --&gt;
 &lt;div class=&quot;table-of-contents&quot;&gt;
 &lt;ul&gt;
