@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-js",
+    "path": "/tags/fans/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"The Quzao Sama I'm (sometimes IM, IM01 or IM-01) is a 21.9L computer case. It is best known as a micro-ATX (mATX) version of the mini-ITX…","timeToRead":4,"fileAbsolutePath":"/home/runner/work/calvin.me/calvin.me/master/posts/2021/2021-12-08-quzao-sama-im-cooling/index.md","frontmatter":{"title":"Quzao Sama I'm Computer Case Cooling","tags":["fans","cooling","case","testing"],"categories":["Computers"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/f0f3e29dc32f5c1d5b731e21b0bfd13f/thumbnail.svg"}}}}]}},"pageContext":{"tag":"fans"}},
+    "staticQueryHashes": []}
