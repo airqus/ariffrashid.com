@@ -1,4 +1,204 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Tue, 15 Feb 2022 15:07:05 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Daikin Airbase Across VLANs]]></title><description><![CDATA[The Daikin Airbase is a Wi-Fi connected interface for controlling Daikin ducted air conditioning units. This gives the convenience of controlling temperature, timers, and zones…]]></description><link>https://calvin.me/daikin-airbase-vlans-opnsense</link><guid isPermaLink="false">https://calvin.me/daikin-airbase-vlans-opnsense</guid><category><![CDATA[daikin]]></category><category><![CDATA[vlans]]></category><category><![CDATA[aircon]]></category><category><![CDATA[opnsense]]></category><pubDate>Fri, 21 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The &lt;a href=&quot;https://www.daikin.com.au/controllers/daikin-airbase&quot;&gt;Daikin Airbase&lt;/a&gt; is a Wi-Fi connected interface for controlling Daikin ducted air conditioning units. This gives the convenience of controlling temperature, timers, and zones from a mobile device or voice assistant.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Bui]]></title><description><![CDATA[Calvin Bui is a DevOps Engineer passionate about IT as a career and hobby!]]></description><link>https://calvin.me/</link><image><url>https://calvin.me//favicon/favicon-48.png</url><title>Calvin Bui</title><link>https://calvin.me/</link></image><generator>Calvin Bui</generator><lastBuildDate>Sun, 20 Feb 2022 10:27:29 GMT</lastBuildDate><atom:link href="https://calvin.me//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Pi Clock]]></title><description><![CDATA[My Grandma sometimes forgets the date and day of the week as she gets older. She doesn't use a smartphone, only analogue clocks. She doesn't know English, so digital clocks wouldn…]]></description><link>https://calvin.me/pi-clock</link><guid isPermaLink="false">https://calvin.me/pi-clock</guid><category><![CDATA[python]]></category><category><![CDATA[pi]]></category><category><![CDATA[clock]]></category><pubDate>Sun, 20 Feb 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;My Grandma sometimes forgets the date and day of the week as she gets older. She doesn&apos;t use a smartphone, only analogue clocks. She doesn&apos;t know English, so digital clocks wouldn&apos;t help. Some digital clocks also lose their time and date after a power cycle. I couldn&apos;t get her a voice assistant, as Google doesn&apos;t support the Vietnamese language yet. Since there was nothing available for her, I decided to hack together a solution.&lt;/p&gt;
+&lt;p&gt;I soldered together a &lt;a href=&quot;https://www.raspberrypi.com/products/raspberry-pi-zero-w/&quot;&gt;Raspberry Pi W&lt;/a&gt; and an &lt;a href=&quot;https://www.adafruit.com/product/2097&quot;&gt;Adafruit PiTFT display&lt;/a&gt;. The Pi W was used on my Prusa MK3S Printer to run OctoPrint, but the performance was so bad &lt;a href=&quot;https://github.com/guysoft/OctoPi/issues/318#issuecomment-284762963&quot;&gt;it&apos;s no longer recommended&lt;/a&gt;. The Adafruit Display was used as a touchscreen for &lt;a href=&quot;https://www.thingiverse.com/thing:1601055&quot;&gt;OctoPrint&apos;s Touch UI&lt;/a&gt;, but I found it easier to use my phone than the interface. The Pi W&apos;s GPIO pins connect directly to the Adafruit display.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bb00c430bdad5f5d7e853cf01ec93c6e/b064b/solder-01.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 133.33333333333331%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAbABQDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEAgEF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQAC/9oADAMBAAIQAxAAAAGSruMrjAimMnnzy8H/xAAcEAEAAgMAAwAAAAAAAAAAAAABAhEAAxIhIiP/2gAIAQEAAQUCjHymvW+rhHo+0Xu8Z8yZWyEUuVrlDn//xAAYEQEAAwEAAAAAAAAAAAAAAAAAARESAv/aAAgBAwEBPwG6lpzLD//EABoRAQABBQAAAAAAAAAAAAAAAAABAhITIUH/2gAIAQIBAT8B4slVGmZ//8QAIBAAAgEEAQUAAAAAAAAAAAAAAAERAhAhIkESMUJRgf/aAAgBAQAGPwLapi0le2TT2HGJ5OmpyjwFE24t9Mn/xAAdEAEAAgICAwAAAAAAAAAAAAABABEhQTFRgZGh/9oACAEBAAE/ITQZnRLk7MCkClxK8BDnrxA9otw0P1KdhrJudlxKi2rbCESxmQLdVI5gn//aAAwDAQACAAMAAAAQtBgy/8QAGBEBAQEBAQAAAAAAAAAAAAAAAQARMUH/2gAIAQMBAT8QOgk2jjZ8v//EABgRAQEBAQEAAAAAAAAAAAAAAAERABAh/9oACAECAQE/EJeCaTCnpv/EAB0QAQEAAgIDAQAAAAAAAAAAAAERACExQVFhgXH/2gAIAQEAAT8QMduG4+vWUDgpGjiOIqJnHtRVV66fuGBTYsEC8y5FZjUin3EmjShQnWuT3kwdhcmt4qdPIKdYdbYb58+sWPBmdsnF5cdKGTnP/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;solder 01&quot;
+        title=&quot;solder 01&quot;
+        src=&quot;/static/bb00c430bdad5f5d7e853cf01ec93c6e/8a34a/solder-01.jpg&quot;
+        srcset=&quot;/static/bb00c430bdad5f5d7e853cf01ec93c6e/08b27/solder-01.jpg 213w,
+/static/bb00c430bdad5f5d7e853cf01ec93c6e/6f6b2/solder-01.jpg 425w,
+/static/bb00c430bdad5f5d7e853cf01ec93c6e/8a34a/solder-01.jpg 850w,
+/static/bb00c430bdad5f5d7e853cf01ec93c6e/63107/solder-01.jpg 1275w,
+/static/bb00c430bdad5f5d7e853cf01ec93c6e/fef31/solder-01.jpg 1700w,
+/static/bb00c430bdad5f5d7e853cf01ec93c6e/b064b/solder-01.jpg 3024w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6e74251174f1863f5d6baa434153cb58/81f49/solder-02.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAIDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAABmmRvUhm//8QAGhAAAgIDAAAAAAAAAAAAAAAAAAEQERITIf/aAAgBAQABBQJcNsVRi4//xAAXEQADAQAAAAAAAAAAAAAAAAACEBFB/9oACAEDAQE/ASuL/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAIRQf/aAAgBAgEBPwFJpT//xAAZEAACAwEAAAAAAAAAAAAAAAAAEAERMUH/2gAIAQEABj8CMVSZ1f/EABgQAQEBAQEAAAAAAAAAAAAAAAERAGEh/9oACAEBAAE/IVFxaFa5SwHPHXNd/9oADAMBAAIAAwAAABCYP//EABcRAQEBAQAAAAAAAAAAAAAAAAEAETH/2gAIAQMBAT8QDR4sL//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAgEBPxBHS6v/xAAbEAEBAQEAAwEAAAAAAAAAAAABEQAhMVFhgf/aAAgBAQABPxD589GMXoyrlrbooB+NuViZXRet147+7//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;solder 02&quot;
+        title=&quot;solder 02&quot;
+        src=&quot;/static/6e74251174f1863f5d6baa434153cb58/8a34a/solder-02.jpg&quot;
+        srcset=&quot;/static/6e74251174f1863f5d6baa434153cb58/08b27/solder-02.jpg 213w,
+/static/6e74251174f1863f5d6baa434153cb58/6f6b2/solder-02.jpg 425w,
+/static/6e74251174f1863f5d6baa434153cb58/8a34a/solder-02.jpg 850w,
+/static/6e74251174f1863f5d6baa434153cb58/63107/solder-02.jpg 1275w,
+/static/6e74251174f1863f5d6baa434153cb58/fef31/solder-02.jpg 1700w,
+/static/6e74251174f1863f5d6baa434153cb58/81f49/solder-02.jpg 4032w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/65c478c995e25a4a4c60e1ba802fdf42/81f49/solder-03.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCA//EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHXeSiWsH//xAAZEAADAAMAAAAAAAAAAAAAAAAAAQIDERL/2gAIAQEAAQUC7UqcksQkKZNn/8QAFhEAAwAAAAAAAAAAAAAAAAAAARAh/9oACAEDAQE/ATF//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGRAAAgMBAAAAAAAAAAAAAAAAABAhIjFB/9oACAEBAAY/ArGqTq//xAAcEAADAAEFAAAAAAAAAAAAAAAAAREhMUFRofH/2gAIAQEAAT8hnct4aV1EtYu5ttnvCwP/2gAMAwEAAgADAAAAENQf/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/EArCf//EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQIBAT8QUesh/8QAHBABAAICAwEAAAAAAAAAAAAAAQARIXExQZHR/9oACAEBAAE/EBakzUJL7gQ+i+QbHC2aomRIvCGyA04Mf//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;solder 03&quot;
+        title=&quot;solder 03&quot;
+        src=&quot;/static/65c478c995e25a4a4c60e1ba802fdf42/8a34a/solder-03.jpg&quot;
+        srcset=&quot;/static/65c478c995e25a4a4c60e1ba802fdf42/08b27/solder-03.jpg 213w,
+/static/65c478c995e25a4a4c60e1ba802fdf42/6f6b2/solder-03.jpg 425w,
+/static/65c478c995e25a4a4c60e1ba802fdf42/8a34a/solder-03.jpg 850w,
+/static/65c478c995e25a4a4c60e1ba802fdf42/63107/solder-03.jpg 1275w,
+/static/65c478c995e25a4a4c60e1ba802fdf42/fef31/solder-03.jpg 1700w,
+/static/65c478c995e25a4a4c60e1ba802fdf42/81f49/solder-03.jpg 4032w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Adafruit provides &lt;a href=&quot;https://github.com/adafruit/Raspberry-Pi-Installer-Scripts&quot;&gt;scripts on their GitHub&lt;/a&gt; to install drivers for their displays, HATs and add-ons.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell-session&quot;&gt;&lt;pre style=&quot;counter-reset: linenumber NaN&quot; class=&quot;language-shell-session line-numbers&quot;&gt;&lt;code class=&quot;language-shell-session&quot;&gt;&lt;span class=&quot;token command&quot;&gt;&lt;span class=&quot;token shell-symbol important&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;token bash language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;sudo&lt;/span&gt; python3 adafruit-pitft.py --display&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;35r --rotation&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;270&lt;/span&gt; --install-type&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;console&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;span aria-hidden=&quot;true&quot; class=&quot;line-numbers-rows&quot; style=&quot;white-space: normal; width: auto; left: 0;&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I wrote a simple Python script that would output the day of the week, the date, and the time. It was difficult to change the font size on the terminal, so I used a package called &lt;a href=&quot;https://pypi.org/project/art/&quot;&gt;art&lt;/a&gt; to display large ASCII art which filled up the display. The source code can be found on my GitHub at &lt;a href=&quot;https://github.com/calvinbui/pi-clock&quot;&gt;calvinbui/pi-clock&lt;/a&gt;. The package did not support the Vietnamese alphabet, so I had to remove their &lt;a href=&quot;https://en.wikipedia.org/wiki/Diacritic&quot;&gt;diacritics&lt;/a&gt;. To autostart the Python script, I edited &lt;code class=&quot;language-text&quot;&gt;/etc/rc.local&lt;/code&gt; and added &lt;code class=&quot;language-text&quot;&gt;/home/pi/pi-clock/main.py &gt; /dev/tty1&lt;/code&gt; before the &lt;code class=&quot;language-text&quot;&gt;exit 0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 824px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/931746e88cafc30a6f98c7de81891bcf/a0e79/python.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 62.441314553990615%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsTAAALEwEAmpwYAAACiklEQVQozz2R30vqcBjGdyXUkZzTmYjROuqGhme2rfBHFzGlsGVkkOhFzq+j4fzV5swyvdBhIysV6yJi0I+r6L88pNTn4uHlfXl4Hngh8l8wHmdXV1d9Ph9BEBiG0TQdCAQ2NjYIglhfX49Go6FQiOM4iqKWlpYQBLHOQBAEUhuqqqq6rr+9vbXb7Xw+PxqNxuPxdDqd6/v7e7Vavb+/39/fN5lMZrP5zw9Qs9nsdDqapk0mk7u7u16vV6/XHx4ePj8/B4PBy8vLcDgURVGW5XA4vLCw8Os0m81QJBplWTYYDJIkGQ6Ht7e3553j8XggEKAoamtri6IohmH8fj+CIDAM22w2i8XynXx0dCRJkiiKpVJpc3MTAKCqaiaTqdVqe3t7HMfxPF8ulwVBUBTl9PRUluV8Pq8oisPhgERRvLq66na7Nzc3nU5HUZTBYNDv99vtNs/zrVarUChcXl5eX1/ruq5pWqlUqsyw2+1QsVjMZDInJycAgIODA5IkJUnK5XKSJGWz2Vgsls1meZ5Pp9MAgEKhwPO8IAgAABRFoVgslkwmd3Z2kslkKBQ6PDz0+/0syzIME4lEdnd3aZpOpVI0TafT6UQiwTBMIpFAUXRxcRG6uLjQNO329tYwjFQqZRgGAOD19ZXjuLOzM8MwKpVKt9vVdf35+fnp6enj4+Pr6wvHcZPJBJ3L5/1+v1gsDofDXC43Ho8VRRmNRvV6XRTFx8fHZrPZ6/Uajcbx8bEgCOVyudVqEQTxbV5bW/s7Yz7gOO7xeHw+n9frxXHc6/ViGObxeJxOp9vtxjDM6XSurKzAMPxde/46q9UKz7BYLDAMoyg631h/TrYZCILYHajNYV9eXna5XP8BdizTUZWFqhYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;python&quot;
+        title=&quot;python&quot;
+        src=&quot;/static/931746e88cafc30a6f98c7de81891bcf/a0e79/python.png&quot;
+        srcset=&quot;/static/931746e88cafc30a6f98c7de81891bcf/53f68/python.png 213w,
+/static/931746e88cafc30a6f98c7de81891bcf/df70d/python.png 425w,
+/static/931746e88cafc30a6f98c7de81891bcf/a0e79/python.png 824w&quot;
+        sizes=&quot;(max-width: 824px) 100vw, 824px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The clock now hangs in her cabinet next to where she sits to watch television. It is powered using a single micro-USB cable, which automatically turns it on whenever it is plugged in. The Python script autostarts after boot. The Pi W is also connected to the Internet, so it will always have the correct time synced.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/05caeb8249caf91ba865ab71b908bc0f/81f49/clock-01.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAABAv/aAAwDAQACEAMQAAABu5+0CwlJr//EABsQAQACAgMAAAAAAAAAAAAAAAEAAgMEERIx/9oACAEBAAEFAreWyJO7NnKcWGzYR//EABYRAAMAAAAAAAAAAAAAAAAAAAEQIf/aAAgBAwEBPwERf//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPwGxj//EABcQAQADAAAAAAAAAAAAAAAAABAAEjH/2gAIAQEABj8CmFX/xAAbEAACAwADAAAAAAAAAAAAAAAAAREhMVFxsf/aAAgBAQABPyHcxEOoRidzYsQ0l6QK85P/2gAMAwEAAgADAAAAEATv/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAERQVH/2gAIAQMBAT8QaxK0/8QAFxEAAwEAAAAAAAAAAAAAAAAAABExUf/aAAgBAgEBPxBkGw//xAAfEAEBAAEDBQEAAAAAAAAAAAABEQAhMUFRYXGRodH/2gAIAQEAAT8QJqTbEh3E1pzghWV8/uDm1sDpCn2YvyFnPdeuFAIhHke8/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;clock 01&quot;
+        title=&quot;clock 01&quot;
+        src=&quot;/static/05caeb8249caf91ba865ab71b908bc0f/8a34a/clock-01.jpg&quot;
+        srcset=&quot;/static/05caeb8249caf91ba865ab71b908bc0f/08b27/clock-01.jpg 213w,
+/static/05caeb8249caf91ba865ab71b908bc0f/6f6b2/clock-01.jpg 425w,
+/static/05caeb8249caf91ba865ab71b908bc0f/8a34a/clock-01.jpg 850w,
+/static/05caeb8249caf91ba865ab71b908bc0f/63107/clock-01.jpg 1275w,
+/static/05caeb8249caf91ba865ab71b908bc0f/fef31/clock-01.jpg 1700w,
+/static/05caeb8249caf91ba865ab71b908bc0f/81f49/clock-01.jpg 4032w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/b6428d98b4844a008e9bff7eca34cec5/81f49/clock-02.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 75.11737089201877%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEAv/EABUBAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAGRVKTIE1//xAAaEAACAwEBAAAAAAAAAAAAAAABAgARIQMQ/9oACAEBAAEFAumsVIlCNpoef//EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAEDAQE/Aaf/xAAWEQADAAAAAAAAAAAAAAAAAAAQIUH/2gAIAQIBAT8BVH//xAAWEAEBAQAAAAAAAAAAAAAAAAAQARH/2gAIAQEABj8Cxr//xAAcEAACAQUBAAAAAAAAAAAAAAAAAREQIUFRcZH/2gAIAQEAAT8hRwrTkX4a2La0Q6YO3tP/2gAMAwEAAgADAAAAEN/P/8QAGBEBAAMBAAAAAAAAAAAAAAAAAQARIWH/2gAIAQMBAT8Qpojkrs//xAAXEQEBAQEAAAAAAAAAAAAAAAABABEh/9oACAECAQE/EBIg7bf/xAAdEAEBAAICAwEAAAAAAAAAAAABEQAhMUFRwdHh/9oACAEBAAE/EFaCRYs1+YJbwnhPGAO10XJjdAozgPuJFBd7T7xd5//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;clock 02&quot;
+        title=&quot;clock 02&quot;
+        src=&quot;/static/b6428d98b4844a008e9bff7eca34cec5/8a34a/clock-02.jpg&quot;
+        srcset=&quot;/static/b6428d98b4844a008e9bff7eca34cec5/08b27/clock-02.jpg 213w,
+/static/b6428d98b4844a008e9bff7eca34cec5/6f6b2/clock-02.jpg 425w,
+/static/b6428d98b4844a008e9bff7eca34cec5/8a34a/clock-02.jpg 850w,
+/static/b6428d98b4844a008e9bff7eca34cec5/63107/clock-02.jpg 1275w,
+/static/b6428d98b4844a008e9bff7eca34cec5/fef31/clock-02.jpg 1700w,
+/static/b6428d98b4844a008e9bff7eca34cec5/81f49/clock-02.jpg 4032w&quot;
+        sizes=&quot;(max-width: 850px) 100vw, 850px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded><author>Calvin Bui</author></item><item><title><![CDATA[Daikin Airbase Across VLANs]]></title><description><![CDATA[The Daikin Airbase is a Wi-Fi connected interface for controlling Daikin ducted air conditioning units. This gives the convenience of controlling temperature, timers, and zones…]]></description><link>https://calvin.me/daikin-airbase-vlans-opnsense</link><guid isPermaLink="false">https://calvin.me/daikin-airbase-vlans-opnsense</guid><category><![CDATA[daikin]]></category><category><![CDATA[vlans]]></category><category><![CDATA[aircon]]></category><category><![CDATA[opnsense]]></category><pubDate>Fri, 21 Jan 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The &lt;a href=&quot;https://www.daikin.com.au/controllers/daikin-airbase&quot;&gt;Daikin Airbase&lt;/a&gt; is a Wi-Fi connected interface for controlling Daikin ducted air conditioning units. This gives the convenience of controlling temperature, timers, and zones from a mobile device or voice assistant.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 850px; &quot;

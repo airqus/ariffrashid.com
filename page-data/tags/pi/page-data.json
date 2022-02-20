@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-js",
+    "path": "/tags/pi/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"My Grandma sometimes forgets the date and day of the week as she gets older. She doesn't use a smartphone, only analogue clocks. She doesn't…","timeToRead":2,"fileAbsolutePath":"/home/runner/work/calvin.me/calvin.me/master/posts/2022/2022-02-20-pi-clock/index.md","frontmatter":{"title":"Pi Clock","tags":["python","pi","clock"],"categories":["Programming"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/04a77d10bedffcf9fb35e2189ba213ec/thumbnail.svg"}}}}]}},"pageContext":{"tag":"pi"}},
+    "staticQueryHashes": []}
