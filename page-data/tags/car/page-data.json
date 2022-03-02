@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tag-js",
     "path": "/tags/car/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"I bought a new 2018 Volkswagen Golf R Wolfsburg Edition back in February. One of the main things I wanted was a car with a lot of features…","timeToRead":7,"fileAbsolutePath":"/home/runner/work/calvin.me/calvin.me/master/posts/2018/2018-07-23-tech-inside-my-2018-vw-golf-r/index.md","frontmatter":{"title":"Tech Inside My 2018 VW Golf R","tags":["car"],"categories":["Misc"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/20d8cc88a5ff1dcf606080c9fb512660/thumbnail.svg"}}}}]}},"pageContext":{"tag":"car"}},
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"I bought a new 2018 Volkswagen Golf R Wolfsburg Edition back in February. One of the main things I wanted was a car with a lot of features…","timeToRead":7,"fileAbsolutePath":"/home/runner/work/ariffrashid.com/ariffrashid.com/master/posts/2018/2018-07-23-tech-inside-my-2018-vw-golf-r/index.md","frontmatter":{"title":"Tech Inside My 2018 VW Golf R","tags":["car"],"categories":["Misc"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/20d8cc88a5ff1dcf606080c9fb512660/thumbnail.svg"}}}}]}},"pageContext":{"tag":"car"}},
     "staticQueryHashes": []}

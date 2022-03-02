@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tag-js",
     "path": "/tags/laptop/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"I’m not into writing a buying guides, LappyList is probably the best place to find a laptop if you want something that would probably do the…","timeToRead":9,"fileAbsolutePath":"/home/runner/work/calvin.me/calvin.me/master/posts/2016/2016-07-20-my-next-laptop/index.md","frontmatter":{"title":"My Next Laptop","tags":["laptop"],"categories":["Review","Computers"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/8250d0015c3bdfc19950ed693dd9fe89/thumbnail.svg"}}}}]}},"pageContext":{"tag":"laptop"}},
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"I’m not into writing a buying guides, LappyList is probably the best place to find a laptop if you want something that would probably do the…","timeToRead":9,"fileAbsolutePath":"/home/runner/work/ariffrashid.com/ariffrashid.com/master/posts/2016/2016-07-20-my-next-laptop/index.md","frontmatter":{"title":"My Next Laptop","tags":["laptop"],"categories":["Review","Computers"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/8250d0015c3bdfc19950ed693dd9fe89/thumbnail.svg"}}}}]}},"pageContext":{"tag":"laptop"}},
     "staticQueryHashes": []}

@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tag-js",
     "path": "/tags/wifi/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"WiFi is so important in the household with the emergence of portable devices. Pretty much everyone that comes over my place, young or old…","timeToRead":5,"fileAbsolutePath":"/home/runner/work/calvin.me/calvin.me/master/posts/2014/2014-10-17-wifi-and-vlans/index.md","frontmatter":{"title":"WiFi and VLANs","tags":["vlan","wifi"],"categories":["Networking"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/2203c0687c7a9896250aac98c3a3b32e/thumbnail.svg"}}}}]}},"pageContext":{"tag":"wifi"}},
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"WiFi is so important in the household with the emergence of portable devices. Pretty much everyone that comes over my place, young or old…","timeToRead":5,"fileAbsolutePath":"/home/runner/work/ariffrashid.com/ariffrashid.com/master/posts/2014/2014-10-17-wifi-and-vlans/index.md","frontmatter":{"title":"WiFi and VLANs","tags":["vlan","wifi"],"categories":["Networking"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/2203c0687c7a9896250aac98c3a3b32e/thumbnail.svg"}}}}]}},"pageContext":{"tag":"wifi"}},
     "staticQueryHashes": []}

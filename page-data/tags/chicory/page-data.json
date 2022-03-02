@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tag-js",
     "path": "/tags/chicory/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"I enjoyed playing this game. The themes it explores were deep. The music matched the environments. The boss fights remind me of Undertale…","timeToRead":2,"fileAbsolutePath":"/home/runner/work/calvin.me/calvin.me/master/posts/2021/2021-08-23-chicory/index.md","frontmatter":{"title":"Chicory: A Colorful Tale","tags":["chicory"],"categories":["Gaming"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/4e47a02b30c24dfc317f0cf0be7eb47d/thumbnail.svg"}}}}]}},"pageContext":{"tag":"chicory"}},
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"I enjoyed playing this game. The themes it explores were deep. The music matched the environments. The boss fights remind me of Undertale…","timeToRead":2,"fileAbsolutePath":"/home/runner/work/ariffrashid.com/ariffrashid.com/master/posts/2021/2021-08-23-chicory/index.md","frontmatter":{"title":"Chicory: A Colorful Tale","tags":["chicory"],"categories":["Gaming"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/4e47a02b30c24dfc317f0cf0be7eb47d/thumbnail.svg"}}}}]}},"pageContext":{"tag":"chicory"}},
     "staticQueryHashes": []}

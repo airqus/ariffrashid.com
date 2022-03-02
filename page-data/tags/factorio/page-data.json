@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-tag-js",
     "path": "/tags/factorio/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"I finished Factorio for the first time in just under 50 hours. I waited for the 1.0 release to play it and it was well worth it. What is…","timeToRead":5,"fileAbsolutePath":"/home/runner/work/calvin.me/calvin.me/master/posts/2020/2020-09-13-factorio/index.md","frontmatter":{"title":"Factorio","tags":["factorio"],"categories":["Gaming"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/acac0ca1f430c0e2c7ad334e194bcef1/thumbnail.svg"}}}}]}},"pageContext":{"tag":"factorio"}},
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"excerpt":"I finished Factorio for the first time in just under 50 hours. I waited for the 1.0 release to play it and it was well worth it. What is…","timeToRead":5,"fileAbsolutePath":"/home/runner/work/ariffrashid.com/ariffrashid.com/master/posts/2020/2020-09-13-factorio/index.md","frontmatter":{"title":"Factorio","tags":["factorio"],"categories":["Gaming"],"thumbnail":{"childImageSharp":null,"extension":"svg","publicURL":"/static/acac0ca1f430c0e2c7ad334e194bcef1/thumbnail.svg"}}}}]}},"pageContext":{"tag":"factorio"}},
     "staticQueryHashes": []}
