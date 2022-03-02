@@ -1,6 +1,6 @@
-# calvin.me
+# ariffrashid.com
 
-Calvin's personal website running on Gatsby, React, and Node.js.
+Ariff's personal website running on Gatsby, React, and Node.js.
 
 ## Features
 
@@ -15,8 +15,8 @@ Calvin's personal website running on Gatsby, React, and Node.js.
 
 ### Setup
 ```console
-git clone --single-branch --branch master --depth 1 git@github.com:calvinbui/calvin.me.git
-cd calvin.me
+git clone --single-branch --branch master --depth 1 git@github.com:airqus/ariffrashid.com.git
+cd ariffrashid.com
 nvm install "$(cat .nvmrc)"
 nvm use
 npm install -g yarn
